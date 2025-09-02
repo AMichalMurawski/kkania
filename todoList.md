@@ -1,7 +1,8 @@
 # General
     1. Create project - done
-    2. Build
-    3. SEO
+    2. Basic CSS - done
+    3. Build
+    4. SEO
 
 # Elements
     1. Buttons

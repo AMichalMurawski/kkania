@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #F2E2E1;
+    --secondary-color: #754540;
+    --accent-color: #A36963;
+    --glass-accent-color: #A3686233;
+    --glass-color: #FFFFFF33;
+
+    --font-heading: 'PlayfairDisplay', serif;
+    --font-heading-alternative: 'DMSerifDisplay', serif;
+    --font-paragraph: 'Montserrat', sans-serif;
+    --font-logo: 'BlackOpsOne', sans-serif,
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-paragraph);
+    line-height: 1.5;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    display: grid;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-family: var(--font-heading-alternative);
+    margin-bottom: 1em;
+}
+
+h1, h3 {
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.125rem;
+}
+
+p {
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-left: 1em;
+}
+
+button {
+    font-family: var(--font-paragraph);
+    font-weight: 900;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+
+    @media screen and (min-width: 480px) {
+        padding: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 35px;
+    }
+}
+
