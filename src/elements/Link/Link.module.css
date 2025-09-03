@@ -1,4 +1,4 @@
-.button {
+.link {
     position: relative;
     text-shadow: 3px 3px 2px var(--color-shadow);
     transition: text-shadow var(--transition-primary);
@@ -7,15 +7,15 @@
     margin-inline: 1em;
 }
 
-.buttonLight {
+.linkLight {
     color: var(--color-secondary);
 }
 
-.buttonDark {
+.linkDark {
     color: var(--color-primary);
 }
 
-.button::before {
+.link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -26,23 +26,23 @@
     transition: width var(--transition-primary);
 }
 
-.buttonLight::before {
+.linkLight::before {
     background-color: var(--color-accent);
 }
 
-.buttonDark::before {
+.linkDark::before {
     background-color: var(--color-primary);
 }
 
-.button:hover::before,
-.button:focus-visible::before {
+.link:hover::before,
+.link:focus-visible::before {
     width: 100%;
 }
 
-.button:active {
+.link:active {
     text-shadow: 3px 3px 2px var(--color-accent);
 }
 
-.button:active::before {
+.link:active::before {
     width: 0;
 }

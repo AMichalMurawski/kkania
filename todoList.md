@@ -5,14 +5,15 @@
     4. SEO
 
 # Elements
-    1. Buttons
-    2. Navbar
-    3. IconSVG
-    4. Contacts
-    5. Hamburger
-    6. Logo
-    7. Image
-    8. Input
+    1. Buttons - done
+    2. Links
+    3. Navbar
+    4. IconSVG
+    5. Contacts
+    6. Hamburger
+    7. Logo
+    8. Image
+    9. Input
 
 # Components
     1. MobileNavbar

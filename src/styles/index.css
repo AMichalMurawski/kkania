@@ -32,6 +32,8 @@ body {
 }
 
 a, a:hover {
+    font-family: var(--font-paragraph);
+    font-weight: 900;
     text-decoration: none;
     color: inherit;
 }
