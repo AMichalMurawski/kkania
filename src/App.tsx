@@ -4,6 +4,8 @@ import LogoIcon from "./elements/Icons/LogoIcon";
 import SocialIcon from "./elements/Icons/SocialIcon";
 import LinkTo from "./elements/Links/LinkTo";
 import Link from "./elements/Links/Link";
+import Image from "./elements/Images/Image";
+import ImageBg from "./elements/Images/ImageBg";
 
 
 
@@ -36,6 +38,26 @@ function App() {
         <SocialIcon name="facebook" />
         <SocialIcon name="instagram" />
         <LogoIcon />
+      </div>
+      
+      <h3>Images</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+        <div style={{width: '200px'}}>
+          <Image name="image1.jpg" orientation="landscape" />
+          landscape
+        </div>
+        <div style={{width: '200px'}}>
+          <Image name="image1.jpg" orientation="portrait" />
+          portrait
+        </div>
+        <div style={{width: '200px', height: '50px'}}>
+          <Image name="image1.jpg" />
+          any size
+        </div>
+        <div style={{width: '200px', height: '100px'}}>
+          <ImageBg name="image1.jpg" />
+          background
+        </div>
       </div>
       
       <h3></h3>
