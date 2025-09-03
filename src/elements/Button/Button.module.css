@@ -15,7 +15,7 @@
 
 .buttonLight {
     color: var(--color-secondary);
-    background-color: var(--color-glass);
+    background-color: var(--color-primary);
 }
 
 .buttonDark {

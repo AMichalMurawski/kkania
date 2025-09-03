@@ -12,12 +12,5 @@
     height: 6.5em;
     top: -0.92em;
     left: 0;
-}
-
-.logoLight {
-    fill: var(--color-primary);
-}
-
-.logoDark {
-    fill: var(--color-secondary);
+    fill: inherit;
 }

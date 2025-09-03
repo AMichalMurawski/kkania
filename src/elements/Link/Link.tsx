@@ -5,7 +5,7 @@ import { LinkProps } from "./types";
 const Link: React.FC<PropsWithChildren<LinkProps>> = ({ children, href = '', style = 'light' }) => {
     return (
         <a
-            className={`${styles.link} ${style === 'light' ? styles.linkLight : styles.linkLight}`}
+            className={`${styles.link} ${style === 'light' ? styles.linkLight : styles.linkDark}`}
             href={href}
         >{children}</a>
     )

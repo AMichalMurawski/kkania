@@ -10,21 +10,21 @@
 }
 
 .iconLight {
-    fill: var(--color-primary);
+    fill: var(--color-secondary);
 }
 
 .iconDark {
-    fill: var(--color-secondary);
+    fill: var(--color-primary);
 }
 
 .iconLight:hover {
-    background-color: var(--color-primary);
-    fill: var(--color-secondary);
+    background-color: var(--color-secondary);
+    fill: var(--color-primary);
 }
 
 .iconDark:hover {
-    background-color: var(--color-secondary);
-    fill: var(--color-primary);
+    background-color: var(--color-primary);
+    fill: var(--color-secondary);
 }
 
 .iconDark:active {

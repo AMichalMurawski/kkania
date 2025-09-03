@@ -12,6 +12,4 @@ export interface SocialIconProps extends IconProps {
     style?: 'light' | 'dark';
 }
 
-export interface LogoIconProps extends Omit<IconProps, 'name'> {
-    style?: 'light' | 'dark';
-}
+export interface LogoIconProps extends Omit<IconProps, 'name'> {}
