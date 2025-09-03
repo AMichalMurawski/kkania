@@ -1,4 +1,4 @@
-.link {
+.linkTo {
     position: relative;
     text-shadow: 3px 3px 2px var(--color-shadow);
     transition: text-shadow var(--transition-primary);
@@ -7,15 +7,15 @@
     margin-inline: 1em;
 }
 
-.linkLight {
+.linkToLight {
     color: var(--color-secondary);
 }
 
-.linkDark {
+.linkToDark {
     color: var(--color-primary);
 }
 
-.link::before {
+.linkTo::before {
     content: "";
     position: absolute;
     width: 0;
@@ -26,23 +26,23 @@
     transition: width var(--transition-primary);
 }
 
-.linkLight::before {
+.linkToLight::before {
     background-color: var(--color-accent);
 }
 
-.linkDark::before {
+.linkToDark::before {
     background-color: var(--color-primary);
 }
 
-.link:hover::before,
-.link:focus-visible::before {
+.linkTo:hover::before,
+.linkTo:focus-visible::before {
     width: 100%;
 }
 
-.link:active {
+.linkTo:active {
     text-shadow: 3px 3px 2px var(--color-accent);
 }
 
-.link:active::before {
+.linkTo:active::before {
     width: 0;
 }

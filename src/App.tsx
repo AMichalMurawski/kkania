@@ -2,7 +2,8 @@ import Button from "./elements/Button/Button";
 import IconSVG from "./elements/Icons/IconSVG";
 import LogoIcon from "./elements/Icons/LogoIcon";
 import SocialIcon from "./elements/Icons/SocialIcon";
-import Link from "./elements/Link/Link";
+import LinkTo from "./elements/Links/LinkTo";
+import Link from "./elements/Links/Link";
 
 
 
@@ -20,7 +21,8 @@ function App() {
       
       <h3>Links</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
-        <Link href="" >Sprawdź moje oferty&nbsp;&nbsp;&nbsp;&gt;</Link>
+        <LinkTo href="" >Sprawdź moje oferty&nbsp;&nbsp;&nbsp;&gt;</LinkTo>
+        <Link >Regulamin</Link>
       </div>
       
       <h3>Icons</h3>
@@ -54,7 +56,8 @@ function App() {
       
       <h3>Links</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
-        <Link href="" style="dark">Sprawdź moje oferty&nbsp;&nbsp;&nbsp;&gt;</Link>
+        <LinkTo href="" style="dark">Sprawdź moje oferty&nbsp;&nbsp;&nbsp;&gt;</LinkTo>
+        <Link >Regulamin</Link>
       </div>
       
       <h3>Icons</h3>
