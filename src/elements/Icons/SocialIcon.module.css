@@ -1,0 +1,36 @@
+.icon {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: fill var(--transition-primary), background-color var(--transition-primary);
+}
+
+.iconLight {
+    fill: var(--color-primary);
+}
+
+.iconDark {
+    fill: var(--color-secondary);
+}
+
+.iconLight:hover {
+    background-color: var(--color-primary);
+    fill: var(--color-secondary);
+}
+
+.iconDark:hover {
+    background-color: var(--color-secondary);
+    fill: var(--color-primary);
+}
+
+.iconDark:active {
+    box-shadow: inset 0 0 2px 3px var(--color-glass);
+}
+
+.iconLight:active {
+    box-shadow: inset 0 0 2px 3px var(--color-shadow);
+}

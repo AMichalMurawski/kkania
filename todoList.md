@@ -5,14 +5,14 @@
     4. SEO
 
 # Elements
-    1. Buttons - done
-    2. Links
-    3. Navbar
-    4. IconSVG
-    5. Contacts
-    6. Hamburger
-    7. Logo
-    8. Image
+    1. Button - done
+    2. Link - done
+    3. IconSVG - done
+    4. Image
+    5. Navbar
+    6. Contacts
+    7. Hamburger
+    8. Logo
     9. Input
 
 # Components

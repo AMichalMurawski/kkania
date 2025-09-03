@@ -1,10 +1,15 @@
-import ButtonBasic from "./elements/Button/Button";
-import Link from "./elements/Link/Link";
+
+
 
 function App() {
-  return <div style={{padding: '30px', backgroundColor: 'var(--color-primary)', display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
-    <Link href="">Jakis link</Link>
-  </div>;
+  return <>
+    <div style={{ padding: '30px', backgroundColor: 'var(--color-primary)', display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+      
+    </div>
+    <div style={{ padding: '30px', backgroundColor: 'var(--color-secondary)', display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+      
+    </div>
+  </>;
 }
 
 export default App;
