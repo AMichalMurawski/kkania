@@ -6,13 +6,13 @@
 
 # Elements
     1. Button - done
-    2. Link - done
-    3. IconSVG - done
-    4. Image
-    5. Navbar
-    6. Contacts
+    2. Links - done
+    3. Icons - done
+    4. Images - done
+    5. Logo - done
+    6. Navbar
     7. Hamburger
-    8. Logo
+    8. Contacts
     9. Input
 
 # Components

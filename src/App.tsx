@@ -6,6 +6,7 @@ import LinkTo from "./elements/Links/LinkTo";
 import Link from "./elements/Links/Link";
 import Image from "./elements/Images/Image";
 import ImageBg from "./elements/Images/ImageBg";
+import Logo from "./elements/Logo/Logo";
 
 
 
@@ -60,6 +61,12 @@ function App() {
         </div>
       </div>
       
+      <h3>Logo</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+        <Logo />
+        <Logo withoutText/>
+      </div>
+      
       <h3></h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
         
@@ -95,6 +102,12 @@ function App() {
         <LogoIcon />
       </div>
       
+      <h3>Logo</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
+        <Logo style="dark"/>
+        <Logo style="dark" withoutText/>
+      </div>
+
       <h3></h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '30px' }}>
         
