@@ -1,0 +1,14 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    color: inherit;
+}
+
+.light {
+    fill: var(--color-secondary);
+}
+
+.dark {
+    fill: var(--color-primary);
+}

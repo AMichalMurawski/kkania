@@ -10,18 +10,18 @@
     3. Icons - done
     4. Images - done
     5. Logo - done
-    6. Navbar
+    6. Contact
     7. Hamburger
-    8. Contacts
-    9. Input
+    8. Input
 
 # Components
-    1. MobileNavbar
-    2. OfferItem
-    3. OfferDescription
-    4. CategoryItem
-    5. GalleryList
-    6. Forms
+    1. Navbar
+    2. MobileNavbar
+    3. OfferItem
+    4. OfferDescription
+    5. CategoryItem
+    6. GalleryList
+    7. Forms
         - ContactForm
         - ReservationForm 
 

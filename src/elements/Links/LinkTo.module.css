@@ -5,14 +5,17 @@
     border-radius: 0;
     padding-inline: 0;
     margin-inline: 1em;
+    cursor: pointer;
 }
 
 .linkToLight {
     color: var(--color-secondary);
+    fill: var(--color-secondary);
 }
 
 .linkToDark {
     color: var(--color-primary);
+    fill: var(--color-primary);
 }
 
 .linkTo::before {

@@ -1,4 +1,7 @@
 export interface LinkProps {
     href: string;
-    style?: 'light' | 'dark';
+}
+
+export interface LinkToProps extends LinkProps {
+    style?: 'light' | 'dark';    
 }

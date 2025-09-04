@@ -1,4 +1,5 @@
 .link {
+    color: inherit;
     text-decoration: underline;
     cursor: pointer;
     transition: filter var(--transition-primary);
