@@ -1,0 +1,58 @@
+.wraper {
+    position: relative;
+    width: 3.5em;
+    height: 3.5em;
+    cursor: pointer;
+}
+.wraper div {
+    position: absolute;
+    height: 0.5em;
+    transition: width var(--transition-primary), rotate var(--transition-primary), translate var(--transition-primary);
+}
+.wraper div {
+    width: 100%;
+}
+.wraper div:nth-child(1),
+.wraper div:nth-child(3) {
+    transform-origin: left;
+}
+.wraper div:nth-child(2) {
+    transform-origin: center;
+}
+.wraper div:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.wraper div:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.wraper div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.light div {
+    background-color: var(--color-secondary);
+}
+
+.dark div {
+    background-color: var(--color-primary);
+}
+
+
+.exit div:nth-child(1),
+.exit div:nth-child(3) {
+    width: calc(100% * var(--sqrt2) - 0.7em);
+    translate: 0.2em 0;
+}
+.exit div:nth-child(1) {
+    rotate: 45deg;
+}
+.exit div:nth-child(2) {
+    width: 0;
+}
+.exit div:nth-child(3) {
+    rotate: -45deg;
+}

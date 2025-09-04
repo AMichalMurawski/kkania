@@ -10,7 +10,7 @@
     3. Icons - done
     4. Images - done
     5. Logo - done
-    6. Contact
+    6. Contact - done
     7. Hamburger
     8. Input
 

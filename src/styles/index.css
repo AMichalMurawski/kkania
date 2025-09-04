@@ -12,6 +12,8 @@
     --font-logo: 'BlackOpsOne', sans-serif;
 
     --transition-primary: 200ms ease;
+
+    --sqrt2: 1.41421356237;
 }
 
 *,

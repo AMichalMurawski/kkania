@@ -8,6 +8,7 @@ import Image from "./elements/Images/Image";
 import ImageBg from "./elements/Images/ImageBg";
 import Logo from "./elements/Logo/Logo";
 import Contact from "./elements/Contact/Contact";
+import Hamburger from "./elements/Hamburger/Hamburger";
 
 
 
@@ -86,9 +87,15 @@ function App() {
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
       
+      <h3 style={{ margin: 0 }}>Hamburger</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        <Hamburger onClick={() => {}}/>
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
       <h3 style={{ margin: 0 }}></h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
-        
       </div>
     </div>
 
@@ -139,6 +146,13 @@ function App() {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
         <Contact href="" iconName="envelop" style="dark">kkania@kkania.pl</Contact>
         <Contact href="" iconName="phone" style="dark">(+48) 012 345 678</Contact>
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
+      <h3 style={{ margin: 0 }}>Hamburger</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        <Hamburger onClick={() => {}} style="dark"/>
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
