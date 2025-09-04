@@ -1,0 +1,37 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.item {
+    padding: 0.3em 1em;
+    cursor: pointer;
+    transition: text-shadow var(--transition-primary);
+}
+
+.light .active {
+    color: var(--color-primary);
+    text-shadow:
+        -2px -2px 0 var(--color-secondary),
+        0   -2px 0 var(--color-secondary),
+        2px -2px 0 var(--color-secondary),
+        2px  0   0 var(--color-secondary),
+        2px  2px 0 var(--color-secondary),
+        0    2px 0 var(--color-secondary),
+        -2px  2px 0 var(--color-secondary),
+        -2px  0   0 var(--color-secondary);
+}
+
+.dark .active {
+    color: var(--color-secondary);
+    text-shadow:
+        -2px -2px 0 var(--color-primary),
+        0   -2px 0 var(--color-primary),
+        2px -2px 0 var(--color-primary),
+        2px  0   0 var(--color-primary),
+        2px  2px 0 var(--color-primary),
+        0    2px 0 var(--color-primary),
+        -2px  2px 0 var(--color-primary),
+        -2px  0   0 var(--color-primary);
+}
