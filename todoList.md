@@ -11,8 +11,8 @@
     4. Images - done
     5. Logo - done
     6. Contact - done
-    7. Hamburger
-    8. Input
+    7. Hamburger - done
+    8. Input - done
 
 # Components
     1. Navbar

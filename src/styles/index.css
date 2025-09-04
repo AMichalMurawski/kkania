@@ -5,6 +5,10 @@
     --color-glass-accent: #A3686233;
     --color-glass: #FFFFFF33;
     --color-shadow: #00000033;
+    --color-error: red;
+    --color-error-alternative: #ff7676;
+    --color-accept: green;
+    --color-warning: orange;
 
     --font-heading: 'PlayfairDisplay', serif;
     --font-heading-alternative: 'DMSerifDisplay', serif;

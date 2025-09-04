@@ -9,6 +9,7 @@ import ImageBg from "./elements/Images/ImageBg";
 import Logo from "./elements/Logo/Logo";
 import Contact from "./elements/Contact/Contact";
 import Hamburger from "./elements/Hamburger/Hamburger";
+import Input from "./elements/Input/Input";
 
 
 
@@ -94,8 +95,18 @@ function App() {
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
       
-      <h3 style={{ margin: 0 }}></h3>
+      <h3 style={{ margin: 0 }}>Inputs</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        <div style={{ width: '200px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+          <Input type='text' name='name' label='Imię i Nazwisko' error='Jakiś błąd ---'/>
+          <Input type='email' name='email' label='E-mail' />
+          <Input type='select' name='session' label='Sesja' options={[
+            { value: "occasional", label: "sesja okolicznościowa" },
+            { value: "family", label: "sesja rodzinna" },
+            { value: "outdoor", label: "sesja plenerowa" }]} />
+          <Input type='date' name='date' label='Data' />
+          <Input type='textarea' name='informations' label='Informacje o sesji' placeholder="Proszę podać proponowane godziny oraz krótki opis czego Pan/Pani oczekuje."/>
+        </div>
       </div>
     </div>
 
@@ -153,6 +164,22 @@ function App() {
       <h3 style={{ margin: 0 }}>Hamburger</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
         <Hamburger onClick={() => {}} style="dark"/>
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
+      <h3 style={{ margin: 0 }}>Inputs</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        <div style={{ width: '200px', display: 'flex', flexDirection: 'column', gap: '15px' }}>
+          <Input type='text' name='name' label='Imię i Nazwisko' error='Jakiś błąd ---' style="dark" />
+          <Input type='email' name='email' label='E-mail' style="dark" />
+          <Input type='select' name='session' label='Sesja' options={[
+            { value: "occasional", label: "sesja okolicznościowa" },
+            { value: "family", label: "sesja rodzinna" },
+            { value: "outdoor", label: "sesja plenerowa" }]} style="dark" />
+          <Input type='date' name='date' label='Data' style="dark" />
+          <Input type='textarea' name='informations' label='Informacje o sesji' placeholder="Proszę podać proponowane godziny oraz krótki opis czego Pan/Pani oczekuje." style="dark"/>
+        </div>
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
