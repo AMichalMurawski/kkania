@@ -1,14 +1,23 @@
 :root {
-    --primary-color: #F2E2E1;
-    --secondary-color: #754540;
-    --accent-color: #A36963;
-    --glass-accent-color: #A3686233;
-    --glass-color: #FFFFFF33;
+    --color-primary: #F2E2E1;
+    --color-secondary: #754540;
+    --color-accent: #A36963;
+    --color-glass-accent: #A3686233;
+    --color-glass: #FFFFFF33;
+    --color-shadow: #00000033;
+    --color-error: red;
+    --color-error-alternative: #ff7676;
+    --color-accept: green;
+    --color-warning: orange;
 
     --font-heading: 'PlayfairDisplay', serif;
     --font-heading-alternative: 'DMSerifDisplay', serif;
     --font-paragraph: 'Montserrat', sans-serif;
-    --font-logo: 'BlackOpsOne', sans-serif,
+    --font-logo: 'BlackOpsOne', sans-serif;
+
+    --transition-primary: 200ms ease;
+
+    --sqrt2: 1.41421356237;
 }
 
 *,
@@ -22,13 +31,15 @@
 body {
     font-family: var(--font-paragraph);
     line-height: 1.5;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     font-size: 1rem;
     display: grid;
 }
 
 a, a:hover {
+    font-family: var(--font-paragraph);
+    font-weight: 900;
     text-decoration: none;
     color: inherit;
 }
@@ -67,10 +78,22 @@ ul, ol {
 button {
     font-family: var(--font-paragraph);
     font-weight: 900;
+    padding: 0.75em 1em;
+    border-radius: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 button:disabled {
     cursor: not-allowed;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container {

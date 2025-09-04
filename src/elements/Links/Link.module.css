@@ -1,0 +1,16 @@
+.link {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: filter var(--transition-primary);
+}
+
+.link:hover,
+.link:focus-visible {
+    text-decoration: underline;
+    filter: drop-shadow(0 0 0.5px var(--color-primary)) drop-shadow(0 0 0.5px var(--color-accent));
+}
+
+.link:active {
+    filter: drop-shadow(0 0 2px var(--color-primary)) drop-shadow(0 0 2px var(--color-accent));
+}

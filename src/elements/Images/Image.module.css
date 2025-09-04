@@ -1,0 +1,17 @@
+.wraper {
+    width: 100%;
+    background-color: var(--color-accent);
+    overflow: hidden;
+}
+
+.landscape {
+    aspect-ratio: 3 / 2;
+}
+
+.portrait {
+    aspect-ratio: 2 / 3;
+}
+
+.parentSize {
+    height: 100%;
+}

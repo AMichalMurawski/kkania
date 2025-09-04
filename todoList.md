@@ -5,22 +5,23 @@
     4. SEO
 
 # Elements
-    1. Buttons
-    2. Navbar
-    3. IconSVG
-    4. Contacts
-    5. Hamburger
-    6. Logo
-    7. Image
-    8. Input
+    1. Button - done
+    2. Links - done
+    3. Icons - done
+    4. Images - done
+    5. Logo - done
+    6. Contact - done
+    7. Hamburger - done
+    8. Input - done
 
 # Components
-    1. MobileNavbar
-    2. OfferItem
-    3. OfferDescription
-    4. CategoryItem
-    5. GalleryList
-    6. Forms
+    1. Navbar
+    2. MobileNavbar
+    3. OfferItem
+    4. OfferDescription
+    5. CategoryItem
+    6. GalleryList
+    7. Forms
         - ContactForm
         - ReservationForm 
 

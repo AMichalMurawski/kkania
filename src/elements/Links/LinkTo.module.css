@@ -1,0 +1,51 @@
+.linkTo {
+    position: relative;
+    text-shadow: 3px 3px 2px var(--color-shadow);
+    transition: text-shadow var(--transition-primary);
+    border-radius: 0;
+    padding-inline: 0;
+    margin-inline: 1em;
+    cursor: pointer;
+}
+
+.linkToLight {
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
+}
+
+.linkToDark {
+    color: var(--color-primary);
+    fill: var(--color-primary);
+}
+
+.linkTo::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width var(--transition-primary);
+}
+
+.linkToLight::before {
+    background-color: var(--color-accent);
+}
+
+.linkToDark::before {
+    background-color: var(--color-primary);
+}
+
+.linkTo:hover::before,
+.linkTo:focus-visible::before {
+    width: 100%;
+}
+
+.linkTo:active {
+    text-shadow: 3px 3px 2px var(--color-accent);
+}
+
+.linkTo:active::before {
+    width: 0;
+}

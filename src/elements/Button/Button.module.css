@@ -1,0 +1,35 @@
+.button {
+    border: 2px solid var(--color-accent);
+    box-shadow: 2px 2px 2px 1px var(--color-shadow), inset 0 0 0 0 var(--color-shadow);
+    transition: box-shadow var(--transition-primary);
+}
+
+.button:hover,
+.button:focus-visible {
+    box-shadow: 0 0 0 0 var(--color-shadow), inset -2px -2px 2px 1px var(--color-shadow);
+}
+
+.button:active {
+    box-shadow: 0 0 0 0 var(--color-shadow), inset 0 0 2px 2px var(--color-shadow);
+}
+
+.buttonLight {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.buttonDark {
+    color: var(--color-primary);
+    background-color: var(--color-accent);
+}
+
+.buttonShort {
+    width: auto;
+    border-radius: 100px;
+}
+
+.buttonFull {
+    width: 100%;
+    text-align: center;
+    border-radius: 1em;
+}

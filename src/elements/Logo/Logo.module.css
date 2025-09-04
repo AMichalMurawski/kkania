@@ -1,0 +1,42 @@
+.wraper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.light {
+    fill: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.dark {
+    fill: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    align-items: center;
+    justify-content: center;
+    translate: 0 0.2em;
+    font-family: var(--font-logo);
+}
+
+.name p{
+    margin: 0;
+    line-height: 0.85;
+}
+
+.name p:nth-child(1) {
+    font-size: 1.12em;
+}
+
+.name p:nth-child(2) {
+    font-size: 2.15em;
+}
+
+.name p:nth-child(3) {
+    font-size: 0.84em;
+}

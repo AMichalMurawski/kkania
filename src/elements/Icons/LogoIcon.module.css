@@ -1,0 +1,16 @@
+.logoConteiner {
+    position: relative;
+    width: 6.444em;
+    height: 4.64em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 6.5em;
+    height: 6.5em;
+    top: -0.92em;
+    left: 0;
+    fill: inherit;
+}
