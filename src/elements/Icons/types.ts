@@ -10,6 +10,7 @@ export interface IconSVGProps extends IconProps {
 
 export interface SocialIconProps extends IconProps {
     style?: 'light' | 'dark';
+    href?: string;
 }
 
 export interface LogoIconProps extends Omit<IconProps, 'name'> {}
