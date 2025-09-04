@@ -43,8 +43,8 @@ function App() {
         <div style={{ width: '2rem', height: '2rem' }}>
           <IconSVG name="phone" />
         </div>
-        <SocialIcon name="facebook" />
-        <SocialIcon name="instagram" />
+        <SocialIcon name="facebook" href='https://facebook.com' />
+        <SocialIcon name="instagram" href='https://instagram.com' />
         <LogoIcon />
       </div>
       
@@ -138,8 +138,8 @@ function App() {
         <div style={{ width: '2rem', height: '2rem' }}>
           <IconSVG name="phone" />
         </div>
-        <SocialIcon name="facebook" style="dark" />
-        <SocialIcon name="instagram" style="dark" />
+        <SocialIcon name="facebook" style="dark" href='https://facebook.com' />
+        <SocialIcon name="instagram" style="dark" href='https://instagram.com' />
         <LogoIcon />
       </div>
       
