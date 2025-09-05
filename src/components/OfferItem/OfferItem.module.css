@@ -35,12 +35,6 @@
     height: calc(1.6em *3);
 }
 
-.hidden {
-    position: absolute;
-    visibility: hidden;
-    height: calc(1.6em * 3);
-}
-
 .price {
     font-family: var(--font-numeric);
     font-size: 3em;

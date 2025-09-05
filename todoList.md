@@ -18,7 +18,7 @@
     1. Navbar - done
     2. Contacts - done
     3. OfferItem - done
-    4. OfferDescription
+    4. OfferDescription - done
     5. CategoryItem
     6. GalleryList
     7. MobileNavbar
@@ -70,4 +70,8 @@
     1. sendMail
 
 # ToDo
-    1. Fix text-overflow in OfferItem
+    ## OfferItem
+        - fix text-overflow
+        - add logic for buttons
+    ## OferDescription
+        - add logic for button 

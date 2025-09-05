@@ -15,7 +15,7 @@ const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {
                 {offer.details.map((detail, i) => 
                     <li key={i} className={styles.detail}>
                         <IconSVG name="image" alt="ikona zdjęcia" fill="var(--color-accent)" size='1.1em' />
-                        {detail}
+                        {detail.heading}
                     </li>
                 )}
             </ul>

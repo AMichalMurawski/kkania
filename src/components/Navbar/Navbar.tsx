@@ -10,8 +10,6 @@ const Navbar: React.FC<NavbarProps> = ({ menuList, style='light' }) => {
         setActive(value)
     }
 
-    console.log('active:', active);
-
     return <nav>
         <ul className={`${styles.list} ${style === 'light' ? styles.light : styles.dark}`}>
             {menuList.map(item =>
