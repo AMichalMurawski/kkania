@@ -87,3 +87,4 @@
         / OfferItem
             - fix text-overflow
             - add logic for buttons
+            - move OfferProps to utils/types

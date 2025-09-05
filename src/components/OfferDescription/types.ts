@@ -1,4 +1,4 @@
-import { OfferProps } from "../OfferItem/types";
+import { OfferProps } from "../../utils";
 
 export interface OfferDescriptionProps {
     offer: OfferProps;
