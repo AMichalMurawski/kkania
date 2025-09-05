@@ -4,7 +4,7 @@
     3. Build
     4. SEO
 
-# Elements
+# Elements - done
     1. Button - done
     2. Links - done
     3. Icons - done
@@ -16,8 +16,8 @@
 
 # Components
     1. Navbar - done
-    2. Contacts
-    3. OfferItem
+    2. Contacts - done
+    3. OfferItem - done
     4. OfferDescription
     5. CategoryItem
     6. GalleryList
@@ -68,3 +68,6 @@
 
 # Backend
     1. sendMail
+
+# ToDo
+    1. Fix text-overflow in OfferItem

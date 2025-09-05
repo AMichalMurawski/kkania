@@ -14,8 +14,9 @@
     --font-heading-alternative: 'DMSerifDisplay', serif;
     --font-paragraph: 'Montserrat', sans-serif;
     --font-logo: 'BlackOpsOne', sans-serif;
+    --font-numeric: 'MontaguSlab', sans-serif;
 
-    --transition-primary: 200ms ease;
+    --transition-primary: 2000ms ease;
 
     --sqrt2: 1.41421356237;
 }
