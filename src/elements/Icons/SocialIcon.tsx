@@ -1,8 +1,7 @@
 import React from "react";
 import styles from './SocialIcon.module.css';
-import IconSVG from "./IconSVG";
+import { IconSVG, Link } from "../";
 import { SocialIconProps } from "./types";
-import Link from "../Links/Link";
 
 const SocialIcon: React.FC<SocialIconProps> = ({ name, style = 'light', alt = '', href='' }) => {
     return (

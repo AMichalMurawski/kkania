@@ -1,8 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import styles from "./Contact.module.css";
 import { ContactProps } from "./types";
-import LinkTo from "../Links/LinkTo";
-import IconSVG from "../Icons/IconSVG";
+import { IconSVG, LinkTo } from "../";
 
 const Contact: React.FC<PropsWithChildren<ContactProps>> = ({children, href = "", iconName="", style="light" }) => {
     return (

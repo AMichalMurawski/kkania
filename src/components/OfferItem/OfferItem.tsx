@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./OfferItem.module.css";
-import Button from "../../elements/Button/Button";
-import IconSVG from "../../elements/Icons/IconSVG";
+import { Button, IconSVG } from "../../elements";
 import { OfferItemProps } from "./types";
 
 const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {    

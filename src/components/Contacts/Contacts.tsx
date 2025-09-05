@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contacts.module.css";
-import Contact from "../../elements/Contact/Contact";
+import { Contact } from "../../elements";
 import { ContactsProps } from "./types";
 
 const Contacts: React.FC<ContactsProps> = ({ style = 'light' }) => {

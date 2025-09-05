@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Logo.module.css";
-import LogoIcon from "../Icons/LogoIcon";
+import { LogoIcon } from "../";
 import { LogoProps } from "./types";
 
 const Logo: React.FC<LogoProps> = ({size= '1rem', style='light', withoutText=false}) => {

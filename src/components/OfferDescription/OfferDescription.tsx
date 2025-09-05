@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./OfferDescription.module.css";
 import { OfferDescriptionProps } from "./types";
-import IconSVG from "../../elements/Icons/IconSVG";
+import { IconSVG } from "../../elements";
 
 const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, style='light'}) => {
     return (
