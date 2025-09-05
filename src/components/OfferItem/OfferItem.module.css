@@ -22,7 +22,7 @@
 
 .active {
     background-image: linear-gradient(var(--color-glass-accent));
-    border: 5px solid var(--color-secondary);
+    border: 5px solid var(--color-accent);
 }
 
 .description {
