@@ -15,13 +15,14 @@
     8. Input - done
 
 # Components
-    1. Navbar
-    2. MobileNavbar
+    1. Navbar - done
+    2. Contacts
     3. OfferItem
     4. OfferDescription
     5. CategoryItem
     6. GalleryList
-    7. Forms
+    7. MobileNavbar
+    8. Forms
         - ContactForm
         - ReservationForm 
 

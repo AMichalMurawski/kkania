@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #F2E2E1;
+    --color-primary: #FFE7E2;
     --color-secondary: #754540;
     --color-accent: #A36963;
     --color-glass-accent: #A3686233;
-    --color-glass: #FFFFFF33;
+    --color-glass: #FEFEFE33;
     --color-shadow: #00000033;
     --color-error: red;
     --color-error-alternative: #ff7676;
