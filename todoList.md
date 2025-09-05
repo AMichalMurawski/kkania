@@ -73,6 +73,7 @@
     ## Others
         - change style in props to darkMode + add types to utils + import darkMode type from utils in all components types + change style/darkMode logic in all components
         - add index.ts to elements and components
+        - add configOffers.json + logic for load config
     ## Elements
         / Hamburger
             - logic for view/hide NavbarModal
@@ -87,4 +88,3 @@
         / OfferItem
             - fix text-overflow
             - add logic for buttons
-            - move OfferProps to utils/types
