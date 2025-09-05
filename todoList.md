@@ -70,8 +70,20 @@
     1. sendMail
 
 # ToDo
-    ## OfferItem
-        - fix text-overflow
-        - add logic for buttons
-    ## OferDescription
-        - add logic for button 
+    ## Others
+        - change style in props to darkMode + add types to utils + import darkMode type from utils in all components types + change style/darkMode logic in all components
+        - add index.ts to elements and components
+    ## Elements
+        / Hamburger
+            - logic for view/hide NavbarModal
+        / Images
+            - change types (ImageBg alt isn't necessary)
+    ## Components
+        / Contacts
+            - complete href for contacts
+        / Navbar
+            - logic for change site
+            - active item from url
+        / OfferItem
+            - fix text-overflow
+            - add logic for buttons
