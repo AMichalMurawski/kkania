@@ -119,7 +119,71 @@ export const categories: CategoryGalleryProps[] = [
         orientation: "landscape",
       },
     ],
-    images: [],
+    images: [
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'p1.png', alt: '', orientation: "portrait",
+      },
+      {
+        name: 'l1.png', alt: '', orientation: "landscape",
+      },
+    ],
   },
   {
     name: 'plener',
