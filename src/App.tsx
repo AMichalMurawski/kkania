@@ -48,14 +48,14 @@ function App() {
       <h3 style={{ margin: 0 }}>Categories</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
         {categories.map((category, i) =>
-          <div style={{width: '300px'}}>
+          <div key={i} style={{width: '300px'}}>
             <CategoryItem
               name={category.name}
               session={category.session}
               title={category.title}
               description={category.description}
               composition={category.composition}
-              images={category.images}
+              imagesPreview={category.imagesPreview}
             />
           </div>
         )}
@@ -99,6 +99,24 @@ function App() {
       <h3 style={{ margin: 0 }}>OfferDescription</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
         <OfferDescription offer={offerList[1]} style="dark" />
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
+      <h3 style={{ margin: 0 }}>Categories</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        {categories.map((category, i) =>
+          <div key={i} style={{width: '300px'}}>
+            <CategoryItem
+              name={category.name}
+              session={category.session}
+              title={category.title}
+              description={category.description}
+              composition={category.composition}
+              imagesPreview={category.imagesPreview}
+            />
+          </div>
+        )}
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />

@@ -110,15 +110,16 @@ export const categories: CategoryGalleryProps[] = [
     name: 'plener',
     session: 'Sesja w plenerze',
     title: 'Malwina i Maciek - sesja nad jeziorem',
-    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim. Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
     composition: 1,
-    images: [
+    imagesPreview: [
       {
         name: 'l1.png',
         alt: '',
         orientation: "landscape",
       },
     ],
+    images: [],
   },
   {
     name: 'plener',
@@ -126,7 +127,7 @@ export const categories: CategoryGalleryProps[] = [
     title: 'Malwina i Maciek - sesja nad jeziorem',
     description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
     composition: 2,
-    images: [
+    imagesPreview: [
       {
         name: 'p1.png',
         alt: '',
@@ -138,6 +139,7 @@ export const categories: CategoryGalleryProps[] = [
         orientation: "portrait",
       },
     ],
+    images: [],
   },
   {
     name: 'plener',
@@ -145,7 +147,7 @@ export const categories: CategoryGalleryProps[] = [
     title: 'Malwina i Maciek - sesja nad jeziorem',
     description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
     composition: 3,
-    images: [
+    imagesPreview: [
       {
         name: 'p1.png',
         alt: '',
@@ -162,6 +164,7 @@ export const categories: CategoryGalleryProps[] = [
         orientation: "landscape",
       },
     ],
+    images: [],
   },
   {
     name: 'plener',
@@ -169,7 +172,7 @@ export const categories: CategoryGalleryProps[] = [
     title: 'Malwina i Maciek - sesja nad jeziorem',
     description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
     composition: 4,
-    images: [
+    imagesPreview: [
       {
         name: 'l1.png',
         alt: '',
@@ -186,6 +189,7 @@ export const categories: CategoryGalleryProps[] = [
         orientation: "portrait",
       },
     ],
+    images: [],
   },
   {
     name: 'plener',
@@ -193,7 +197,7 @@ export const categories: CategoryGalleryProps[] = [
     title: 'Malwina i Maciek - sesja nad jeziorem',
     description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
     composition: 5,
-    images: [
+    imagesPreview: [
       {
         name: 'l1.png',
         alt: '',
@@ -215,5 +219,6 @@ export const categories: CategoryGalleryProps[] = [
         orientation: "landscape",
       },
     ],
+    images: [],
   },
 ]

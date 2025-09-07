@@ -19,8 +19,8 @@
     2. Contacts - done
     3. OfferItem - done
     4. OfferDescription - done
-    5. CategoryItem
-    6. GalleryList
+    5. CategoryItem - 55min
+    6. GalleryList - 
     7. MobileNavbar
     8. Forms
         - ContactForm

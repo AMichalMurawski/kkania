@@ -6,5 +6,6 @@ export interface CategoryGalleryProps {
     title: string;
     description: string;
     composition: number;
+    imagesPreview: ImageProps[];
     images: ImageProps[];
 }
