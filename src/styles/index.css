@@ -1,6 +1,8 @@
 :root {
     --color-primary: #FFE7E2;
     --color-secondary: #754540;
+    --color-text: #754540;
+    --color-text-alternative: #FFE7E2;
     --color-accent: #A36963;
     --color-glass-accent: #A3686233;
     --color-glass: #FEFEFE33;
@@ -33,7 +35,7 @@ body {
     font-family: var(--font-paragraph);
     line-height: 1.5;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-text);
     font-size: 1rem;
     display: grid;
 }

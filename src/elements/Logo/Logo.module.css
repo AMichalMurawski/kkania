@@ -5,13 +5,13 @@
 }
 
 .light {
-    fill: var(--color-secondary);
-    color: var(--color-secondary);
+    fill: var(--color-text);
+    color: var(--color-text);
 }
 
 .dark {
-    fill: var(--color-primary);
-    color: var(--color-primary);
+    fill: var(--color-text-alternative);
+    color: var(--color-text-alternative);
 }
 
 .name {

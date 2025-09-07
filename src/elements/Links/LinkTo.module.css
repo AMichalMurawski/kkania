@@ -9,13 +9,13 @@
 }
 
 .linkToLight {
-    color: var(--color-secondary);
-    fill: var(--color-secondary);
+    color: var(--color-text);
+    fill: var(--color-text);
 }
 
 .linkToDark {
-    color: var(--color-primary);
-    fill: var(--color-primary);
+    color: var(--color-text-alternative);
+    fill: var(--color-text-alternative);
 }
 
 .linkTo::before {

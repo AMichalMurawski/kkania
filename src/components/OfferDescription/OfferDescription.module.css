@@ -15,7 +15,7 @@
 }
 
 .dark {
-    fill: var(--color-primary);
+    fill: var(--color-text-alternative);
 }
 
 .price {
