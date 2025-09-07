@@ -1,4 +1,5 @@
-import { OfferProps } from "./components/OfferItem/types"
+import { OfferProps } from "./utils";
+import { CategoryGalleryProps } from "./utils/types/categoryGallery";
 
 export const menuList = [
   {
@@ -103,3 +104,116 @@ export const offerList: OfferProps[] = [
     }],
   }
 ];
+
+export const categories: CategoryGalleryProps[] = [
+  {
+    name: 'plener',
+    session: 'Sesja w plenerze',
+    title: 'Malwina i Maciek - sesja nad jeziorem',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    composition: 1,
+    images: [
+      {
+        name: 'l1.png',
+        alt: '',
+        orientation: "landscape",
+      },
+    ],
+  },
+  {
+    name: 'plener',
+    session: 'Sesja w plenerze',
+    title: 'Malwina i Maciek - sesja nad jeziorem',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    composition: 2,
+    images: [
+      {
+        name: 'p1.png',
+        alt: '',
+        orientation: "portrait",
+      },
+      {
+        name: 'p2.png',
+        alt: '',
+        orientation: "portrait",
+      },
+    ],
+  },
+  {
+    name: 'plener',
+    session: 'Sesja w plenerze',
+    title: 'Malwina i Maciek - sesja nad jeziorem',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    composition: 3,
+    images: [
+      {
+        name: 'p1.png',
+        alt: '',
+        orientation: "portrait",
+      },
+      {
+        name: 'l1.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'l2.png',
+        alt: '',
+        orientation: "landscape",
+      },
+    ],
+  },
+  {
+    name: 'plener',
+    session: 'Sesja w plenerze',
+    title: 'Malwina i Maciek - sesja nad jeziorem',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    composition: 4,
+    images: [
+      {
+        name: 'l1.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'l2.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'p1.png',
+        alt: '',
+        orientation: "portrait",
+      },
+    ],
+  },
+  {
+    name: 'plener',
+    session: 'Sesja w plenerze',
+    title: 'Malwina i Maciek - sesja nad jeziorem',
+    description: 'Czuła i piękna sesja narzeczonych nad jeziorkiem Suchockim.',
+    composition: 5,
+    images: [
+      {
+        name: 'l1.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'l2.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'l3.png',
+        alt: '',
+        orientation: "landscape",
+      },
+      {
+        name: 'l4.png',
+        alt: '',
+        orientation: "landscape",
+      },
+    ],
+  },
+]
