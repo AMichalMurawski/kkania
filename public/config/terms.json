@@ -1,0 +1,55 @@
+{
+  "title": "Regulamin świadczenia usług fotograficznych",
+  "lastUpdated": "2025-09-08",
+  "sections": [
+    {
+      "heading": "1. Postanowienia ogólne",
+      "content": [
+        { "type": "paragraph", "text": "Niniejszy regulamin określa zasady świadczenia usług fotograficznych przez Fotografia Rodzinna." },
+        { "type": "paragraph", "text": "Korzystając z usług, akceptujesz warunki niniejszego regulaminu." }
+      ]
+    },
+    {
+      "heading": "2. Zakres usług",
+      "content": [
+        { "type": "paragraph", "text": "Usługi obejmują sesje zdjęciowe w plenerze, w domu oraz podczas okoliczności rodzinnych." },
+        { "type": "list", "items": [
+            "Sesje rodzinne",
+            "Sesje okolicznościowe (chrzciny, urodziny, baby shower)",
+            "Sesje w plenerze"
+        ]}
+      ]
+    },
+    {
+      "heading": "3. Rezerwacja i płatność",
+      "content": [
+        { "type": "paragraph", "text": "Rezerwacja sesji wymaga kontaktu telefonicznego lub mailowego." },
+        { "type": "paragraph", "text": "Płatność realizowana jest przed sesją lub zgodnie z indywidualnym ustaleniem z klientem." }
+      ]
+    },
+    {
+      "heading": "4. Prawa autorskie",
+      "content": [
+        { "type": "paragraph", "text": "Wszystkie prawa autorskie do zdjęć należą do Fotografia Rodzinna." },
+        { "type": "paragraph", "text": "Klient otrzymuje prawo do korzystania z zakupionych zdjęć w celach prywatnych." }
+      ]
+    },
+    {
+      "heading": "5. Reklamacje i anulowanie sesji",
+      "content": [
+        { "type": "paragraph", "text": "Klient ma prawo do reklamacji w przypadku niewłaściwego wykonania usług." },
+        { "type": "list", "items": [
+            "Sesję można odwołać z co najmniej 48-godzinnym wyprzedzeniem.",
+            "W przeciwnym razie może być naliczona opłata."
+        ]}
+      ]
+    },
+    {
+      "heading": "6. Postanowienia końcowe",
+      "content": [
+        { "type": "paragraph", "text": "Regulamin może ulegać zmianom." },
+        { "type": "paragraph", "text": "Aktualna wersja regulaminu zawsze jest dostępna na stronie internetowej." }
+      ]
+    }
+  ]
+}

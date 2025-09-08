@@ -1,5 +1,5 @@
 import { OfferProps } from "./utils";
-import { CategoryGalleryProps } from "./utils/types/categoryGallery";
+import { CategoryGalleryProps } from "./utils/types/gallery";
 
 export const menuList = [
   {

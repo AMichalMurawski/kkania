@@ -1,0 +1,90 @@
+[
+  {
+    "name": "family_gallery",
+    "session": "family",
+    "title": "Galeria Sesji Rodzinnej",
+    "description": "Galeria sesji rodzinnej prezentuje naturalne, pełne emocji kadry wykonane podczas spotkania w domu lub plenerze. Zdjęcia oddają relacje i autentyczne momenty między członkami rodziny.",
+    "composition": 1,
+    "imagesPreview": [
+      { "name": "l1.png", "alt": "", "orientation": "landscape" }
+    ],
+    "images": [
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" }
+    ]
+  },
+  {
+    "name": "special_occasions_gallery",
+    "session": "special_occasions",
+    "title": "Galeria Sesji Okolicznościowej",
+    "description": "Galeria prezentuje najważniejsze momenty wydarzeń rodzinnych, takich jak chrzciny, urodziny czy baby shower. Zdjęcia dokumentują emocje, detale i atmosferę wyjątkowych chwil.",
+    "composition": 2,
+    "imagesPreview": [
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" }
+    ],
+    "images": [
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" }
+    ]
+  },
+  {
+    "name": "outdoor_gallery",
+    "session": "outdoor",
+    "title": "Galeria Sesji w Plenerze",
+    "description": "Galeria sesji w plenerze pokazuje swobodne kadry w naturalnym świetle – wśród łąk, lasów lub miejskiej przestrzeni. Zdjęcia uchwycają ruch, emocje i piękno otoczenia.",
+    "composition": 3,
+    "imagesPreview": [
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" }
+    ],
+    "images": [
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" },
+      { "name": "p1.png", "alt": "", "orientation": "portrait" },
+      { "name": "p2.png", "alt": "", "orientation": "portrait" },
+      { "name": "l1.png", "alt": "", "orientation": "landscape" },
+      { "name": "l2.png", "alt": "", "orientation": "landscape" },
+      { "name": "l3.png", "alt": "", "orientation": "landscape" },
+      { "name": "l4.png", "alt": "", "orientation": "landscape" }
+    ]
+  }
+]

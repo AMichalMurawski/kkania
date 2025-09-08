@@ -1,0 +1,86 @@
+[
+  {
+    "name": "family",
+    "title": "Sesja rodzinna",
+    "description": "Naturalne, ciepłe kadry pełne emocji – uchwycone w Waszym codziennym rytmie. Sesja rodzinna pozwala zachować wyjątkowe wspomnienia z czasu spędzonego razem. Starannie dobrane kadry oddają bliskość i autentyczne emocje, tworząc pamiątkę na lata.",
+    "price": 500,
+    "details": [
+      {
+        "heading": "do 1 godziny zdjęć (plener lub dom)",
+        "value": "Sesja trwa do jednej godziny i może odbywać się w plenerze lub w Waszym domu. Czas ten pozwala na swobodną interakcję i uchwycenie naturalnych momentów, bez pośpiechu, w przyjaznej atmosferze."
+      },
+      {
+        "heading": "15 obrobionych zdjęć w wersji cyfrowej",
+        "value": "Otrzymacie 15 starannie wybranych i obrobionych zdjęć w wysokiej jakości, gotowych do udostępnienia rodzinie i znajomym lub wydrukowania jako pamiątka."
+      },
+      {
+        "heading": "galeria online do wyboru zdjęć",
+        "value": "Każda sesja ma dedykowaną galerię online, w której możecie przeglądać wszystkie wykonane zdjęcia, wybierać ulubione i pobierać je w wygodnym formacie cyfrowym."
+      },
+      {
+        "heading": "możliwość dokupienia dodatkowych ujęć",
+        "value": "Jeżeli zapragniecie więcej zdjęć niż w pakiecie podstawowym, istnieje możliwość dokupienia dodatkowych ujęć. Pozwala to na elastyczne dopasowanie liczby zdjęć do Waszych potrzeb."
+      },
+      {
+        "heading": "pomoc w przygotowaniu do sesji (stylizacje, lokalizacja)",
+        "value": "Oferujemy wsparcie w przygotowaniu sesji – doradzamy w wyborze stylizacji, miejsc i akcesoriów, aby zdjęcia wyglądały naturalnie i spójnie z Waszym stylem."
+      }
+    ]
+  },
+  {
+    "name": "special_occasions",
+    "title": "Sesja okolicznościowa",
+    "description": "Zdjęcia z ważnych chwil – chrzest, urodziny, baby shower lub inne rodzinne wydarzenie. Sesja okolicznościowa pozwala uwiecznić te wyjątkowe momenty w profesjonalny i estetyczny sposób. Każde zdjęcie opowiada historię tego dnia, pełną emocji i radości.",
+    "price": 700,
+    "details": [
+      {
+        "heading": "reportaż do 2 godzin",
+        "value": "Sesja trwa do dwóch godzin, pozwalając uwiecznić najważniejsze momenty wydarzenia od początku do końca, bez pośpiechu."
+      },
+      {
+        "heading": "30 obrobionych zdjęć",
+        "value": "Otrzymacie 30 starannie wybranych i obrobionych zdjęć, które w pełni oddają charakter i atmosferę Waszego wydarzenia."
+      },
+      {
+        "heading": "zdjęcia grupowe i detale",
+        "value": "Podczas sesji wykonujemy zarówno ujęcia grupowe, jak i detale – emocje na twarzach, dekoracje, prezenty, aby zachować pełną historię dnia."
+      },
+      {
+        "heading": "galeria online z możliwością pobrania",
+        "value": "Każde zdjęcie jest dostępne w galerii online, skąd można je wygodnie pobrać lub udostępnić rodzinie i znajomym."
+      },
+      {
+        "heading": "dojazd w obrębie miasta w cenie",
+        "value": "W cenie sesji zapewniamy dojazd w obrębie miasta, aby sesja odbyła się w wybranym przez Was miejscu, bez dodatkowych kosztów."
+      }
+    ]
+  },
+  {
+    "name": "outdoor",
+    "title": "Sesja w plenerze",
+    "description": "Swobodne zdjęcia w naturalnym świetle – wśród łąk, lasów lub miejskiej przestrzeni. Sesja w plenerze pozwala na uchwycenie naturalnej energii i relaksu w pięknych sceneriach. Kadry oddają ruch, emocje i unikalny charakter otoczenia.",
+    "price": 450,
+    "details": [
+      {
+        "heading": "45 minut sesji w wybranej lokalizacji",
+        "value": "Sesja trwa 45 minut w wybranej lokalizacji, pozwalając na uchwycenie najlepszych kadrów w naturalnym środowisku."
+      },
+      {
+        "heading": "12 obrobionych zdjęć",
+        "value": "Otrzymacie 12 starannie wybranych i obrobionych zdjęć w wysokiej jakości, które oddają charakter sesji i piękno naturalnego światła."
+      },
+      {
+        "heading": "galeria online do wyboru zdjęć",
+        "value": "Udostępniamy zdjęcia w galerii online, aby mogli Państwo przeglądać wszystkie ujęcia i wybierać te ulubione."
+      },
+      {
+        "heading": "sugestie co do stylizacji i miejsca",
+        "value": "Doradzamy w wyborze stylizacji i lokalizacji, aby zdjęcia były spójne wizualnie i oddawały Wasz indywidualny styl."
+      },
+      {
+        "heading": "możliwość zabrania bliskiej osoby lub pupila",
+        "value": "Podczas sesji można zabrać bliską osobę lub pupila, co dodatkowo wzbogaca naturalność i emocjonalny charakter zdjęć."
+      }
+    ]
+  }
+]

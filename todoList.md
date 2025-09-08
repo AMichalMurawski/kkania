@@ -61,10 +61,14 @@
     3. loadOffers
 
 # Public
-    1. Images
-    2. Offers
-    3. SiteConfig
-    4. DocumentConfig
+    1. Fonts - done ?
+    2. Icons - done ?
+    3. Images
+    4. Config
+        Offer
+        Gallery
+        SiteInfo
+        Terms
 
 # Backend
     1. sendMail
