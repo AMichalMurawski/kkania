@@ -4,7 +4,7 @@
     3. Build
     4. SEO
 
-# Elements
+# Elements - done
     1. Button - done
     2. Links - done
     3. Icons - done
@@ -14,16 +14,17 @@
     7. Hamburger - done
     8. Input - done
 
-# Components
-    1. Navbar
-    2. MobileNavbar
-    3. OfferItem
-    4. OfferDescription
-    5. CategoryItem
-    6. GalleryList
-    7. Forms
-        - ContactForm
-        - ReservationForm 
+# Components - done
+    1. Navbar - done
+    2. Contacts - done
+    3. OfferItem - done
+    4. OfferDescription - done
+    5. CategoryItem - done
+    6. GalleryList - done
+    7. MobileMenu - done
+    8. Forms - done
+        - ContactForm - done
+        - ReservationForm - done
 
 # Sections
     1. Header
@@ -67,3 +68,25 @@
 
 # Backend
     1. sendMail
+
+# ToDo
+    ## Others
+        -
+    ## Elements
+        / Hamburger
+            - logic for view/hide NavbarModal
+        / Images
+            - change types (ImageBg alt isn't necessary)
+    ## Components
+        / CategoryItem 
+            - onClick - open gallery (name props)
+        / Contacts
+            - complete href for contacts
+        / GalleryList
+            - logic for click on image - view modal with full size images
+        / Navbar
+            - logic for change site
+            - active item from url
+        / OfferItem
+            - fix text-overflow
+            - add logic for buttons

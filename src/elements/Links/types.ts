@@ -4,5 +4,5 @@ export interface LinkProps {
 }
 
 export interface LinkToProps extends LinkProps {
-    style?: 'light' | 'dark';    
+    darkStyle?: boolean;    
 }

@@ -1,0 +1,12 @@
+export { default as Button } from "./Button/Button";
+export { default as Contact } from "./Contact/Contact";
+export { default as Hamburger } from "./Hamburger/Hamburger";
+export { default as IconSVG } from "./Icons/IconSVG";
+export { default as LogoIcon } from "./Icons/LogoIcon";
+export { default as SocialIcon } from "./Icons/SocialIcon";
+export { default as Image } from "./Images/Image";
+export { default as ImageBg } from "./Images/ImageBg";
+export { default as Input } from "./Input/Input";
+export { default as Link } from "./Links/Link";
+export { default as LinkTo } from "./Links/LinkTo";
+export { default as Logo } from "./Logo/Logo";

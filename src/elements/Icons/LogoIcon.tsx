@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './LogoIcon.module.css';
-import IconSVG from "./IconSVG";
+import { IconSVG } from "../";
 
 const LogoIcon: React.FC = () => {
     return (

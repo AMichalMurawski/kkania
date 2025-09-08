@@ -1,0 +1,27 @@
+.conteiner {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    @media screen and (min-width: 480px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.imageWrapper {
+    width: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--color-accent);
+}

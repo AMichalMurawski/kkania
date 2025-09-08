@@ -1,0 +1,49 @@
+.conteiner {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: var(--color-glass-accent);
+    overflow: hidden;
+}
+
+.images {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.informationsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.informationsWrapper * {
+    margin: 0;
+}
+
+.session {
+    text-align: right;
+}
+
+.session, .title {
+    font-size: 1rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: calc(1.6em *3);
+}

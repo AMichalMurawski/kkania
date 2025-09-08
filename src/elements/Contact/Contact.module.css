@@ -6,9 +6,9 @@
 }
 
 .light {
-    fill: var(--color-secondary);
+    fill: var(--color-text);
 }
 
 .dark {
-    fill: var(--color-primary);
+    fill: var(--color-text-alternative);
 }

@@ -1,6 +1,6 @@
 export interface ButtonProps {
     type?: 'button' | 'submit';
     linkTo: string;
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
     view?: 'short' | 'full';
 }

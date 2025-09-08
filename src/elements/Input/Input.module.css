@@ -12,7 +12,7 @@
     border-radius: 1em;
     border: 1px solid var(--color-secondary);
     outline: none;
-    color: var(--color-secondary);
+    color: var(--color-text);
 }
 
 .wrapper :not(label,.error):hover,
@@ -53,10 +53,13 @@
 }
 
 .error {
+    position: absolute;
     font-family: var(--font-logo);
     font-size: 0.7em;
     margin-left: 0.5em;
     letter-spacing: 0.1em;
+    bottom: -1.5em;
+    left: 0.5em;
 }
 
 .light .error {

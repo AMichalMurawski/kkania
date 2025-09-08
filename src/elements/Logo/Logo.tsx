@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Logo.module.css";
-import LogoIcon from "../Icons/LogoIcon";
+import { LogoIcon } from "../";
 import { LogoProps } from "./types";
 
-const Logo: React.FC<LogoProps> = ({size= '1rem', style='light', withoutText=false}) => {
+const Logo: React.FC<LogoProps> = ({size= '1rem', darkStyle, withoutText=false}) => {
     return (
-        <div style={{fontSize: size}} className={`${styles.wraper} ${style === 'light' ? styles.light : styles.dark}`}>
+        <div style={{fontSize: size}} className={`${styles.wraper} ${darkStyle ? styles.dark : styles.light}`}>
             <LogoIcon />
             {!withoutText && (
                 <div className={styles.name}>

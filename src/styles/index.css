@@ -1,9 +1,11 @@
 :root {
-    --color-primary: #F2E2E1;
+    --color-primary: #FFE7E2;
     --color-secondary: #754540;
+    --color-text: #754540;
+    --color-text-alternative: #FFE7E2;
     --color-accent: #A36963;
     --color-glass-accent: #A3686233;
-    --color-glass: #FFFFFF33;
+    --color-glass: #FEFEFE33;
     --color-shadow: #00000033;
     --color-error: red;
     --color-error-alternative: #ff7676;
@@ -14,6 +16,7 @@
     --font-heading-alternative: 'DMSerifDisplay', serif;
     --font-paragraph: 'Montserrat', sans-serif;
     --font-logo: 'BlackOpsOne', sans-serif;
+    --font-numeric: 'MontaguSlab', sans-serif;
 
     --transition-primary: 200ms ease;
 
@@ -32,7 +35,7 @@ body {
     font-family: var(--font-paragraph);
     line-height: 1.5;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-text);
     font-size: 1rem;
     display: grid;
 }
@@ -72,6 +75,7 @@ p {
 
 ul, ol {
     list-style-position: inside;
+    list-style-type: none;
     margin-left: 1em;
 }
 

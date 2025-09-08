@@ -1,0 +1,45 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.conteiner * {
+    margin: 0;
+}
+
+.light {
+    fill: var(--color-accent);
+}
+
+.dark {
+    fill: var(--color-text-alternative);
+}
+
+.price {
+    font-family: var(--font-numeric);
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.detailsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.detailsList li{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.detailsList svg{
+    translate: 0 -0.25em;
+}
+
+.heading {
+    font-weight: 800;
+}

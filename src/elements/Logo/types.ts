@@ -1,5 +1,5 @@
 export interface LogoProps {
     size?: string;
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
     withoutText?: boolean;
 }

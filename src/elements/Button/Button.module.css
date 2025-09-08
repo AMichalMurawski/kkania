@@ -14,12 +14,12 @@
 }
 
 .buttonLight {
-    color: var(--color-secondary);
+    color: var(--color-text);
     background-color: var(--color-primary);
 }
 
 .buttonDark {
-    color: var(--color-primary);
+    color: var(--color-text-alternative);
     background-color: var(--color-accent);
 }
 

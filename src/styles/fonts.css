@@ -45,3 +45,11 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'MontaguSlab';
+  src: url('/fonts/MontaguSlab_48pt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
