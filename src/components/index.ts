@@ -1,4 +1,5 @@
 export { default as CategoryItem } from "./CategoryItem/CategoryItem";
+export { default as ContactForm } from "./Forms/ContactForm/ContactForm";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as GalleryList } from "./GalleryList/GalleryList";
 export { default as MobileMenu } from "./MobileMenu/MobileMenu";

@@ -1,48 +1,65 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Input.module.css";
 import { InputProps } from "./types";
 
-const Input: React.FC<InputProps> = ({ type = 'text', name, label, options, placeholder, error, style='light' }) => {
+const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement, InputProps>(
+  ({ type, name, label, placeholder, error, style = "light", ...rest }, ref) => {
     return (
-        <div className={`${styles.wrapper} ${style === 'light' ? styles.light : styles.dark}`}>
-            {label && <label className={styles.label}>{label}</label>}
+      <div className={`${styles.wrapper} ${style === "light" ? styles.light : styles.dark}`}>
+        {label && (
+          <label htmlFor={name} className={styles.label}>
+            {label}
+          </label>
+        )}
 
-            {type === 'text' &&
-                <input id={name} name={name} type={type} className={styles.input} />
-            }
+        {type === "text" || type === "email" || type === "date" ? (
+          <input
+            id={name}
+            name={name}
+            type={type}
+            className={styles.input}
+            ref={ref as React.Ref<HTMLInputElement>}
+            {...(rest as React.InputHTMLAttributes<HTMLInputElement>)}
+          />
+        ) : type === "textarea" ? (
+          <textarea
+            id={name}
+            name={name}
+            rows={6}
+            maxLength={250}
+            placeholder={placeholder}
+            className={styles.textarea}
+            ref={ref as React.Ref<HTMLTextAreaElement>}
+            {...(rest as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
+          />
+        ) : type === "select" ? (
+          <select
+            id={name}
+            name={name}
+            className={styles.select}
+            defaultValue=""
+            ref={ref as React.Ref<HTMLSelectElement>}
+            {...(rest as React.SelectHTMLAttributes<HTMLSelectElement>)}
+          >
+            <option value="" disabled>
+              Wybierz sesję
+            </option>
+            {"options" in rest && Array.isArray((rest as any).options)
+              ? (rest as any).options.map((opt: { value: string; label: string }) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))
+              : null}
+          </select>
+        ) : null}
 
-            {type === 'email' &&
-                <input id={name} name={name} type={type} className={styles.input} />
-            }
-
-            {type === 'date' &&
-                <input
-                    id={name}
-                    name={name}
-                    type={type}
-                    min={new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().split('T')[0]}
-                    className={styles.input}
-                />
-            }
-
-            {type === 'textarea' &&
-                <textarea id={name} name={name} rows={6} maxLength={250} placeholder={placeholder} className={styles.textarea} />
-            }
-
-            {(type === 'select') && options &&
-                <select id={name} name={name} className={styles.select} defaultValue="" >
-                    <option value="" disabled>Wybierz sesję</option>
-                    {options.map(opt =>
-                        <option key={opt.value} value={opt.value}>
-                            {opt.label}
-                        </option>
-                    )}
-                </select>
-            }
-
-            {error && <span className={styles.error} >{error}</span>}
-        </div>
+        {error && <span className={styles.error}>{error}</span>}
+      </div>
     );
-};
+  }
+);
+
+Input.displayName = "Input";
 
 export default Input;
