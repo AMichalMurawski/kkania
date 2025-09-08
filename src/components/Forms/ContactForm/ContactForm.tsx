@@ -16,12 +16,14 @@ const ContactForm: React.FC = () => {
         register,
         handleSubmit,
         formState: { errors },
+        reset,
     } = useForm<ContactFormData>({
         resolver: yupResolver(contactSchema),
     });
 
     const onSubmit = (data: ContactFormData) => {
         window.alert(`Form data: ${JSON.stringify(data)}`);
+        reset();
     };
 
     return (
@@ -48,7 +50,7 @@ const ContactForm: React.FC = () => {
                 {...register("message")}
             />
 
-            <Button type="submit" linkTo="">Wyślij</Button>
+            <Button type="submit" linkTo="">Wyślij wiadomość</Button>
         </form>
     );
 };
