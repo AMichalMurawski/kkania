@@ -16,7 +16,12 @@ const Navbar: React.FC<NavbarProps> = ({ menuList, style='light', flexDirection=
             style={{flexDirection}}
         >
             {menuList.map(item =>
-                <li key={item.label} className={`${styles.item} ${active === item.label ? styles.active : null}`} onClick={() => handleChange(item.label)}>
+                <li
+                    key={item.label}
+                    className={`${styles.item} ${active === item.label ? styles.active : null}`}
+                    style={flexDirection === 'column' ? {textAlign: 'center'} : {}}
+                    onClick={() => handleChange(item.label)}
+                >
                     <a>{item.label}</a>
                 </li>
             )}
