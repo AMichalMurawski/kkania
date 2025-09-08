@@ -1,5 +1,5 @@
 export interface ContactFormProps { 
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
 }
 
 export interface ContactFormData {

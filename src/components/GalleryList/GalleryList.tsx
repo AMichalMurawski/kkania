@@ -88,7 +88,7 @@ const GalleryList: React.FC<GalleryListProps> = ({images}) => {
         ? `calc(100% / (${columns} * 6 + ${columns} - 1))`
         : `0`;
     const rowGap = totalRows > 1
-        ? `calc(100% / (${totalRows} * 6 + ${totalRows} - 1))`
+        ? `calc(100% / (${totalRows} * 4 + ${totalRows} - 1))`
         : `0`;
     
     return (
@@ -97,7 +97,7 @@ const GalleryList: React.FC<GalleryListProps> = ({images}) => {
             className={styles.conteiner}
             style={columns > 1 
                 ? { rowGap, columnGap }
-                : { gap: 'calc((100vw - 30px) / 12)' }
+                : { rowGap: '1.5em' }
             }
         >
             {positioned.map((image, i) => 

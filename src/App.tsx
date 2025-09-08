@@ -19,7 +19,7 @@ function App() {
       
       <h3 style={{ margin: 0 }}>Contacts</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
-        <Contacts />
+        <Contacts  />
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
@@ -102,14 +102,14 @@ function App() {
 
       <h3 style={{ margin: 0 }}>Navbar</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
-        <Navbar menuList={menuList} style="dark"/>
+        <Navbar menuList={menuList} darkStyle/>
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
       
       <h3 style={{ margin: 0 }}>Contacts</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
-        <Contacts style="dark" />
+        <Contacts darkStyle />
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
@@ -127,7 +127,7 @@ function App() {
       
       <h3 style={{ margin: 0 }}>OfferDescription</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
-        <OfferDescription offer={offerList[1]} style="dark" />
+        <OfferDescription offer={offerList[1]} darkStyle />
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
@@ -152,14 +152,14 @@ function App() {
       
       <h3 style={{ margin: 0 }}>Contact Form</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', maxWidth: '500px' }}>
-        <ContactForm  style="dark" />
+        <ContactForm  darkStyle />
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
       
       <h3 style={{ margin: 0 }}>Reservation Form</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', maxWidth: '500px' }}>
-        <ReservationForm style="dark" />
+        <ReservationForm darkStyle />
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />

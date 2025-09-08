@@ -8,12 +8,12 @@
     cursor: pointer;
 }
 
-.linkToLight {
+.light {
     color: var(--color-text);
     fill: var(--color-text);
 }
 
-.linkToDark {
+.dark {
     color: var(--color-text-alternative);
     fill: var(--color-text-alternative);
 }
@@ -29,11 +29,11 @@
     transition: width var(--transition-primary);
 }
 
-.linkToLight::before {
+.light::before {
     background-color: var(--color-accent);
 }
 
-.linkToDark::before {
+.dark::before {
     background-color: var(--color-primary);
 }
 

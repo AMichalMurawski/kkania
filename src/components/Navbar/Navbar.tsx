@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { NavbarProps } from "./types";
 
-const Navbar: React.FC<NavbarProps> = ({ menuList, style='light', flexDirection='row' }) => {
+const Navbar: React.FC<NavbarProps> = ({ menuList, darkStyle, flexDirection='row' }) => {
     const [active, setActive] = useState<string>("Strona główna")
 
     const handleChange = (value: string) => {
@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ menuList, style='light', flexDirection=
 
     return <nav>
         <ul
-            className={`${styles.list} ${style === 'light' ? styles.light : styles.dark}`}
+            className={`${styles.list} ${darkStyle ? styles.dark : styles.light}`}
             style={{flexDirection}}
         >
             {menuList.map(item =>

@@ -8,7 +8,7 @@ import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
 import { sessions } from "./sessionsData";
 
-const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) => {
+const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     const {
         register,
         handleSubmit,
@@ -26,7 +26,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) =>
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="text"
                 label="Imię i Nazwisko"
                 error={errors.name?.message}
@@ -34,7 +34,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) =>
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="email"
                 label="Email"
                 error={errors.email?.message}
@@ -42,7 +42,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) =>
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="select"
                 label="Sesja"
                 options={sessions}
@@ -51,7 +51,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) =>
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="date"
                 label="Data"
                 error={errors.date?.message}
@@ -59,7 +59,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) =>
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="textarea"
                 label="Informacje o sesji"
                 placeholder="Podaj dodatkowe informacje..."

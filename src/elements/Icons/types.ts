@@ -9,7 +9,7 @@ export interface IconSVGProps extends IconProps {
 }
 
 export interface SocialIconProps extends IconProps {
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
     href?: string;
 }
 

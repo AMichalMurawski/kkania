@@ -5,7 +5,7 @@ interface MenuItem {
 
 export interface NavbarProps {
     menuList: MenuItem[];
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
     flexDirection?: 'row' | 'column';
 }
 

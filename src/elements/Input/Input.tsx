@@ -3,9 +3,9 @@ import styles from "./Input.module.css";
 import { InputProps } from "./types";
 
 const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement, InputProps>(
-  ({ type, name, label, placeholder, error, style = "light", ...rest }, ref) => {
+  ({ type, name, label, placeholder, error, darkStyle, ...rest }, ref) => {
     return (
-      <div className={`${styles.wrapper} ${style === "light" ? styles.light : styles.dark}`}>
+      <div className={`${styles.wrapper} ${darkStyle ? styles.dark : styles.light}`}>
         {label && (
           <label htmlFor={name} className={styles.label}>
             {label}

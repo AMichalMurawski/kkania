@@ -1,3 +1,3 @@
 export interface ContactsProps {
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
 }

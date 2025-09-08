@@ -15,6 +15,13 @@
 }
 
 .contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-primary);
     background-color: var(--color-secondary);
     padding: 2em 1em;
+}
+
+.contactsWrapper > * {
+    margin-right: auto;
 }

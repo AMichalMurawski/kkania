@@ -6,7 +6,7 @@ import { Button, Input } from "../../../elements";
 import { contactSchema } from "./contactValidation";
 import { ContactFormData, ContactFormProps } from "./types";
 
-const ContactForm: React.FC<ContactFormProps> = ({ style = 'light' }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
     const {
         register,
         handleSubmit,
@@ -24,7 +24,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ style = 'light' }) => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="text"
                 label="Imię"
                 error={errors.name?.message}
@@ -32,7 +32,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ style = 'light' }) => {
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="email"
                 label="Email"
                 error={errors.email?.message}
@@ -40,7 +40,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ style = 'light' }) => {
             />
 
             <Input
-                style={style}
+                darkStyle={darkStyle}
                 type="textarea"
                 label="Wiadomość"
                 placeholder="Napisz swoją wiadomość..."

@@ -28,7 +28,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({ name, title, session, descr
                 ))}
             </div>
             <div className={styles.informationsWrapper}>
-                <h3 className={styles.name}>{name}</h3>
+                <h3 className={styles.session}>{session}</h3>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.description}>{description}</p>
             </div>

@@ -9,28 +9,28 @@
     transition: fill var(--transition-primary), background-color var(--transition-primary);
 }
 
-.iconLight {
+.light {
     fill: var(--color-text);
 }
 
-.iconDark {
+.dark {
     fill: var(--color-text-alternative);
 }
 
-.iconLight:hover {
+.light:hover {
     background-color: var(--color-secondary);
     fill: var(--color-text-alternative);
 }
 
-.iconDark:hover {
+.dark:hover {
     background-color: var(--color-primary);
     fill: var(--color-text);
 }
 
-.iconDark:active {
+.dark:active {
     box-shadow: inset 0 0 2px 3px var(--color-glass);
 }
 
-.iconLight:active {
+.light:active {
     box-shadow: inset 0 0 2px 3px var(--color-shadow);
 }

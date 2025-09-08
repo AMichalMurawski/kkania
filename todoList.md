@@ -14,7 +14,7 @@
     7. Hamburger - done
     8. Input - done
 
-# Components
+# Components - done
     1. Navbar - done
     2. Contacts - done
     3. OfferItem - done
@@ -22,9 +22,9 @@
     5. CategoryItem - done
     6. GalleryList - done
     7. MobileMenu - done
-    8. Forms
-        - ContactForm
-        - ReservationForm 
+    8. Forms - done
+        - ContactForm - done
+        - ReservationForm - done
 
 # Sections
     1. Header
@@ -71,15 +71,19 @@
 
 # ToDo
     ## Others
-        - change style in props to darkMode + add types to utils + import darkMode type from utils in all components types + change style/darkMode logic in all components
+        -
     ## Elements
         / Hamburger
             - logic for view/hide NavbarModal
         / Images
             - change types (ImageBg alt isn't necessary)
     ## Components
+        / CategoryItem 
+            - onClick - open gallery (name props)
         / Contacts
             - complete href for contacts
+        / GalleryList
+            - logic for click on image - view modal with full size images
         / Navbar
             - logic for change site
             - active item from url

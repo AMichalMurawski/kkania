@@ -1,5 +1,5 @@
 export interface ReservationFormProps {
-    style?: 'light' | 'dark';
+    darkStyle?: boolean;
 }
 
 export interface ReservationFormData {

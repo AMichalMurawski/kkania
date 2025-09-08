@@ -10,7 +10,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({menuList}) => {
                 <Navbar menuList={menuList} flexDirection="column"/>
             </div>
             <div className={styles.contactsWrapper}>
-                <Contacts style="dark"/>
+                <Contacts darkStyle/>
             </div>
         </div>
     );

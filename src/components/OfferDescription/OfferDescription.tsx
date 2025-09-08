@@ -3,9 +3,9 @@ import styles from "./OfferDescription.module.css";
 import { OfferDescriptionProps } from "./types";
 import { IconSVG } from "../../elements";
 
-const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, style='light'}) => {
+const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, darkStyle}) => {
     return (
-        <div className={`${styles.conteiner} ${style === 'light' ? styles.light : styles.dark}`}>
+        <div className={`${styles.conteiner} ${darkStyle ? styles.dark : styles.light}`}>
             <h3>{offer.title}</h3>
             <p>{offer.description}</p>
             <p className={styles.price}>{offer.price} zł</p>

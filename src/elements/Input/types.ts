@@ -5,7 +5,7 @@ export type BaseInputProps = {
   label?: string;
   placeholder?: string;
   error?: string;
-  style?: "light" | "dark";
+  darkStyle?: boolean;
 };
 
 export type TextInputProps = BaseInputProps & {
