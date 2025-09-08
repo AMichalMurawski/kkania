@@ -4,14 +4,9 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Input } from "../../../elements";
 import { contactSchema } from "./contactValidation";
+import { ContactFormData, ContactFormProps } from "./types";
 
-type ContactFormData = {
-    name: string;
-    email: string;
-    message: string;
-};
-
-const ContactForm: React.FC = () => {
+const ContactForm: React.FC<ContactFormProps> = ({ style = 'light' }) => {
     const {
         register,
         handleSubmit,
@@ -29,6 +24,7 @@ const ContactForm: React.FC = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <Input
+                style={style}
                 type="text"
                 label="Imię"
                 error={errors.name?.message}
@@ -36,6 +32,7 @@ const ContactForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="email"
                 label="Email"
                 error={errors.email?.message}
@@ -43,6 +40,7 @@ const ContactForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="textarea"
                 label="Wiadomość"
                 placeholder="Napisz swoją wiadomość..."

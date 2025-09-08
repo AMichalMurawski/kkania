@@ -5,10 +5,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Input } from "../../../elements";
 
 import { reservationSchema } from "./reservationValidation";
-import { ReservationFormData } from "./types";
+import { ReservationFormData, ReservationFormProps } from "./types";
 import { sessions } from "./sessionsData";
 
-const ReservationForm: React.FC = () => {
+const ReservationForm: React.FC<ReservationFormProps> = ({ style = 'light' }) => {
     const {
         register,
         handleSubmit,
@@ -26,6 +26,7 @@ const ReservationForm: React.FC = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
             <Input
+                style={style}
                 type="text"
                 label="Imię i Nazwisko"
                 error={errors.name?.message}
@@ -33,6 +34,7 @@ const ReservationForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="email"
                 label="Email"
                 error={errors.email?.message}
@@ -40,6 +42,7 @@ const ReservationForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="select"
                 label="Sesja"
                 options={sessions}
@@ -48,6 +51,7 @@ const ReservationForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="date"
                 label="Data"
                 error={errors.date?.message}
@@ -55,6 +59,7 @@ const ReservationForm: React.FC = () => {
             />
 
             <Input
+                style={style}
                 type="textarea"
                 label="Informacje o sesji"
                 placeholder="Podaj dodatkowe informacje..."

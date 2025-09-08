@@ -150,6 +150,20 @@ function App() {
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
       
+      <h3 style={{ margin: 0 }}>Contact Form</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', maxWidth: '500px' }}>
+        <ContactForm  style="dark" />
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
+      <h3 style={{ margin: 0 }}>Reservation Form</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px', maxWidth: '500px' }}>
+        <ReservationForm style="dark" />
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
       <h3 style={{ margin: 0 }}></h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
       </div>
