@@ -21,7 +21,7 @@
     4. OfferDescription - done
     5. CategoryItem - done
     6. GalleryList - done
-    7. MobileNavbar
+    7. MobileMenu - done
     8. Forms
         - ContactForm
         - ReservationForm 
@@ -72,7 +72,6 @@
 # ToDo
     ## Others
         - change style in props to darkMode + add types to utils + import darkMode type from utils in all components types + change style/darkMode logic in all components
-        - add configOffers.json + logic for load config
     ## Elements
         / Hamburger
             - logic for view/hide NavbarModal

@@ -1,5 +1,5 @@
 import { categories, menuList, offerList } from "./appData";
-import { GalleryList } from "./components";
+import { GalleryList, MobileMenu } from "./components";
 import CategoryItem from "./components/CategoryItem/CategoryItem";
 import Contacts from "./components/Contacts/Contacts";
 import Navbar from "./components/Navbar/Navbar";
@@ -67,6 +67,13 @@ function App() {
       <h3 style={{ margin: 0 }}>Gallery</h3>
       <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
         <GalleryList images={categories[0].images} />
+      </div>
+
+      <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
+      
+      <h3 style={{ margin: 0 }}>Mobile Menu</h3>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '60px' }}>
+        <MobileMenu menuList={menuList}/>
       </div>
 
       <div style={{ width: '100%', height: '5px', backgroundColor: 'var(--color-shadow)' }} />
