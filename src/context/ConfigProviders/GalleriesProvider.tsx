@@ -1,4 +1,11 @@
+import React, { ReactNode } from "react";
 import { GalleryProps } from "../../utils";
 import { createDataContext } from "../DataProvider";
 
-export const { Provider: GalleriesProvider, useData: useGalleries } = createDataContext<GalleryProps[]>();
+const { Provider: BaseProvider, useData: useBaseData } = createDataContext<GalleryProps[]>();
+
+export const GalleriesProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  return <BaseProvider jsonFile="/config/galleries.json">{children}</BaseProvider>;
+};
+
+export const useGalleries = () => useBaseData();

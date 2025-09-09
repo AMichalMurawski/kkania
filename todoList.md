@@ -1,8 +1,9 @@
 # General
     1. Create project - done
     2. Basic CSS - done
-    3. Build
-    4. SEO
+    3. Routes
+    4. Build
+    5. SEO
 
 # Elements - done
     1. Button - done
@@ -64,11 +65,11 @@
     1. Fonts - done ?
     2. Icons - done ?
     3. Images
-    4. Config
-        Offer
-        Gallery
-        SiteInfo
-        Terms
+    4. Config - for corrections /////////////
+        Offer - for corrections /////////////
+        Gallery - done
+        SiteInfo - done ?
+        Terms - done ?
 
 # Backend
     1. sendMail
