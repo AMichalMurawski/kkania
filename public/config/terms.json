@@ -1,55 +1,194 @@
 {
-  "title": "Regulamin świadczenia usług fotograficznych",
-  "lastUpdated": "2025-09-08",
+  "title": "REGULAMIN STRONY INTERNETOWEJ",
+  "siteName": "[Nazwa Twojej Strony / Imię i nazwisko fotografa]",
+  "lastUpdated": "[wstaw datę]",
   "sections": [
     {
-      "heading": "1. Postanowienia ogólne",
+      "id": "",
+      "heading": "Definicje",
       "content": [
-        { "type": "paragraph", "text": "Niniejszy regulamin określa zasady świadczenia usług fotograficznych przez Fotografia Rodzinna." },
-        { "type": "paragraph", "text": "Korzystając z usług, akceptujesz warunki niniejszego regulaminu." }
+        {
+          "type": "paragraph",
+          "text": "Na potrzeby niniejszego regulaminu przyjmuje się następujące definicje:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Fotograf</strong> - osoba fizyczna prowadząca działalność fotograficzną, oferująca usługi wykonywania i obróbki zdjęć, działająca pod nazwą [companyName], zwana również „Wykonawcą”.",
+            "<strong>Klient</strong> - osoba fizyczna, która zgłasza chęć skorzystania z usług fotograficznych, rezerwuje termin sesji lub przystępuje do realizacji usługi, niezależnie od formy kontaktu."
+          ]
+        }
       ]
     },
     {
-      "heading": "2. Zakres usług",
+      "id": "1",
+      "heading": "Postanowienia ogólne",
       "content": [
-        { "type": "paragraph", "text": "Usługi obejmują sesje zdjęciowe w plenerze, w domu oraz podczas okoliczności rodzinnych." },
-        { "type": "list", "items": [
-            "Sesje rodzinne",
-            "Sesje okolicznościowe (chrzciny, urodziny, baby shower)",
-            "Sesje w plenerze"
-        ]}
+        {
+          "type": "paragraph",
+          "text": "Niniejszy regulamin określa zasady korzystania ze strony internetowej [siteUrl], prowadzonej przez [companyName], [companyAddress], [companyNIP]."
+        },
+        {
+          "type": "paragraph",
+          "text": "Korzystając ze strony, użytkownik akceptuje poniższe zasady."
+        },
+        {
+          "type": "paragraph",
+          "text": "Strona ma charakter informacyjny i prezentuje ofertę usług fotograficznych."
+        }
       ]
     },
     {
-      "heading": "3. Rezerwacja i płatność",
+      "id": "2",
+      "heading": "Zakres usług",
       "content": [
-        { "type": "paragraph", "text": "Rezerwacja sesji wymaga kontaktu telefonicznego lub mailowego." },
-        { "type": "paragraph", "text": "Płatność realizowana jest przed sesją lub zgodnie z indywidualnym ustaleniem z klientem." }
+        {
+          "type": "paragraph",
+          "text": "Fotograf oferuje usługi w zakresie:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "sesji zdjęciowych w plenerze",
+            "sesji studyjnych",
+            "fotografii okolicznościowej (np. śluby, chrzciny, urodziny)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Szczegóły dotyczące dostępnych usług, cennika oraz warunków realizacji ustalane są indywidualnie, za pośrednictwem kontaktu podanego na stronie."
+        }
       ]
     },
     {
-      "heading": "4. Prawa autorskie",
+      "id": "3",
+      "heading": "Rezerwacja i realizacja usług",
       "content": [
-        { "type": "paragraph", "text": "Wszystkie prawa autorskie do zdjęć należą do Fotografia Rodzinna." },
-        { "type": "paragraph", "text": "Klient otrzymuje prawo do korzystania z zakupionych zdjęć w celach prywatnych." }
+        {
+          "type": "paragraph",
+          "text": "Rezerwacja terminu sesji możliwa jest drogą mailową, telefoniczną lub poprzez formularz kontaktowy dostępny na stronie."
+        },
+        {
+          "type": "paragraph",
+          "text": "Termin i miejsce sesji ustalane są indywidualnie z klientem."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf zastrzega sobie prawo do pobrania zadatku na poczet usługi."
+        },
+        {
+          "type": "paragraph",
+          "text":  "W przypadku odwołania sesji przez klienta z przyczyn niezależnych od fotografa, zadatek może nie podlegać zwrotowi."
+        }
       ]
     },
     {
-      "heading": "5. Reklamacje i anulowanie sesji",
+      "id": "3a",
+      "heading": "Sesje plenerowe i warunki pogodowe",
       "content": [
-        { "type": "paragraph", "text": "Klient ma prawo do reklamacji w przypadku niewłaściwego wykonania usług." },
-        { "type": "list", "items": [
-            "Sesję można odwołać z co najmniej 48-godzinnym wyprzedzeniem.",
-            "W przeciwnym razie może być naliczona opłata."
-        ]}
+        {
+          "type": "paragraph",
+          "text": "W przypadku sesji plenerowych ich realizacja jest uzależniona od warunków atmosferycznych."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf zastrzega sobie prawo do zmiany terminu sesji plenerowej, jeśli warunki pogodowe uniemożliwiają jej przeprowadzenie w sposób bezpieczny lub zgodny z oczekiwanym efektem estetycznym."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nowy termin sesji ustalany jest indywidualnie z klientem, w możliwie najszybszym czasie dogodnym dla obu stron."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf nie ponosi odpowiedzialności za niedogodności związane z koniecznością zmiany terminu wynikającej z warunków pogodowych."
+        }
       ]
     },
     {
-      "heading": "6. Postanowienia końcowe",
+      "id": "3b",
+      "heading": "Odwoływanie i zmiana terminu sesji",
       "content": [
-        { "type": "paragraph", "text": "Regulamin może ulegać zmianom." },
-        { "type": "paragraph", "text": "Aktualna wersja regulaminu zawsze jest dostępna na stronie internetowej." }
+        {
+          "type": "paragraph",
+          "text": "Klient ma prawo do jednokrotnej zmiany terminu sesji z przyczyn osobistych bez utraty zadatku, pod warunkiem poinformowania fotografa nie później niż 48 godzin przed pierwotnie ustalonym terminem."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kolejna zmiana terminu sesji z winy klienta, lub jej odwołanie, może skutkować utratą zadatku, chyba że strony postanowią inaczej."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf zastrzega sobie prawo do zmiany terminu sesji w przypadku wystąpienia nieprzewidzianych zdarzeń losowych (np. choroba, awaria sprzętu, nagłe wypadki)."
+        },
+        {
+          "type": "paragraph",
+          "text": "W przypadku odwołania lub przełożenia sesji z winy fotografa, klientowi proponowany jest nowy termin lub - jeśli nie dojdzie do realizacji usługi - zwrot pełnej kwoty zadatku."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "heading": "Prawa autorskie",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Wszystkie zdjęcia oraz treści zamieszczone na stronie stanowią własność fotografa i są chronione prawem autorskim."
+        },
+        {
+          "type": "paragraph",
+          "text": "Kopiowanie, rozpowszechnianie lub wykorzystywanie zdjęć bez pisemnej zgody autora jest zabronione."
+        },
+        {
+          "type": "paragraph",
+          "text": "Klient ma prawo do prywatnego użytku zdjęć wykonanych w ramach zamówionej sesji. Użycie komercyjne wymaga osobnego uzgodnienia."
+        }
+      ]
+    },
+    {
+      "id": "4a",
+      "heading": "Zgoda na publikację wizerunku",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Fotograf zastrzega sobie prawo do publikacji wybranych zdjęć wykonanych w ramach sesji (w tym zawierających wizerunek klienta) w celach promocyjnych, w szczególności na stronie internetowej, w mediach społecznościowych, w portfolio oraz materiałach reklamowych."
+        },
+        {
+          "type": "paragraph",
+          "text": "Umówienie się na sesję zdjęciową jest równoznaczne z wyrażeniem zgody na nieodpłatne wykorzystanie wizerunku w wyżej wymienionych celach."
+        },
+        {
+          "type": "paragraph",
+          "text": "Klient ma prawo odmówić zgody na publikację swojego wizerunku - w takim przypadku zobowiązany jest poinformować fotografa o tym najpóźniej w dniu sesji, przed jej rozpoczęciem."
+        }
+      ]
+    },
+    {
+      "id": "4b",
+      "heading": "Akceptacja stylu fotografa",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Klient przed zarezerwowaniem sesji ma możliwość zapoznania się z portfolio fotografa, udostępnionym na stronie internetowej oraz w mediach społecznościowych."
+        },
+        {
+          "type": "paragraph",
+          "text": "Umówienie się na sesję oznacza akceptację stylu pracy fotografa, w tym kompozycji, kolorystyki, sposobu obróbki i ogólnej estetyki zdjęć."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf nie wykonuje indywidualnych przeróbek graficznych wykraczających poza standardowy styl prezentowany w portfolio, chyba że zostało to wcześniej uzgodnione."
+        }
       ]
     }
-  ]
+  ],
+  "contact": {
+    "email": "kkania@kkania.pl",
+    "phone": "(+48) 123 456 789",
+    "siteName": "Katarzyna Kania fotografia",
+    "companyName": "kkania",
+    "companyAddress": "ul. kkania 1/2, kkania 01-234",
+    "companyNip": "0123456789",
+    "siteUrl": "www.KatarzynaKania.fotografia.pl",
+    "formUrl": "www.KatarzynaKania.fotografa.pl/rezerwacja"
+  }
 }
