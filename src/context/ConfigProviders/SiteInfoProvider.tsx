@@ -1,4 +1,11 @@
+import React, { ReactNode } from "react";
 import { SiteInfoProps } from "../../utils";
 import { createDataContext } from "../DataProvider";
 
-export const { Provider: SiteInfoProvider, useData: useSiteInfo } = createDataContext<SiteInfoProps>();
+const { Provider: BaseProvider, useData: useBaseData } = createDataContext<SiteInfoProps>();
+
+export const SiteInfoProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  return <BaseProvider jsonFile="/config/siteInfo.json">{children}</BaseProvider>;
+};
+
+export const useSiteInfo = () => useBaseData();

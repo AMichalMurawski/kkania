@@ -1,0 +1,42 @@
+{
+  "home": {
+    "path": "/",
+    "navbar": "Strona główna",
+    "hero": "Witaj na naszej stronie",
+    "heroImage": "/assets/images/home-hero.jpg"
+  },
+  "aboutMe": {
+    "path": "/o-mnie",
+    "navbar": "O mnie",
+    "hero": "Poznaj mnie",
+    "heroImage": "/assets/images/about-hero.jpg"
+  },
+  "categories": {
+    "path": "/galerie",
+    "navbar": "Galerie",
+    "hero": "Kategorie galerii",
+    "heroImage": "/assets/images/categories-hero.jpg"
+  },
+  "gallery": {
+    "path": "/galerie/:galleryName",
+    "navbar": "Galeria",
+    "hero": "Galeria zdjęć",
+    "heroImage": "/assets/images/gallery-hero.jpg"
+  },
+  "offers": {
+    "path": "/oferta",
+    "navbar": "Oferta",
+    "hero": "Nasze oferty",
+    "heroImage": "/assets/images/offer-hero.jpg"
+  },
+  "contact": {
+    "path": "/kontakt",
+    "navbar": "Kontakt",
+    "hero": "Skontaktuj się z nami",
+    "heroImage": "/assets/images/contact-hero.jpg"
+  },
+  "terms": {
+    "path": "/regulamin",
+    "navbar": "Regulamin"
+  }
+}
