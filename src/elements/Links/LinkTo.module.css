@@ -1,5 +1,6 @@
 .linkTo {
     position: relative;
+    width: fit-content;
     text-shadow: 3px 3px 2px var(--color-shadow);
     transition: text-shadow var(--transition-primary);
     border-radius: 0;
