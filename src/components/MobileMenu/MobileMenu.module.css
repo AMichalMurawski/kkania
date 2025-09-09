@@ -1,8 +1,19 @@
 .conteiner {
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    top: 0; 
+    right: -110%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-primary);
+    opacity: 0;
+    transition: right var(--transition-primary), opacity var(--transition-primary);
+}
+
+.active {
+    right: 0;
+    opacity: 1;
 }
 
 .menuWrapper {

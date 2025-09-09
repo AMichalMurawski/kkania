@@ -1,3 +1,5 @@
+export { ModalProvider, useModal } from "./ModalProvider";
+
 // config providers
 export { GalleriesProvider, useGalleries } from "./ConfigProviders/GalleriesProvider";
 export { OffersProvider, useOffers } from "./ConfigProviders/OffersProvider";
