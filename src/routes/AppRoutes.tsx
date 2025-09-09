@@ -2,17 +2,18 @@ import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useRoutes } from "../context";
 
-const HomePage = React.lazy(() => import("../pages/HomePage"));
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage"));
-const GalleryPage = React.lazy(() => import("../pages/GalleryPage"));
-const OffersPage = React.lazy(() => import("../pages/OffersPage"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
-const TermsPage = React.lazy(() => import("../pages/TermsPage"));
+const HomePage = React.lazy(() => import("../pages/HomePage"));
+const GalleryPage = React.lazy(() => import("../pages/GalleryPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
+const OffersPage = React.lazy(() => import("../pages/OffersPage"));
+const OrderPage = React.lazy(() => import("../pages/OrderPage"));
+const TermsPage = React.lazy(() => import("../pages/TermsPage"));
 
-const MainLayout = React.lazy(() => import("../layouts/MainLayout"));
-const GalleryLayout = React.lazy(() => import("../layouts/GalleryLayout"));
+const GalleryLayout = React.lazy(() => import("../layouts/GalleryLayout/GalleryLayout"));
+const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
 
 const AppRoutes: React.FC = () => {
     const { data: routes } = useRoutes();
@@ -28,6 +29,7 @@ const AppRoutes: React.FC = () => {
                     <Route path={routes.offers.path} element={<OffersPage />} />
                     <Route path={routes.contact.path} element={<ContactPage />} />
                     <Route path={routes.terms.path} element={<TermsPage />} />
+                    <Route path={routes.order.path} element={<OrderPage />} />
                     <Route path={routes.categories.path} element={<GalleryLayout />}>
                         <Route index element={<CategoriesPage />} />
                         <Route path={routes.gallery.path} element={<GalleryPage />} />

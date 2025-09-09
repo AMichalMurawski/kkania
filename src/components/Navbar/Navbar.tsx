@@ -1,29 +1,34 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { NavbarProps } from "./types";
+import { useModal, useRoutes } from "../../context";
+import { Link, useLocation } from "react-router-dom";
 
-const Navbar: React.FC<NavbarProps> = ({ menuList, darkStyle, flexDirection='row' }) => {
-    const [active, setActive] = useState<string>("Strona główna")
+const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => {
+    const { data: routes } = useRoutes();
+    const location = useLocation();
+    const { close } = useModal();
 
-    const handleChange = (value: string) => {
-        console.log('value:', value)
-        setActive(value)
-    }
+    const navRoutes = routes ? Object.values(routes).filter((r: any) => r.navbar) : [];
+    const currentPath = "/" + location.pathname.split("/")[1];
 
     return <nav>
         <ul
             className={`${styles.list} ${darkStyle ? styles.dark : styles.light}`}
-            style={{flexDirection}}
+            style={{ flexDirection }}
         >
-            {menuList.map(item =>
-                <li
-                    key={item.label}
-                    className={`${styles.item} ${active === item.label ? styles.active : null}`}
-                    style={flexDirection === 'column' ? {textAlign: 'center'} : {}}
-                    onClick={() => handleChange(item.label)}
+            {navRoutes.map((route: any) =>
+                <Link
+                    key={route.path}
+                    to={route.path}
+                    className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}
+                    style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
+                    onClick={() => close("MenuMobile")}
                 >
-                    <a>{item.label}</a>
-                </li>
+                    <li>
+                        {route.navbar}
+                    </li>
+                </Link>
             )}
         </ul>
     </nav>

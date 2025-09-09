@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./MobileMenu.module.css";
 import { Contacts, Navbar } from "../";
-import { MobileMenuProps } from "./types";
+import { useModal } from "../../context";
 
-const MobileMenu: React.FC<MobileMenuProps> = ({menuList}) => {
+const MobileMenu: React.FC = () => {
+    const { modals } = useModal()
+    
     return (
-        <div className={styles.conteiner}>
+        <div className={`${styles.conteiner} ${modals.MenuMobile ? styles.active : null}`}>
             <div className={styles.menuWrapper}>
-                <Navbar menuList={menuList} flexDirection="column"/>
+                <Navbar flexDirection="column" />
             </div>
             <div className={styles.contactsWrapper}>
-                <Contacts darkStyle/>
+                <Contacts darkStyle />
             </div>
         </div>
     );

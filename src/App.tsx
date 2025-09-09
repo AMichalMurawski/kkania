@@ -1,13 +1,15 @@
 import React from "react";
 import AppRoutes from "./routes/AppRoutes";
-import { OffersProvider, RoutesProvider, SiteInfoProvider } from "./context";
+import { ModalProvider, OffersProvider, RoutesProvider, SiteInfoProvider } from "./context";
 
 const App: React.FC = () => {
   return (
     <SiteInfoProvider>
       <OffersProvider>
         <RoutesProvider>
-          <AppRoutes />
+          <ModalProvider>
+            <AppRoutes />
+          </ModalProvider>
         </RoutesProvider>
       </OffersProvider>
     </SiteInfoProvider>
