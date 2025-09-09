@@ -35,7 +35,7 @@
     "heroImage": "/images/gallery-hero.jpg"
   },
   "order" : {
-    "path": "/rezerwacja",
+    "path": "/oferta/rezerwacja",
     "hero": "Rezerwacja",
     "heroImage": "/images/order-hero.jpg"
   },

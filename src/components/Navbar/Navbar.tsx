@@ -10,6 +10,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
     const { close } = useModal();
 
     const navRoutes = routes ? Object.values(routes).filter((r: any) => r.navbar) : [];
+    const currentPath = "/" + location.pathname.split("/")[1];
 
     return <nav>
         <ul
@@ -20,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
                 <Link
                     key={route.path}
                     to={route.path}
-                    className={`${styles.item} ${location.pathname === route.path ? styles.active : null}`}
+                    className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}
                     style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
                     onClick={() => close("MenuMobile")}
                 >
