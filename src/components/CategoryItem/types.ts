@@ -1,3 +1,3 @@
-import { CategoryGalleryProps } from "../../utils/types/categoryGallery";
+import { GalleryProps } from "../../utils/types/gallery";
 
-export interface CategoryItemProps extends Omit<CategoryGalleryProps, 'images'> { };
+export interface CategoryItemProps extends Omit<GalleryProps, 'images'> { };

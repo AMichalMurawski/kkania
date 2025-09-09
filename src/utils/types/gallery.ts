@@ -1,6 +1,6 @@
 import { ImageProps } from "./image";
 
-export interface CategoryGalleryProps {
+export interface GalleryProps {
     name: string;
     session: string;
     title: string;
