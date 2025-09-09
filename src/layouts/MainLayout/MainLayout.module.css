@@ -2,12 +2,11 @@
     position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 1fr auto;
-    
 }
 
 .main {

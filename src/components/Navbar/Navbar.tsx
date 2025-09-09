@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { NavbarProps } from "./types";
-import { useRoutes } from "../../context";
+import { useModal, useRoutes } from "../../context";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => {
     const { data: routes } = useRoutes();
     const location = useLocation();
+    const { close } = useModal();
 
     const navRoutes = routes ? Object.values(routes).filter((r: any) => r.navbar) : [];
 
@@ -21,6 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
                     to={route.path}
                     className={`${styles.item} ${location.pathname === route.path ? styles.active : null}`}
                     style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
+                    onClick={() => close("MenuMobile")}
                 >
                     <li>
                         {route.navbar}

@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Hamburger.module.css";
 import { HamburgerProps } from "./types";
 import { useModal } from "../../context";
+import { useWindowWidth } from "../../hooks";
 
 const Hamburger: React.FC<HamburgerProps> = ({darkStyle}) => {
-    const { modals, toggle } = useModal();
+    const { close, modals, toggle } = useModal();
+    const width = useWindowWidth();
+
+    useEffect(() => {
+        width >= 840 ? close("MenuMobile") : null
+    }, [width])
     
     return (
         <div
