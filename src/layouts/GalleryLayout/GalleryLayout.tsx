@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Hero } from "../sections";
+import { Hero } from "../../sections";
 
 const GalleryLayout: React.FC = () => {
     return <>

@@ -1,7 +1,7 @@
 # General
     1. Create project - done
     2. Basic CSS - done
-    3. Routes
+    3. Routes - done
     4. Build
     5. SEO
 
@@ -40,21 +40,21 @@
     10. GalleryShort
     11. ContactMe
     12. ContactMeShort
+    13. Terms
 
 # Layouts
-    1. PageLayout
-    2. DocumentLayout
+    1. MainLayout
+    2. GalleryLayout
 
 # Pages
     1. Home
     2. About
-    3. Gallery
-    4. Offers
-    5. Order
-    6. Contact
-    7. PrivacyPolicy
+    3. Categories
+    4. Gallery
+    5. Offers
+    6. Order
+    7. Contact
     8. Terms
-    9. FAQ
 
 # JS
     1. sendMail

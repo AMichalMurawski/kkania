@@ -11,8 +11,8 @@ const ContactPage = React.lazy(() => import("../pages/ContactPage"));
 const TermsPage = React.lazy(() => import("../pages/TermsPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
 
-const MainLayout = React.lazy(() => import("../layouts/MainLayout"));
-const GalleryLayout = React.lazy(() => import("../layouts/GalleryLayout"));
+const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
+const GalleryLayout = React.lazy(() => import("../layouts/GalleryLayout/GalleryLayout"));
 
 const AppRoutes: React.FC = () => {
     const { data: routes } = useRoutes();
