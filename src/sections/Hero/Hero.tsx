@@ -1,8 +1,19 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import styles from "./Hero.module.css";
+import { HeroProps } from "./types";
+import { ImageBg } from "../../elements";
 
-const Hero: React.FC = () => {
-    return <>Hero Section</>
+const Hero: React.FC<PropsWithChildren<HeroProps>> = ({ children, imageUrl }) => {
+    return <section className={styles.heroConteiner}>
+        <div className={styles.heroWrapper}>
+            <div className={styles.content}>
+                {children}
+            </div>
+        </div>
+        <div className={styles.heroBackground}>
+            <ImageBg url={imageUrl} />
+        </div>
+    </section>
 };
 
 export default Hero;

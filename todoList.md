@@ -26,28 +26,27 @@
     8. Forms - done
         - ContactForm - done
         - ReservationForm - done
+    9. TopSection - done
 
 # Sections
-    1. Header
-    2. Footer
-    3. Hero
-    4. AboutMe
-    5. AboutMeShort
-    6. Offers
-    7. OffersShort
-    8. GalleryCategories
-    9. Gallery
-    10. GalleryShort
-    11. ContactMe
-    12. ContactMeShort
-    13. Terms
+    1. Header - done
+    2. Footer - done
+    3. Hero - done
+    4. AboutMe - done
+    5. TopGallery - done
+    6. TopOffers - done
+    7. ContactMe -  done
+    8. Offers
+    9. GalleryCategories
+    10. Gallery
+    11. Terms
 
 # Layouts
-    1. MainLayout
+    1. MainLayout - done
     2. GalleryLayout
 
 # Pages
-    1. Home
+    1. Home - 
     2. About
     3. Categories
     4. Gallery
@@ -66,10 +65,13 @@
     2. Icons - done ?
     3. Images
     4. Config - for corrections /////////////
-        Offer - for corrections /////////////
-        Gallery - done
-        SiteInfo - done ?
-        Terms - done ?
+        - aboutMe - done
+        - galleries - done
+        - offers - for corrections /////////////
+        - routes - done
+        - siteInfo - done ?
+        - terms - done ?
+        - topGallery - done
 
 # Backend
     1. sendMail
@@ -78,20 +80,14 @@
     ## Others
         -
     ## Elements
-        / Hamburger
-            - logic for view/hide NavbarModal
-        / Images
-            - change types (ImageBg alt isn't necessary)
+        -
     ## Components
         / CategoryItem 
             - onClick - open gallery (name props)
         / Contacts
-            - complete href for contacts
+            - without text in media<480
         / GalleryList
             - logic for click on image - view modal with full size images
-        / Navbar
-            - logic for change site
-            - active item from url
         / OfferItem
             - fix text-overflow
             - add logic for buttons

@@ -1,11 +1,18 @@
 .header {
     position: fixed;
     width: 100%;
-    background-color: var(--color-glass);
-    backdrop-filter: blur(3px) opacity(0.7);
-    -webkit-backdrop-filter: blur(3px) opacity(0.7);
-    border-bottom: 1px solid var(--color-glass);
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.45));
+    box-shadow: 0 4px 18px rgba(8,15,25,0.12);
     z-index: 1000;
+
+    @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+        background: rgba(255,255,255,0.9);
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
 }
 
 .headerConteiner {

@@ -1,0 +1,57 @@
+.aboutMeConteiner {
+    width: clamp(320px, 100%, 1200px);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1em;
+    margin: 4em auto 0;
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 1.5em;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-inline: 2em;
+    }
+}
+
+.itemWrapper {
+    margin: 2em 0;
+    display: flex;
+    gap: 2em; 
+    min-width: 100px;
+}
+
+.itemWrapper:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+
+.itemWrapper p {
+    margin: 0;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: fit-content;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.title svg {
+    translate: 0 0.15em;
+}
+
+.title h3 {
+    margin: 0;
+}
+
+.imageWrapper {
+    max-width: 30em;
+    width: 100%;
+    margin: auto;
+}

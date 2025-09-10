@@ -1,0 +1,12 @@
+.heroContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroButtonsWrapper {
+    margin: 1em auto 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}

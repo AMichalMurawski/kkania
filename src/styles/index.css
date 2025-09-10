@@ -39,6 +39,11 @@ body {
     color: var(--color-text);
     font-size: 1rem;
     min-width: 320px;
+    width: 100%;
+}
+
+#root{
+    width: 100%;
 }
 
 a, a:hover {
@@ -72,6 +77,8 @@ p {
     margin-bottom: 1.5em;
     font-size: 1rem;
     line-height: 1.6;
+    width: 100%;
+    min-width: 100px;
 }
 
 ul, ol {

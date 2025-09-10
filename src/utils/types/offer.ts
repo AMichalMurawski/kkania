@@ -1,12 +1,9 @@
-interface DetailFullProps {
-    heading: string;
-    value: string;
-}
-
 export interface OfferProps {
+    top?: number;
     name: string;
     title: string;
-    description: string;
+    description: string[];
     price: number;
-    details: DetailFullProps[];
+    details: string[];
+    whyChoose: string[];
 }

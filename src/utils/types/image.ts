@@ -1,7 +1,7 @@
-type ImageOrientation = 'landscape' | 'portrait';
+export type ImageOrientation = 'landscape' | 'portrait';
 
 export interface ImageProps {
-    name: string;
+    url: string;
     alt: string;
     orientation: ImageOrientation;
 };
