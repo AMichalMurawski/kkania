@@ -39,6 +39,15 @@ body {
     color: var(--color-text);
     font-size: 1rem;
     min-width: 320px;
+    width: 100%;
+}
+
+#root{
+    width: 100%;
+}
+
+section {
+    width: 100%;
 }
 
 a, a:hover {

@@ -2,7 +2,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
     display: grid;
@@ -11,7 +11,6 @@
 
 .main {
     width: 100%;
-    max-width: 1200px;
     margin-top: 110px;
-    margin-inline: auto;
+    overflow-x: hidden;
 }

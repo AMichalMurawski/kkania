@@ -5,14 +5,16 @@ import { Footer, Header } from "../../sections";
 import { MobileMenu } from "../../components";
 
 const MainLayout: React.FC = () => {
-    return <div className={styles.body}>
-        <Header />
-        <main className={styles.main}>
-            <Outlet />
-        </main>
-        <Footer />
-        <MobileMenu />
-    </div>
+    return (
+        <div className={styles.body}>
+            <Header />
+            <main className={styles.main}>
+                <Outlet />
+            </main>
+            <Footer />
+            <MobileMenu />
+        </div>
+    )
 };
 
 export default MainLayout;

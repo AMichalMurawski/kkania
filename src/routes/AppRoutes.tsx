@@ -5,7 +5,7 @@ import { useRoutes } from "../context";
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
-const HomePage = React.lazy(() => import("../pages/HomePage"));
+const HomePage = React.lazy(() => import("../pages/HomePage/HomePage"));
 const GalleryPage = React.lazy(() => import("../pages/GalleryPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
 const OffersPage = React.lazy(() => import("../pages/OffersPage"));

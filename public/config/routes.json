@@ -2,42 +2,41 @@
   "home": {
     "path": "/",
     "navbar": "Strona główna",
-    "hero": "Witaj na naszej stronie",
-    "heroImage": "/images/home-hero.jpg"
+    "heroImage": "hero/hero-home.png"
   },
   "aboutMe": {
     "path": "/o-mnie",
     "navbar": "Poznaj mnie",
     "hero": "Poznaj mnie",
-    "heroImage": "/images/about-hero.jpg"
+    "heroImage": "hero/hero-about-me.png"
   },
   "offers": {
     "path": "/oferta",
     "navbar": "Oferta",
     "hero": "Oferta",
-    "heroImage": "/images/offer-hero.jpg"
+    "heroImage": "hero/hero-offer.png"
   },
   "categories": {
     "path": "/galeria",
     "navbar": "Galeria",
     "hero": "Galeria",
-    "heroImage": "/images/gallery-hero.jpg"
+    "heroImage": "hero/hero-gallery.png"
   },
   "contact": {
     "path": "/kontakt",
     "navbar": "Kontakt",
     "hero": "Skontaktuj się ze mną",
-    "heroImage": "/images/contact-hero.jpg"
+    "heroImage": "hero/hero-contact.png"
   },
   "gallery": {
     "path": "/galeria/:galleryName",
     "hero": "Galeria",
-    "heroImage": "/images/gallery-hero.jpg"
+    "heroImage": "hero/hero-gallery.png"
   },
   "order" : {
     "path": "/oferta/rezerwacja",
     "hero": "Rezerwacja",
-    "heroImage": "/images/order-hero.jpg"
+    "heroImage": "hero/hero-offer.png"
   },
   "terms": {
     "path": "/regulamin"
