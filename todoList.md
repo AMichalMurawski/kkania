@@ -35,12 +35,11 @@
     4. AboutMe - done
     5. TopGallery - done
     6. TopOffers - done
-    7. ContactMeShort - 
+    7. ContactMe -  done
     8. Offers
     9. GalleryCategories
     10. Gallery
-    11. ContactMe
-    12. Terms
+    11. Terms
 
 # Layouts
     1. MainLayout - done
