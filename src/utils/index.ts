@@ -5,3 +5,4 @@ export * from "./types/offer";
 export * from "./types/route";
 export * from "./types/siteInfo";
 export * from "./types/terms";
+export * from "./types/topSection";

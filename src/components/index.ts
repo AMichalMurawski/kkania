@@ -7,3 +7,4 @@ export { default as Navbar } from "./Navbar/Navbar";
 export { default as OfferDescription } from "./OfferDescription/OfferDescription";
 export { default as OfferItem } from "./OfferItem/OfferItem";
 export { default as ReservationForm } from "./Forms/ReservationForm/ReservationForm";
+export { default as TopSection } from "./TopSection/TopSection";

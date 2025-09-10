@@ -1,86 +1,206 @@
 [
   {
-    "name": "family",
-    "title": "Sesja rodzinna",
-    "description": "Naturalne, ciepłe kadry pełne emocji – uchwycone w Waszym codziennym rytmie. Sesja rodzinna pozwala zachować wyjątkowe wspomnienia z czasu spędzonego razem. Starannie dobrane kadry oddają bliskość i autentyczne emocje, tworząc pamiątkę na lata.",
-    "price": 500,
+    "top": 1,
+    "name": "plener-family",
+    "title": "Sesja Rodzinna w Plenerze",
+    "description": [
+      "Naturalne, ciepłe kadry pełne emocji - uchwycone w Waszym codziennym rytmie. Sesja rodzinna pozwala zachować wyjątkowe wspomnienia z czasu spędzonego razem. Starannie dobrane kadry oddają bliskość i autentyczne emocje, tworząc pamiątkę na lata.",
+      "Podczas sesji nie musisz się martwić o pozowanie - zależy mi na tym, aby zdjęcia były naturalne i pełne życia. Podpowiem Wam, jak ustawić się w świetle, zaproponuję proste aktywności, które wywołają uśmiech i spontaniczne reakcje."
+    ],
+    "price": 750,
     "details": [
-      {
-        "heading": "do 1 godziny zdjęć (plener lub dom)",
-        "value": "Sesja trwa do jednej godziny i może odbywać się w plenerze lub w Waszym domu. Czas ten pozwala na swobodną interakcję i uchwycenie naturalnych momentów, bez pośpiechu, w przyjaznej atmosferze."
-      },
-      {
-        "heading": "15 obrobionych zdjęć w wersji cyfrowej",
-        "value": "Otrzymacie 15 starannie wybranych i obrobionych zdjęć w wysokiej jakości, gotowych do udostępnienia rodzinie i znajomym lub wydrukowania jako pamiątka."
-      },
-      {
-        "heading": "galeria online do wyboru zdjęć",
-        "value": "Każda sesja ma dedykowaną galerię online, w której możecie przeglądać wszystkie wykonane zdjęcia, wybierać ulubione i pobierać je w wygodnym formacie cyfrowym."
-      },
-      {
-        "heading": "możliwość dokupienia dodatkowych ujęć",
-        "value": "Jeżeli zapragniecie więcej zdjęć niż w pakiecie podstawowym, istnieje możliwość dokupienia dodatkowych ujęć. Pozwala to na elastyczne dopasowanie liczby zdjęć do Waszych potrzeb."
-      },
-      {
-        "heading": "pomoc w przygotowaniu do sesji (stylizacje, lokalizacja)",
-        "value": "Oferujemy wsparcie w przygotowaniu sesji – doradzamy w wyborze stylizacji, miejsc i akcesoriów, aby zdjęcia wyglądały naturalnie i spójnie z Waszym stylem."
-      }
+      "1,5 godziny zdjęć w plenerze",
+      "12 obrobionych zdjęć w galerii online + 12 odbitek w formacie 15x21 cm",
+      "możliwość dokupienia dodatkowych ujęć",
+      "prywatny dostęp do galerii dla całej rodziny"
+    ],
+    "whyChoose": [
+      "Zatrzymasz ulotne chwile dzieciństwa i bliskości rodzinnej",
+      "Naturalne, szczere emocje zamiast sztucznego pozowania",
+      "Pamiątka na lata, do której będziecie wracać z uśmiechem",
+      "Zdjęcia idealne do rodzinnego albumu lub na ścianę"
     ]
   },
   {
-    "name": "special_occasions",
-    "title": "Sesja okolicznościowa",
-    "description": "Zdjęcia z ważnych chwil – chrzest, urodziny, baby shower lub inne rodzinne wydarzenie. Sesja okolicznościowa pozwala uwiecznić te wyjątkowe momenty w profesjonalny i estetyczny sposób. Każde zdjęcie opowiada historię tego dnia, pełną emocji i radości.",
+    "top": 2,
+    "name": "plener-couples",
+    "title": "Sesja Narzeczeńska / Dla Par",
+    "description": [
+      "Zakochani wyglądają najpiękniej właśnie wtedy, gdy są sobą - gdy trzymają się za ręce, śmieją się do siebie, opowiadają wspólne historie. Sesja plenerowa dla par to doskonały sposób, aby uchwycić Waszą więź i uczucia w wyjątkowej, romantycznej oprawie natury lub miejskiego klimatu.",
+      "To nie jest tylko sesja zdjęciowa - to czas spędzony razem, pełen bliskości, rozmów i wspólnych przygód. Dzięki moim wskazówkom nie musicie się martwić, że nie wiecie jak pozować. Będziemy spacerować, śmiać się i cieszyć chwilą, a ja uchwycę to, co w Was najpiękniejsze - prawdziwe emocje."
+    ],
     "price": 700,
     "details": [
-      {
-        "heading": "reportaż do 2 godzin",
-        "value": "Sesja trwa do dwóch godzin, pozwalając uwiecznić najważniejsze momenty wydarzenia od początku do końca, bez pośpiechu."
-      },
-      {
-        "heading": "30 obrobionych zdjęć",
-        "value": "Otrzymacie 30 starannie wybranych i obrobionych zdjęć, które w pełni oddają charakter i atmosferę Waszego wydarzenia."
-      },
-      {
-        "heading": "zdjęcia grupowe i detale",
-        "value": "Podczas sesji wykonujemy zarówno ujęcia grupowe, jak i detale – emocje na twarzach, dekoracje, prezenty, aby zachować pełną historię dnia."
-      },
-      {
-        "heading": "galeria online z możliwością pobrania",
-        "value": "Każde zdjęcie jest dostępne w galerii online, skąd można je wygodnie pobrać lub udostępnić rodzinie i znajomym."
-      },
-      {
-        "heading": "dojazd w obrębie miasta w cenie",
-        "value": "W cenie sesji zapewniamy dojazd w obrębie miasta, aby sesja odbyła się w wybranym przez Was miejscu, bez dodatkowych kosztów."
-      }
+      "1,5 godziny zdjęć w wybranej lokalizacji",
+      "10 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 10 odbitek w formacie 15x21 cm",
+      "możliwość dokupienia dodatkowych ujęć",
+      "prywatną galerię online do wyboru i pobrania",
+      "możliwość zamówienia eleganckiego fotoalbumu - za dodatkową opłatą"
+    ],
+    "whyChoose": [
+      "Wspaniała pamiątka przed ślubem lub rocznicą",
+      "Zdjęcia pełne miłości i naturalnych emocji",
+      "Sesja, którą można podarować jako prezent drugiej osobie",
+      "Idealny materiał do zaproszeń ślubnych lub dekoracji weselnych"
     ]
   },
   {
-    "name": "outdoor",
-    "title": "Sesja w plenerze",
-    "description": "Swobodne zdjęcia w naturalnym świetle – wśród łąk, lasów lub miejskiej przestrzeni. Sesja w plenerze pozwala na uchwycenie naturalnej energii i relaksu w pięknych sceneriach. Kadry oddają ruch, emocje i unikalny charakter otoczenia.",
-    "price": 450,
+    "top": 3,
+    "name": "plener-individual",
+    "title": "Sesja Indywidualna",
+    "description": [
+      "Każdy z nas zasługuje na piękne zdjęcia, które pokażą jego prawdziwe „ja”. Sesja indywidualna w plenerze to idealna okazja, by zatrzymać na fotografiach nie tylko Twój wygląd, ale także emocje, charakter i wyjątkową energię.",
+      "Podczas sesji nie musisz być profesjonalnym modelem ani wiedzieć, jak się ustawić - to ja pomogę Ci poczuć się swobodnie przed obiektywem. Zadbam o atmosferę, w której zapomnisz o aparacie, a zdjęcia będą naturalne i autentyczne. Będziemy spacerować, rozmawiać i korzystać z uroku otoczenia - światła zachodzącego słońca, zieleni parku, klimatycznych uliczek czy przestrzeni, która najlepiej odda Twój styl.",
+      "Ta sesja to nie tylko zdjęcia - to także doświadczenie, które może pomóc Ci spojrzeć na siebie z zupełnie nowej perspektywy. To moment, w którym możesz poczuć się pewnie, pięknie i wyjątkowo. To pamiątka na lata, która będzie Ci przypominać o tym, że warto doceniać siebie i swoje wyjątkowe cechy.",
+      "Zdjęcia z takiej sesji możesz wykorzystać na wiele sposobów - jako artystyczną pamiątkę, profesjonalny portret do CV czy LinkedIn, piękne fotografie do mediów społecznościowych, albo po prostu prezent dla siebie lub bliskiej osoby."
+    ],
+    "price": 550,
     "details": [
-      {
-        "heading": "45 minut sesji w wybranej lokalizacji",
-        "value": "Sesja trwa 45 minut w wybranej lokalizacji, pozwalając na uchwycenie najlepszych kadrów w naturalnym środowisku."
-      },
-      {
-        "heading": "12 obrobionych zdjęć",
-        "value": "Otrzymacie 12 starannie wybranych i obrobionych zdjęć w wysokiej jakości, które oddają charakter sesji i piękno naturalnego światła."
-      },
-      {
-        "heading": "galeria online do wyboru zdjęć",
-        "value": "Udostępniamy zdjęcia w galerii online, aby mogli Państwo przeglądać wszystkie ujęcia i wybierać te ulubione."
-      },
-      {
-        "heading": "sugestie co do stylizacji i miejsca",
-        "value": "Doradzamy w wyborze stylizacji i lokalizacji, aby zdjęcia były spójne wizualnie i oddawały Wasz indywidualny styl."
-      },
-      {
-        "heading": "możliwość zabrania bliskiej osoby lub pupila",
-        "value": "Podczas sesji można zabrać bliską osobę lub pupila, co dodatkowo wzbogaca naturalność i emocjonalny charakter zdjęć."
-      }
+      "1  godzina zdjęć w plenerze",
+      "8 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 8 odbitek w formacie 15x21 cm",
+      "prywatną galerię online z możliwością wygodnego pobrania",
+      "wskazówki dotyczące stylizacji, makijażu i przygotowania do sesji",
+      "możliwość zamówienia dodatkowych wydruków, fotoobrazów i albumów"
+    ],
+    "whyChoose": [
+      "Zyskasz profesjonalne, piękne zdjęcia, które podkreślą Twoją osobowość",
+      "Poczujesz się pewniej przed obiektywem i odkryjesz swój najlepszy wizerunek",
+      "Otrzymasz fotografie zarówno w wersji cyfrowej, jak i odbitki w wysokiej jakości",
+      "Będziesz mieć pamiątkę, do której z przyjemnością będziesz wracać latami",
+      "Zdjęcia sprawdzą się zarówno jako prywatna pamiątka, jak i profesjonalny wizerunek"
+    ]
+  },
+  {
+    "top": 4,
+    "name": "christening-variant-1",
+    "title": "Chrzciny - wariant 1 podstawowy",
+    "description": [
+      "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
+      "Drodzy Rodzice,",
+      "Chrzest to jeden z najważniejszych dni w życiu Waszego dziecka - pełen wzruszeń, uśmiechów i rodzinnej bliskości. To czas, kiedy każdy gest, każdy uśmiech i spojrzenie staje się bezcenną pamiątką. Profesjonalne zdjęcia pozwolą Wam zachować te ulotne chwile na zawsze - jako piękną opowieść o emocjach, radości i miłości, które otaczają Waszą rodzinę.",
+      "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
+    ],
+    "price": 500,
+    "details": [
+      "Reportaż z kościoła",
+      "Sesja około 1 godziny podczas przyjęcia",
+      "Około 50 zdjęć w wersji cyfrowej",
+      "Profesjonalna obróbka zdjęć",
+      "Galeria online ze zdjęciami"
+    ],
+    "whyChoose": [
+      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
+    ]
+  },
+  {
+    "name": "christening-variant-2",
+    "title": "Chrzciny - wariant 2 standard",
+    "description": [
+      "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
+      "Drodzy Rodzice,",
+      "Chrzest to jeden z najważniejszych dni w życiu Waszego dziecka - pełen wzruszeń, uśmiechów i rodzinnej bliskości. To czas, kiedy każdy gest, każdy uśmiech i spojrzenie staje się bezcenną pamiątką. Profesjonalne zdjęcia pozwolą Wam zachować te ulotne chwile na zawsze - jako piękną opowieść o emocjach, radości i miłości, które otaczają Waszą rodzinę.",
+      "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
+    ],
+    "price": 800,
+    "details": [
+      "Reportaż z kościoła",
+      "2 godziny fotografowania podczas przyjęcia",
+      "Około 80 zdjęć w wersji cyfrowej",
+      "Profesjonalna obróbka zdjęć",
+      "Galeria online ze zdjęciami"
+    ],
+    "whyChoose": [
+      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
+    ]
+  },
+  {
+    "name": "christening-variant-3",
+    "title": "Chrzciny - wariant 3 premium",
+    "description": [
+      "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
+      "Drodzy Rodzice,",
+      "Chrzest to jeden z najważniejszych dni w życiu Waszego dziecka - pełen wzruszeń, uśmiechów i rodzinnej bliskości. To czas, kiedy każdy gest, każdy uśmiech i spojrzenie staje się bezcenną pamiątką. Profesjonalne zdjęcia pozwolą Wam zachować te ulotne chwile na zawsze - jako piękną opowieść o emocjach, radości i miłości, które otaczają Waszą rodzinę.",
+      "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
+    ],
+    "price": 1200,
+    "details": [
+      "Przygotowania dziecka i rodziny",
+      "Reportaż z kościoła",
+      "2 godziny fotografowania podczas przyjęcia",
+      "Około 100 zdjęć w wersji cyfrowej",
+      "Profesjonalna obróbka zdjęć",
+      "Galeria online ze zdjęciami"
+    ],
+    "whyChoose": [
+      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
+    ]
+  },
+  {
+    "name": "studio-variant-1",
+    "title": "Sesja studyjna - pakiet mini",
+    "description": [
+      "Doskonały wybór dla osób, które chcą w szybki i przyjemny sposób uzyskać kilka profesjonalnych portretów. Idealny na pierwszą sesję, prezent dla bliskiej osoby lub jako uzupełnienie portfolio.",
+      "Chcesz spróbować swoich sił przed obiektywem lub potrzebujesz kilku profesjonalnych kadrów w krótkim czasie? Pakiet MINI to idealny wybór na start. W pół godziny stworzymy serię ujęć, które będą świetną pamiątką, a przy okazji poczujesz, jak wygląda praca w studiu fotograficznym."
+      ],
+    "price": 0,
+    "details": [
+      "30 minut sesji studyjnej",
+      "1 stylizacja",
+      "5 profesjonalnie obrobionych zdjęć",
+      "5 odbitek w formacie 15x21 cm",
+      "zdjęcia w wersji elektronicznej (do ponownego druku)",
+      "dodatkowe zdjęcie - 50 zł",
+      "wysyłka odbitek paczkomatem - 20 zł"
+    ],
+    "whyChoose": [
+      "krótki i bezstresowy czas sesji - idealny dla osób początkujących",
+      "możliwość uzyskania naturalnych i profesjonalnych portretów",
+      "gotowe odbitki - nie musisz martwić się o druk"
+    ]
+  },
+  {
+    "name": "studio-variant-2",
+    "title": "Sesja studyjna - pakiet standard",
+    "description": [
+        "Najczęściej wybierany przez klientów! Idealny kompromis między czasem trwania sesji a liczbą zdjęć. Masz możliwość zmiany stylizacji i większego zróżnicowania kadrów, dzięki czemu sesja będzie bardziej urozmaicona. To świetna propozycja zarówno dla osób prywatnych, jak i biznesowych."
+      ],
+    "price": 0,
+    "details": [
+      "60 minut sesji studyjnej",
+      "2-3 stylizacje",
+      "10 profesjonalnie obrobionych zdjęć",
+      "10 odbitek w formacie 15x21 cm",
+      "zdjęcia w wersji elektronicznej (do ponownego druku)",
+      "dodatkowe zdjęcie - 40 zł",
+      "wysyłka odbitek paczkomatem - 20 zł"
+    ],
+    "whyChoose": [
+      "większa swoboda w doborze stylizacji i pozowania",
+      "więcej ujęć - łatwiej wybrać ulubione zdjęcia",
+      "idealna opcja na zdjęcia do portfolio, social mediów czy sesję rodzinną"
+    ]
+  },
+  {
+    "name": "studio-variant-3",
+    "title": "Sesja studyjna - pakiet premium",
+    "description": [
+      "Rozbudowana sesja z większą swobodą stylizacji i większą liczbą zdjęć. Idealny dla osób, które chcą stworzyć bogatszy materiał - do portfolio, social mediów czy albumu rodzinnego.",
+      "Pakiet dla osób, które chcą więcej - więcej czasu, więcej zdjęć i większej różnorodności. Dzięki kilku stylizacjom i dłuższej pracy w studio możemy stworzyć zarówno eleganckie portrety, jak i kreatywne ujęcia. To opcja, która świetnie sprawdzi się przy budowaniu portfolio, sesji wizerunkowej lub wyjątkowej pamiątki dla całej rodziny."
+      ],
+    "price": 0,
+    "details": [
+      "90 minut sesji studyjnej",
+      "4-5 stylizacji",
+      "15 profesjonalnie obrobionych zdjęć",
+      "15 odbitek w formacie 15x21 cm",
+      "zdjęcia w wersji elektronicznej (do ponownego druku)",
+      "dodatkowe zdjęcie - 40 zł",
+      "wysyłka odbitek paczkomatem - 20 zł"
+    ],
+    "whyChoose": [
+      "dłuższa sesja = większy komfort i brak pośpiechu",
+      "możliwość wielu zmian stylizacji i tła",
+      "bogaty zestaw zdjęć i odbitek, który wystarczy na lata"
     ]
   }
 ]

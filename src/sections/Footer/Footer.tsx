@@ -29,8 +29,8 @@ const Footer: React.FC = () => {
             </div>
             <div className={styles.footerCopyright}>
                 <div>
-                    {siteInfo?.footerText.map(text => 
-                        <p>{text}</p>
+                    {siteInfo?.footerText.map((text, i) => 
+                        <p key={i}>{text}</p>
                     )}
                 </div>
                 <div className={styles.madeBy}>
