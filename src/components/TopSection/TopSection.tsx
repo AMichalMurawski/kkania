@@ -4,7 +4,7 @@ import { LinkTo } from "../../elements";
 import { TopSectionProps } from "../../utils";
 import he from "he";
 
-const Top: React.FC<PropsWithChildren<TopSectionProps>> = ({ title, description, children, link }) => {
+const Top: React.FC<PropsWithChildren<TopSectionProps>> = ({ title, description, children, link, darkStyle }) => {
     
     return (
         <div className={styles.topWrapper}>
@@ -15,7 +15,7 @@ const Top: React.FC<PropsWithChildren<TopSectionProps>> = ({ title, description,
                     )}
                 </div>
                 {children}
-            <LinkTo href={link.href}>{he.decode(link.value)}</LinkTo>
+            <LinkTo href={link.href} darkStyle={darkStyle}>{he.decode(link.value)}</LinkTo>
         </div>
     );
 };

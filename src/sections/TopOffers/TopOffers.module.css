@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.dark {
+    background-color: var(--color-secondary);
+    color: var(--color-text-alternative);
+}
+
 .offersList {
     display: flex;
     flex-direction: column;
