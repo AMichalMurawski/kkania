@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
         </Hero>
         <AboutMe content={aboutMe?.short || []} flexDirection={['column', 'row', 'row']} />
         <TopGallery />
-        <TopOffers />
+        <TopOffers darkStyle />
         <ContactMe />
     </>
 };

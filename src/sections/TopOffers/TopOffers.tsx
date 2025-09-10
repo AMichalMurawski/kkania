@@ -3,8 +3,9 @@ import styles from "./TopOffers.module.css";
 import { useOffers, useRoutes } from "../../context";
 import { TopSectionProps } from "../../utils";
 import { OfferItem, TopSection } from "../../components";
+import { TopOffersProps } from "./types";
 
-const TopOffers: React.FC = () => {
+const TopOffers: React.FC<TopOffersProps> = ({darkStyle}) => {
     const { data: routes } = useRoutes();
     const { data: offers } = useOffers();
 
@@ -16,7 +17,7 @@ const TopOffers: React.FC = () => {
     const offersData: TopSectionProps = {
         title: 'Moje propozycje',
         description: [
-            'Każda sesja to indywidualna historia – dopasowana do Ciebie, Twoich emocji i oczekiwań. Sprawdź, co mogę dla Ciebie sfotografować i wybierz coś dla siebie.'
+            'Każda sesja to indywidualna historia - dopasowana do Ciebie, Twoich emocji i oczekiwań. Sprawdź, co mogę dla Ciebie sfotografować i wybierz coś dla siebie.'
         ],
         link: {
             href: routes?.offers.path || "",
@@ -25,8 +26,8 @@ const TopOffers: React.FC = () => {
     }
 
     return (
-        <section className={styles.sectionConteiner}>
-            <TopSection {...offersData}>
+        <section className={`${styles.sectionConteiner} ${darkStyle ? styles.dark : null}`}>
+            <TopSection {...offersData} darkStyle={darkStyle}>
                 <div className={styles.offersList}>
                     {topOffers?.map(offer => 
                         <OfferItem key={offer.top} offer={offer}/>

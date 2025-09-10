@@ -2,8 +2,9 @@
     width: clamp(320px, 100%, 1200px);
     display: flex;
     flex-direction: column;
-    padding-inline: 1em;
-    margin: 4em auto 0;
+    gap: 2em;
+    padding: 4em 1em;
+    margin-inline: auto;
 
     @media screen and (min-width: 768px) {
         padding-inline: 1.5em;
@@ -15,7 +16,6 @@
 }
 
 .itemWrapper {
-    margin: 2em 0;
     display: flex;
     gap: 2em; 
     min-width: 100px;

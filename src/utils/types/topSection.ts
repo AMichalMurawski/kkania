@@ -7,4 +7,5 @@ export interface TopSectionProps {
     title: string;
     description: string[];
     link: Link;
+    darkStyle?: boolean;
 }
