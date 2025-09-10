@@ -1,9 +1,7 @@
-import { ImageOrientation } from "../";
+import { ImageOrientation, ImageProps } from "../";
 
 export interface AboutMeContent {
     title: string;
     value: string[];
-    imageUrl: string;
-    imageAlt: string;
-    imageOrientation: ImageOrientation;
+    image: ImageProps;
 }

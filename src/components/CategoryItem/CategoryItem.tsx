@@ -23,7 +23,7 @@ const CategoryItem: React.FC<CategoryItemProps> = ({ name, title, session, descr
             <div className={styles.images}>
                 {imagesPreview.map((image, i) => (
                     <div className={styles.image} style={{ gridColumn:`${positions[i][0]}`, gridRow: `${positions[i][1]}` }}>
-                        <Image name={image.name} alt={image.alt} orientation={image.orientation} />
+                        <Image url={image.url} alt={image.alt} orientation={image.orientation} />
                     </div>
                 ))}
             </div>

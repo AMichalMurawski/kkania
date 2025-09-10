@@ -21,9 +21,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ content, flexDirection }) => {
                                 <IconSVG name="camera" size="2em" fill="var(--color-secondary)" />
                                 <h3>{item.title}</h3>
                             </div>
-                            <div className={styles.imageWrapper} style={item.imageOrientation === "landscape" ? {aspectRatio: '3 / 2'} : {aspectRatio: '2 / 3'}}>
-                                <Image name={item.imageUrl} alt={item.imageAlt} orientation={item.imageOrientation} />
-                            </div>
+                            {item.image && <div className={styles.imageWrapper} style={item.image.orientation === "landscape" ? { aspectRatio: '3 / 2' } : { aspectRatio: '2 / 3' }}>
+                                <Image url={item.image.url} alt={item.image.alt} orientation={item.image.orientation} />
+                            </div>}
                             {item.value.map((val, j) =>
                                 <p key={`val${j}`}>{val}</p>
                             )}
@@ -43,7 +43,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ content, flexDirection }) => {
                             )}
                         </div>
                         <div className={styles.imageWrapper}>
-                            <Image name={item.imageUrl} alt={item.imageAlt} orientation={item.imageOrientation} />
+                            <Image url={item.image.url} alt={item.image.alt} orientation={item.image.orientation} />
                         </div>
                     </div>
                 )

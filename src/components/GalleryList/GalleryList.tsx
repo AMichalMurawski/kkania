@@ -110,7 +110,7 @@ const GalleryList: React.FC<GalleryListProps> = ({images}) => {
                     className={styles.imageWrapper}
                 >
                     <Image
-                        name={image.name}
+                        url={image.url}
                         alt={image.alt}
                         orientation={image.orientation} />
                 </div>
