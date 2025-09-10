@@ -3,6 +3,7 @@ import styles from "./HomePage.module.css";
 import { useAboutMe, useRoutes } from "../../context";
 import { AboutMe, Hero } from "../../sections";
 import { Button } from "../../elements";
+import TopGallery from "../../sections/TopGallery/TopGallery";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();
@@ -19,7 +20,8 @@ const HomePage: React.FC = () => {
                 </div>
             </div>
         </Hero>
-        <AboutMe content={aboutMe?.short || []} flexDirection={['column', 'row', 'row']}/>
+        <AboutMe content={aboutMe?.short || []} flexDirection={['column', 'row', 'row']} />
+        <TopGallery />
     </>
 };
 

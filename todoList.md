@@ -31,16 +31,15 @@
     1. Header - done
     2. Footer - done
     3. Hero - done
-    4. AboutMe
-    5. AboutMeShort - 
-    6. Offers
-    7. OffersShort - 
-    8. GalleryCategories
-    9. Gallery
-    10. GalleryShort - 
+    4. AboutMe - done
+    5. TopGallery - done
+    6. TopOffers -
+    7. ContactMeShort - 
+    8. Offers
+    9. GalleryCategories
+    10. Gallery
     11. ContactMe
-    12. ContactMeShort - 
-    13. Terms
+    12. Terms
 
 # Layouts
     1. MainLayout - done
@@ -66,10 +65,13 @@
     2. Icons - done ?
     3. Images
     4. Config - for corrections /////////////
-        Offer - for corrections /////////////
-        Gallery - done
-        SiteInfo - done ?
-        Terms - done ?
+        - aboutMe - done
+        - galleries - done
+        - offers - for corrections /////////////
+        - routes - done
+        - siteInfo - done ?
+        - terms - done ?
+        - topGallery - done
 
 # Backend
     1. sendMail
@@ -82,6 +84,8 @@
     ## Components
         / CategoryItem 
             - onClick - open gallery (name props)
+        / Contacts
+            - without text in media<480
         / GalleryList
             - logic for click on image - view modal with full size images
         / OfferItem

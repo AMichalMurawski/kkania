@@ -11,7 +11,7 @@ const Hero: React.FC<PropsWithChildren<HeroProps>> = ({ children, imageUrl }) =>
             </div>
         </div>
         <div className={styles.heroBackground}>
-            <ImageBg name={imageUrl} />
+            <ImageBg url={imageUrl} />
         </div>
     </section>
 };

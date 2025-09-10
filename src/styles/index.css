@@ -46,10 +46,6 @@ body {
     width: 100%;
 }
 
-section {
-    width: 100%;
-}
-
 a, a:hover {
     font-family: var(--font-paragraph);
     font-weight: 900;
@@ -81,6 +77,8 @@ p {
     margin-bottom: 1.5em;
     font-size: 1rem;
     line-height: 1.6;
+    width: 100%;
+    min-width: 100px;
 }
 
 ul, ol {

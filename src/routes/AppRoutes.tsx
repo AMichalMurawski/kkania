@@ -1,6 +1,7 @@
 import React, { ReactNode, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AboutMeProvider, useRoutes } from "../context";
+import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
 
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage"));
@@ -18,7 +19,9 @@ const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
 const HomePageProvider = ({ children }: { children: ReactNode }) => {
     return (
         <AboutMeProvider>
-            {children}
+            <TopGalleryProvider>
+                {children}
+            </TopGalleryProvider>
         </AboutMeProvider>
     )
 };

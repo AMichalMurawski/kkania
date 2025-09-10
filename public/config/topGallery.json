@@ -1,0 +1,45 @@
+[
+    {
+        "url": "/image2.png",
+        "alt": "",
+        "orientation": "landscape"
+    },
+    {
+        "url": "/l1.png",
+        "alt": "",
+        "orientation": "landscape"
+    },
+    {
+        "url": "/p1.png",
+        "alt": "",
+        "orientation": "portrait"
+    },{
+        "url": "/image2.png",
+        "alt": "",
+        "orientation": "landscape"
+    },
+    {
+        "url": "/l2.png",
+        "alt": "",
+        "orientation": "landscape"
+    },
+    {
+        "url": "/p2.png",
+        "alt": "",
+        "orientation": "portrait"
+    },{
+        "url": "/image3.png",
+        "alt": "",
+        "orientation": "portrait"
+    },
+    {
+        "url": "/l3.png",
+        "alt": "",
+        "orientation": "landscape"
+    },
+    {
+        "url": "/l4.png",
+        "alt": "",
+        "orientation": "landscape"
+    }
+]
