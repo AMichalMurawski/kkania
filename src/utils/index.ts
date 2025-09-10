@@ -1,3 +1,4 @@
+export * from "./types/aboutMe"
 export * from "./types/gallery";
 export * from "./types/image";
 export * from "./types/offer";

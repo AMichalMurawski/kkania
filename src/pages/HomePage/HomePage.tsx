@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./HomePage.module.css";
-import { useRoutes } from "../../context";
-import { Hero } from "../../sections";
+import { useAboutMe, useRoutes } from "../../context";
+import { AboutMe, Hero } from "../../sections";
 import { Button } from "../../elements";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();
+    const { data: aboutMe } = useAboutMe();
 
     return <>
         <Hero imageUrl={routes?.home.heroImage || ""} >
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
                 </div>
             </div>
         </Hero>
+        <AboutMe content={aboutMe?.short || []} flexDirection={['column', 'row', 'row']}/>
     </>
 };
 
