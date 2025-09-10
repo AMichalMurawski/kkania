@@ -26,6 +26,7 @@
     8. Forms - done
         - ContactForm - done
         - ReservationForm - done
+    9. TopSection - done
 
 # Sections
     1. Header - done
@@ -33,7 +34,7 @@
     3. Hero - done
     4. AboutMe - done
     5. TopGallery - done
-    6. TopOffers -
+    6. TopOffers - done
     7. ContactMeShort - 
     8. Offers
     9. GalleryCategories
