@@ -2,5 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: fit-content;
+    /* width: fit-content; */
+}
+
+.wrapper *{
+    margin: 0;
 }

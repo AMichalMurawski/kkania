@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--color-secondary);
     color: var(--color-text-alternative);
-    width: 100%;
+    overflow-x: hidden;
 }
 
 .footerConteiner {
