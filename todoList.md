@@ -48,10 +48,10 @@
 # Pages
     1. Home - done
     2. About - done
-    3. Categories
-    4. Gallery
-    5. Offers
-    6. Order
+    3. Offers - 
+    4. Order
+    5. Categories
+    6. Gallery
     7. Contact
     8. Terms
 
