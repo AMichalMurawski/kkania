@@ -9,7 +9,10 @@ const Hamburger: React.FC<HamburgerProps> = ({darkStyle}) => {
     const width = useWindowWidth();
 
     useEffect(() => {
-        width >= 840 ? close("MenuMobile") : null
+        if (width >= 840) {
+            close("MenuMobile");
+            document.body.style.overflow = "auto";
+        };
     }, [width])
 
     const handleClick = () => {
