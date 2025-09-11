@@ -46,8 +46,8 @@
     2. GalleryLayout
 
 # Pages
-    1. Home - 
-    2. About
+    1. Home - done
+    2. About - done
     3. Categories
     4. Gallery
     5. Offers
