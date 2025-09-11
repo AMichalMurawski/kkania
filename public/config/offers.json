@@ -1,7 +1,7 @@
 [
   {
     "top": 1,
-    "name": "plener-family",
+    "name": "plener-rodzinny",
     "title": "Sesja Rodzinna w Plenerze",
     "description": [
       "Naturalne, ciepłe kadry pełne emocji - uchwycone w Waszym codziennym rytmie. Sesja rodzinna pozwala zachować wyjątkowe wspomnienia z czasu spędzonego razem. Starannie dobrane kadry oddają bliskość i autentyczne emocje, tworząc pamiątkę na lata.",
@@ -23,7 +23,7 @@
   },
   {
     "top": 2,
-    "name": "plener-couples",
+    "name": "plener-pary",
     "title": "Sesja Narzeczeńska / Dla Par",
     "description": [
       "Zakochani wyglądają najpiękniej właśnie wtedy, gdy są sobą - gdy trzymają się za ręce, śmieją się do siebie, opowiadają wspólne historie. Sesja plenerowa dla par to doskonały sposób, aby uchwycić Waszą więź i uczucia w wyjątkowej, romantycznej oprawie natury lub miejskiego klimatu.",
@@ -46,7 +46,7 @@
   },
   {
     "top": 3,
-    "name": "plener-individual",
+    "name": "plener-indywidualna",
     "title": "Sesja Indywidualna",
     "description": [
       "Każdy z nas zasługuje na piękne zdjęcia, które pokażą jego prawdziwe „ja”. Sesja indywidualna w plenerze to idealna okazja, by zatrzymać na fotografiach nie tylko Twój wygląd, ale także emocje, charakter i wyjątkową energię.",
@@ -72,7 +72,7 @@
   },
   {
     "top": 4,
-    "name": "christening-variant-1",
+    "name": "chrzest-wariant-1",
     "title": "Chrzciny - wariant 1 podstawowy",
     "description": [
       "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
@@ -93,7 +93,7 @@
     ]
   },
   {
-    "name": "christening-variant-2",
+    "name": "chrzest-wariant-2",
     "title": "Chrzciny - wariant 2 standard",
     "description": [
       "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "name": "christening-variant-3",
+    "name": "chrzest-wariant-3",
     "title": "Chrzciny - wariant 3 premium",
     "description": [
       "Uwiecznij najpiękniejsze chwile chrztu swojego dziecka - pamiątka, która zostanie z Wami na całe życie.",
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "name": "studio-variant-1",
+    "name": "studio-wariant-1",
     "title": "Sesja studyjna - pakiet mini",
     "description": [
       "Doskonały wybór dla osób, które chcą w szybki i przyjemny sposób uzyskać kilka profesjonalnych portretów. Idealny na pierwszą sesję, prezent dla bliskiej osoby lub jako uzupełnienie portfolio.",
@@ -159,7 +159,7 @@
     ]
   },
   {
-    "name": "studio-variant-2",
+    "name": "studio-wariant-2",
     "title": "Sesja studyjna - pakiet standard",
     "description": [
         "Najczęściej wybierany przez klientów! Idealny kompromis między czasem trwania sesji a liczbą zdjęć. Masz możliwość zmiany stylizacji i większego zróżnicowania kadrów, dzięki czemu sesja będzie bardziej urozmaicona. To świetna propozycja zarówno dla osób prywatnych, jak i biznesowych."
@@ -181,7 +181,7 @@
     ]
   },
   {
-    "name": "studio-variant-3",
+    "name": "studio-wariant-3",
     "title": "Sesja studyjna - pakiet premium",
     "description": [
       "Rozbudowana sesja z większą swobodą stylizacji i większą liczbą zdjęć. Idealny dla osób, które chcą stworzyć bogatszy materiał - do portfolio, social mediów czy albumu rodzinnego.",

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./TopOffers.module.css";
 import { useOffers, useRoutes } from "../../context";
 import { TopSectionProps } from "../../utils";
-import { OfferItem, TopSection } from "../../components";
+import { OfferItem, OffersList, TopSection } from "../../components";
 import { TopOffersProps } from "./types";
 
 const TopOffers: React.FC<TopOffersProps> = ({darkStyle}) => {
@@ -28,11 +28,7 @@ const TopOffers: React.FC<TopOffersProps> = ({darkStyle}) => {
     return (
         <section className={`${styles.sectionConteiner} ${darkStyle ? styles.dark : null}`}>
             <TopSection {...offersData} darkStyle={darkStyle}>
-                <div className={styles.offersList}>
-                    {topOffers?.map(offer => 
-                        <OfferItem key={offer.top} offer={offer}/>
-                    )}
-                </div>
+                <OffersList offers={topOffers || []} />
             </TopSection>
         </section>
     );

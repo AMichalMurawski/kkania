@@ -38,4 +38,5 @@
     color: var(--color-primary);
     text-shadow: 0 0 4px var(--color-secondary);
     filter: drop-shadow(0 0 4px var(--color-secondary));
+    margin: 0;
 }
