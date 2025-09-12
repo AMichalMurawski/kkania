@@ -10,15 +10,6 @@
     width: clamp(320px, 100%, 1200px);
     height: 100%;
     margin-inline: auto;
-    padding: 1em;
-    
-    @media screen and (min-width: 768px) {
-        padding: 1.5em;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        padding: 2em;
-    }
 }
 
 .heroBackground {
@@ -41,7 +32,7 @@
 }
 
 .title {
-    font-size: clamp(2em, 3em, 10vmin);
+    font-size: clamp(1.5em, 3em, 5vmin);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-primary);

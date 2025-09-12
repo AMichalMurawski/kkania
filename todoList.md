@@ -78,15 +78,8 @@
     1. sendMail
 
 # ToDo
-    ## Others
-        -
-    ## Elements
-        -
     ## Components
-        / Contacts
-            - without text in media<480
         / GalleryList
             - logic for click on image - view modal with full size images
         / OfferItem
             - fix text-overflow
-            - add logic for buttons
