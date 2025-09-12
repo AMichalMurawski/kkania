@@ -99,7 +99,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 {...register("info")}
             />
 
-            <Button type="submit" linkTo="">
+            <Button type="submit" linkTo="" darkStyle>
                 Wyślij wiadomość
             </Button>
         </form>

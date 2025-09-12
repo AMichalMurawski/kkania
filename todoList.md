@@ -38,9 +38,9 @@
     7. ContactMe -  done
     8. Offers - done
     9. OffersDescription - done
-    10. Order - 
-    11. GalleryCategories
-    12. Gallery
+    10. Order - done
+    11. GalleryCategories - done
+    12. Gallery - done
     13. Contact
     14. Terms
 
@@ -52,9 +52,9 @@
     1. Home - done
     2. About - done
     3. Offers - done
-    4. Order - 
-    5. Categories
-    6. Gallery
+    4. Order - done
+    5. Categories - done
+    6. Gallery - done
     7. Contact
     8. Terms
 

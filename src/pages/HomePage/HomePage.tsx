@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./HomePage.module.css";
 import { useAboutMe, useRoutes } from "../../context";
-import { AboutMe, Hero, TopGallery, TopOffers } from "../../sections";
+import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
-import ContactMe from "../../sections/ContactMe/ContactMe";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();
