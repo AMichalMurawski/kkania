@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { ModalProvider, OffersProvider, RoutesProvider, SiteInfoProvider } from "./";
+import { GalleriesProvider, ModalProvider, OffersProvider, RoutesProvider, SiteInfoProvider } from "./";
 
 
 const AppProviders = ({ children }: { children: ReactNode }) => {
@@ -8,7 +8,9 @@ const AppProviders = ({ children }: { children: ReactNode }) => {
             <OffersProvider>
                 <RoutesProvider>
                     <ModalProvider>
+                        <GalleriesProvider>
                             {children}
+                        </GalleriesProvider>
                     </ModalProvider>
                 </RoutesProvider>
             </OffersProvider>
