@@ -1,11 +1,10 @@
-/* src/fonts.css */
-
 /* BlackOpsOne */
 @font-face {
   font-family: 'BlackOpsOne';
   src: url('/fonts/BlackOpsOne-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* DM Serif Display */
@@ -14,6 +13,7 @@
   src: url('/fonts/DMSerifDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Montserrat */
@@ -22,6 +22,7 @@
   src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -29,6 +30,7 @@
   src: url('/fonts/Montserrat-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Playfair Display */
@@ -37,6 +39,7 @@
   src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
   src: url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -51,5 +55,6 @@
   src: url('/fonts/MontaguSlab_48pt-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 

@@ -12,11 +12,11 @@
     --color-accept: green;
     --color-warning: orange;
 
-    --font-heading: 'PlayfairDisplay', serif;
-    --font-heading-alternative: 'DMSerifDisplay', serif;
-    --font-paragraph: 'Montserrat', sans-serif;
-    --font-logo: 'BlackOpsOne', sans-serif;
-    --font-numeric: 'MontaguSlab', sans-serif;
+    --font-heading: 'PlayfairDisplay', 'Times New Roman', Georgia, serif;
+    --font-heading-alternative: 'DMSerifDisplay', Georgia, 'Times New Roman', serif;
+    --font-paragraph: 'Montserrat', Arial, Helvetica, sans-serif;
+    --font-logo: 'BlackOpsOne', Impact, 'Arial Black', sans-serif;
+    --font-numeric: 'MontaguSlab', 'Rockwell', 'Courier New', serif;
 
     --transition-primary: 200ms ease;
 
@@ -34,6 +34,7 @@
 body {
     position: absolute;
     font-family: var(--font-paragraph);
+    font-size-adjust: 0.54;
     line-height: 1.5;
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -55,11 +56,13 @@ a, a:hover {
 
 h1, h2 {
     font-family: var(--font-heading);
+    font-size-adjust: 0.45;
     margin-bottom: 1em;
 }
 
 h3 {
     font-family: var(--font-heading-alternative);
+    font-size-adjust: 0.50;
     margin-bottom: 1em;
 }
 
@@ -85,6 +88,13 @@ ul, ol {
     list-style-position: inside;
     list-style-type: none;
     margin-left: 1em;
+}
+
+a, a:hover,
+button {
+    font-family: var(--font-paragraph);
+    font-size-adjust: 0.54;
+    font-weight: 900;
 }
 
 button {
