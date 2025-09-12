@@ -46,3 +46,8 @@
     text-overflow: ellipsis;
     height: calc(1.6em *3);
 }
+
+.buttonWrapper {
+    font-size: 0.8rem;
+    text-align: center;
+}
