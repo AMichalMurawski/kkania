@@ -11,6 +11,7 @@
     border: 5px solid var(--color-primary);
     box-shadow: 2px 2px 6px 2px var(--color-shadow);
     flex: 1;
+    transition: border var(--transition-primary), background-color var(--transition-primary);
 }
 
 .conteiner > *:last-child {
@@ -22,7 +23,7 @@
 }
 
 .active {
-    background-image: linear-gradient(var(--color-glass-accent));
+    background-color: var(--color-glass-accent);
     border: 5px solid var(--color-accent);
 }
 
