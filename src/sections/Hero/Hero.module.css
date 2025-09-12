@@ -41,7 +41,7 @@
 }
 
 .title {
-    font-size: 3em;
+    font-size: clamp(2em, 3em, 10vmin);
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-primary);
