@@ -28,23 +28,3 @@
     font-weight: 700;
     font-size: 1.2em;
 }
-
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.list li{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-}
-
-.list svg{
-    translate: 0 0.2em;
-}
-
-.heading {
-    font-weight: 800;
-}

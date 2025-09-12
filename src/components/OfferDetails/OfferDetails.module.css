@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 1em;
+}
+
+.list li{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-style: italic;
+}
+
+.list svg{
+    translate: 0 0.2em;
+}

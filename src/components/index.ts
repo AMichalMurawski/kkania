@@ -5,6 +5,7 @@ export { default as GalleryList } from "./GalleryList/GalleryList";
 export { default as MobileMenu } from "./MobileMenu/MobileMenu";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as OfferDescription } from "./OfferDescription/OfferDescription";
+export { default as OfferDetails } from "./OfferDetails/OfferDetails";
 export { default as OfferItem } from "./OfferItem/OfferItem";
 export { default as OffersList } from "./OffersList/OffersList";
 export { default as ReservationForm } from "./Forms/ReservationForm/ReservationForm";

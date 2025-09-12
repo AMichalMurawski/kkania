@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./OfferDescription.module.css";
 import { OfferDescriptionProps } from "./types";
-import { IconSVG } from "../../elements";
+import { OfferDetails } from "../";
 
 const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, darkStyle}) => {
     return (
@@ -10,23 +10,9 @@ const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, darkStyle}) =
             <p>{offer?.description}</p>
             <p className={styles.price}>{offer?.price} zł</p>
             <p className={styles.listTitle}>Co obejmuje:</p>
-            <ul className={styles.list}>
-                {offer?.details.map((detail, i) => 
-                    <li key={i} className={styles.listItem}>
-                        <IconSVG name="image" alt="ikona zdjęcia" size='1em' />
-                        <p>{detail}</p>
-                    </li>
-                )}
-            </ul>
+            <OfferDetails details={offer?.details || []}/>
             <p className={styles.listTitle}>Dlaczego warto?</p>
-            <ul className={styles.list}>
-                {offer?.whyChoose.map((whyItem, i) => 
-                    <li key={i} className={styles.listItem}>
-                        <IconSVG name="image" alt="ikona zdjęcia" size='1em' />
-                        <p>{whyItem}</p>
-                    </li>
-                )}
-            </ul>
+            <OfferDetails details={offer?.whyChoose || []}/>
         </div>
     );
 };

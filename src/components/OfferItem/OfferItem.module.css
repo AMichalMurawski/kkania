@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 600px;
     color: var(--color-text);
+    fill: var(--color-accent);
     background-color: var(--color-primary);
     border-radius: 1em;
     border: 5px solid var(--color-primary);
@@ -41,20 +42,4 @@
     font-family: var(--font-numeric);
     font-size: 3em;
     font-weight: 900;
-}
-
-.detailsList {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.detailsList li{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-}
-
-.detailsList svg{
-    translate: 0 0.2em;
 }
