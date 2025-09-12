@@ -12,7 +12,7 @@ const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {
             <h3>{offer.title}</h3>
             <p className={styles.description}>{offer.description}</p>
             <p className={styles.price}>{offer.price} zł</p>
-            <Button darkStyle view="full" linkTo={`${routes?.offers.path}?plan=${offer.name}` || ""}>Sprawdź szczegóły</Button>
+            <Button darkStyle view="full" linkTo={`${routes?.offers.path}?plan=${offer.name}#offersDescription` || ""}>Sprawdź szczegóły</Button>
             <ul className={styles.detailsList}>
                 {offer.details.map((detail, i) => 
                     <li key={i} className={styles.detail}>
@@ -21,7 +21,7 @@ const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {
                     </li>
                 )}
             </ul>
-            <Button view="full" linkTo={`${routes?.order.path}?offer=${offer.name}` || ""}>Zapytaj o termin</Button>
+            <Button view="full" linkTo={`${routes?.order.path}?plan=${offer.name}` || ""}>Zapytaj o termin</Button>
         </div>
     );
 };

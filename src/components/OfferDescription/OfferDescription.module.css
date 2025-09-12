@@ -1,7 +1,7 @@
 .conteiner {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     width: 100%;
     border-radius: 1em;
 }
@@ -24,20 +24,25 @@
     font-weight: 900;
 }
 
-.detailsList {
+.listTitle {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.list {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.detailsList li{
+.list li{
     display: flex;
     flex-direction: row;
     gap: 0.5em;
 }
 
-.detailsList svg{
-    translate: 0 -0.25em;
+.list svg{
+    translate: 0 0.2em;
 }
 
 .heading {

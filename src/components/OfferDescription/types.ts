@@ -1,6 +1,6 @@
 import { OfferProps } from "../../utils";
 
 export interface OfferDescriptionProps {
-    offer: OfferProps;
+    offer: OfferProps | null;
     darkStyle?: boolean;
 }
