@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./OffersDescription.module.css";
 import { OfferDescription } from "../../components";
-import { asString, useScrollToHash, useValidatedQuery } from "../../hooks";
+import { asString, useValidatedQuery } from "../../hooks";
 import { useOffers, useRoutes } from "../../context";
 import { Button } from "../../elements";
 
@@ -13,7 +13,6 @@ const OffersDescription: React.FC = () => {
     });
 
     const activeOffer = offers?.filter(offer => offer.name === plan);
-
 
     return (
         <section className={`${styles.sectionConteiner} ${!activeOffer?.[0] ? styles.deactive : null}`} id="offersDescription">
