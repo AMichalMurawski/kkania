@@ -48,7 +48,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
                 {...register("message")}
             />
 
-            <Button type="submit" linkTo="">Wyślij wiadomość</Button>
+            <Button type="submit" linkTo="" darkStyle>Wyślij wiadomość</Button>
         </form>
     );
 };

@@ -5,7 +5,7 @@ import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvide
 
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage/CategoriesPage"));
-const ContactPage = React.lazy(() => import("../pages/ContactPage"));
+const ContactPage = React.lazy(() => import("../pages/ContactPage/ContactPage"));
 const HomePage = React.lazy(() => import("../pages/HomePage/HomePage"));
 const GalleryPage = React.lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));

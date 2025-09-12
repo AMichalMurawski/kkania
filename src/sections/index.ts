@@ -1,5 +1,6 @@
 export { default as AboutMe } from "./AboutMe/AboutMe";
 export { default as Categories } from "./Categories/Categories";
+export { default as ContactMe } from "./ContactMe/ContactMe";
 export { default as Footer } from "./Footer/Footer";
 export { default as Gallery } from "./Gallery/Gallery";
 export { default as Header } from "./Header/Header";
