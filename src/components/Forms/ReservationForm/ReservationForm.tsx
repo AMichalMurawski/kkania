@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ReservationForm.module.css";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,17 +6,48 @@ import { Button, Input } from "../../../elements";
 
 import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
-import { sessions } from "./sessionsData";
+import { useNavigate } from "react-router-dom";
+import { useOffers } from "../../../context";
 
 const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
+    const { data: offers } = useOffers();
+    const navigate = useNavigate();
+    const [sessions, setSessions] = useState<{ value: string; label: string }[]>([]);
+
     const {
         register,
         handleSubmit,
         formState: { errors },
         reset,
+        setValue,
     } = useForm<ReservationFormData>({
         resolver: yupResolver(reservationSchema),
     });
+
+    useEffect(() => {
+        const mappedSessions = offers?.map((offer) => ({
+            value: offer.name,
+            label: offer.title,
+        }));
+        setSessions(mappedSessions || []);
+    }, [offers]);
+
+    useEffect(() => {
+        if (!sessions.length) return;
+
+        const currentUrl = new URL(window.location.href);
+        const planFromUrl = currentUrl.searchParams.get("plan") || sessions[0].value;
+
+        setValue("session", planFromUrl);
+    }, [sessions, setValue]);
+
+    const handleSessionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const plan = e.target.value;
+        const currentUrl = new URL(window.location.href); 
+        currentUrl.searchParams.set("plan", plan);
+        const newPath = currentUrl.pathname + currentUrl.search
+        navigate(newPath, {replace: true});
+    };
 
     const onSubmit: SubmitHandler<ReservationFormData> = (data) => {
         window.alert(`Form data: ${JSON.stringify(data)}`);
@@ -48,6 +79,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 options={sessions}
                 error={errors.session?.message}
                 {...register("session")}
+                onChange={handleSessionChange}
             />
 
             <Input
@@ -68,7 +100,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
             />
 
             <Button type="submit" linkTo="">
-                Zarezerwuj
+                Wyślij wiadomość
             </Button>
         </form>
     );
