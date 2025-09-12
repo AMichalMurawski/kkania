@@ -36,10 +36,11 @@
     5. TopGallery - done
     6. TopOffers - done
     7. ContactMe -  done
-    8. Offers
-    9. GalleryCategories
-    10. Gallery
-    11. Terms
+    8. Offers - done
+    9. OffersDescription - done
+    10. GalleryCategories
+    11. Gallery
+    12. Terms
 
 # Layouts
     1. MainLayout - done
@@ -48,10 +49,10 @@
 # Pages
     1. Home - done
     2. About - done
-    3. Categories
-    4. Gallery
-    5. Offers
-    6. Order
+    3. Offers - done
+    4. Order
+    5. Categories
+    6. Gallery
     7. Contact
     8. Terms
 

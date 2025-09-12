@@ -3,13 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import { AboutMeProvider, useRoutes } from "../context";
 import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
 
-const AboutMePage = React.lazy(() => import("../pages/AboutMe/AboutMePage"));
+const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
 const HomePage = React.lazy(() => import("../pages/HomePage/HomePage"));
 const GalleryPage = React.lazy(() => import("../pages/GalleryPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
-const OffersPage = React.lazy(() => import("../pages/OffersPage"));
+const OffersPage = React.lazy(() => import("../pages/OffersPage/OffersPage"));
 const OrderPage = React.lazy(() => import("../pages/OrderPage"));
 const TermsPage = React.lazy(() => import("../pages/TermsPage"));
 

@@ -1,0 +1,17 @@
+.offersList {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+}
+
+.offersList > div {
+    @media screen and (min-width: 1000px) {
+        flex-basis: calc((100% - 2em) / 2);
+        max-width: calc((100% - 2em) / 2);
+    }
+}
