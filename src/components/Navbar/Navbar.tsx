@@ -12,6 +12,11 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
     const navRoutes = routes ? Object.values(routes).filter((r: any) => r.navbar) : [];
     const currentPath = "/" + location.pathname.split("/")[1];
 
+    const handleClick = () => {
+        document.body.style.overflow = "auto";
+        close("MenuMobile")
+    }
+
     return <nav>
         <ul
             className={`${styles.list} ${darkStyle ? styles.dark : styles.light}`}
@@ -23,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
                     to={route.path}
                     className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}
                     style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
-                    onClick={() => close("MenuMobile")}
+                    onClick={handleClick}
                 >
                     <li>
                         {route.navbar}
