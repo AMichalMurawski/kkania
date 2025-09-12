@@ -7,7 +7,7 @@ const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"))
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage/CategoriesPage"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
 const HomePage = React.lazy(() => import("../pages/HomePage/HomePage"));
-const GalleryPage = React.lazy(() => import("../pages/GalleryPage"));
+const GalleryPage = React.lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
 const OffersPage = React.lazy(() => import("../pages/OffersPage/OffersPage"));
 const OrderPage = React.lazy(() => import("../pages/OrderPage/OrderPage"));

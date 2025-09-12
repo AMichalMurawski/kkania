@@ -1,12 +1,13 @@
 [
   {
-    "name": "galeria_sesji_rodzinnej",
-    "session": "family",
-    "title": "Galeria Sesji Rodzinnej",
-    "description": "Galeria sesji rodzinnej prezentuje naturalne, pełne emocji kadry wykonane podczas spotkania w domu lub plenerze. Zdjęcia oddają relacje i autentyczne momenty między członkami rodziny.",
+    "name": "barbara_i_tomasz_-_sesja_slubna",
+    "session": "plener-rodzinny",
+    "heroImage": "/l1.png",
+    "title": "Barbara i Tomasz - sesja ślubna",
+    "description": "Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami. Pamiątka ze ślubu pod Włodawicami.",
     "composition": 1,
     "imagesPreview": [
-      { "url": "/l1.png", "alt": "", "orientation": "landscape" }
+      { "url": "l1.png", "alt": "", "orientation": "landscape" }
     ],
     "images": [
       { "url": "l1.png", "alt": "", "orientation": "landscape" },
@@ -28,7 +29,8 @@
   },
   {
     "name": "galeria_sesji_okolicznosciowej",
-    "session": "special_occasions",
+    "session": "plener-rodzinny",
+    "heroImage": "/l2.png",
     "title": "Galeria Sesji Okolicznościowej",
     "description": "Galeria prezentuje najważniejsze momenty wydarzeń rodzinnych, takich jak chrzciny, urodziny czy baby shower. Zdjęcia dokumentują emocje, detale i atmosferę wyjątkowych chwil.",
     "composition": 2,
@@ -59,7 +61,8 @@
   },
   {
     "name": "galeria_sesji_w_plenerze",
-    "session": "outdoor",
+    "session": "plener-pary",
+    "heroImage": "/l3.png",
     "title": "Galeria Sesji w Plenerze",
     "description": "Galeria sesji w plenerze pokazuje swobodne kadry w naturalnym świetle – wśród łąk, lasów lub miejskiej przestrzeni. Zdjęcia uchwycają ruch, emocje i piękno otoczenia.",
     "composition": 3,
