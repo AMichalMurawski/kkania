@@ -41,12 +41,10 @@
     10. Order - done
     11. GalleryCategories - done
     12. Gallery - done
-    13. Contact
-    14. Terms
+    13. Terms
 
 # Layouts
     1. MainLayout - done
-    2. GalleryLayout
 
 # Pages
     1. Home - done
@@ -55,24 +53,24 @@
     4. Order - done
     5. Categories - done
     6. Gallery - done
-    7. Contact
+    7. Contact - done
     8. Terms
 
 # JS
     1. sendMail
-    2. loadGallery
-    3. loadOffers
+    2. loadGallery - done
+    3. loadOffers - done
 
 # Public
     1. Fonts - done ?
     2. Icons - done ?
     3. Images
-    4. Config - for corrections /////////////
+    4. Config - done ?
         - aboutMe - done
         - galleries - done
-        - offers - for corrections /////////////
+        - offers - done
         - routes - done
-        - siteInfo - done ?
+        - siteInfo - done
         - terms - done ?
         - topGallery - done
 
@@ -80,17 +78,8 @@
     1. sendMail
 
 # ToDo
-    ## Others
-        -
-    ## Elements
-        -
     ## Components
-        / CategoryItem 
-            - onClick - open gallery (name props)
-        / Contacts
-            - without text in media<480
         / GalleryList
             - logic for click on image - view modal with full size images
         / OfferItem
             - fix text-overflow
-            - add logic for buttons

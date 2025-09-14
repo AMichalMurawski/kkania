@@ -25,7 +25,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: 4em;
     padding-inline: 1em;
+}
+
+.menuWrapper > * {
+    margin-top: auto;
+}
+
+.buttonsWrapper {
+    margin: auto 1em 4em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .contactsWrapper {

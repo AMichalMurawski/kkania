@@ -2,11 +2,12 @@ import React, { PropsWithChildren } from "react";
 import styles from "./LinkTo.module.css";
 import { LinkToProps } from "./types";
 
-const LinkTo: React.FC<PropsWithChildren<LinkToProps>> = ({ children, href = '', darkStyle }) => {
+const LinkTo: React.FC<PropsWithChildren<LinkToProps>> = ({ children, href = '', ariaLabel, darkStyle }) => {
     return (
         <a
-            className={`${styles.linkTo} ${darkStyle ? styles.dark : styles.light}`}
             href={href}
+            aria-label={ariaLabel}
+            className={`${styles.linkTo} ${darkStyle ? styles.dark : styles.light}`}
         >{children}</a>
     )
 };

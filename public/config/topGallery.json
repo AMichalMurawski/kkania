@@ -1,44 +1,44 @@
 [
     {
-        "url": "/image2.png",
+        "url": "/image2.webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l1.png",
+        "url": "/l1.webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/p1.png",
+        "url": "/p1.webp",
         "alt": "",
         "orientation": "portrait"
     },{
-        "url": "/image2.png",
+        "url": "/image2.webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l2.png",
+        "url": "/l2.webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/p2.png",
+        "url": "/p2.webp",
         "alt": "",
         "orientation": "portrait"
     },{
-        "url": "/image3.png",
+        "url": "/image3.webp",
         "alt": "",
         "orientation": "portrait"
     },
     {
-        "url": "/l3.png",
+        "url": "/l3.webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l4.png",
+        "url": "/l4.webp",
         "alt": "",
         "orientation": "landscape"
     }

@@ -9,7 +9,11 @@ const Image: React.FC<ImageComponentProps> = ({url, alt="", orientation}) => {
             ${orientation === 'portrait' ? styles.portrait : null}
             ${orientation !== 'landscape' && orientation !== 'portrait' ? styles.parentSize : null}`}
         >
-            <img src={`/images/${url}`} alt={alt} />
+            <img
+                src={`/images/${url}`}
+                alt={alt}
+                loading="lazy"
+            />
         </div>
     );
 };

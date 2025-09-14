@@ -40,6 +40,7 @@
 
 .price {
     font-family: var(--font-numeric);
+    font-size-adjust: 0.47;
     font-size: 3em;
     font-weight: 900;
 }

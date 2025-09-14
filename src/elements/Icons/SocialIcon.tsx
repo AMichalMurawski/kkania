@@ -5,7 +5,7 @@ import { SocialIconProps } from "./types";
 
 const SocialIcon: React.FC<SocialIconProps> = ({ name, darkStyle, alt = '', href='' }) => {
     return (
-        <Link href={href} anotherSite>
+        <Link href={href} anotherSite ariaLabel={name}>
             <div className={`${styles.icon} ${darkStyle ? styles.dark : styles.light}`}>
                 <IconSVG name={name} size='2rem' alt={alt} />
             </div>

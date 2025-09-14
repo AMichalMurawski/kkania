@@ -23,17 +23,16 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
             style={{ flexDirection }}
         >
             {navRoutes.map((route: any) =>
-                <Link
-                    key={route.path}
-                    to={route.path}
-                    className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}
-                    style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
-                    onClick={handleClick}
-                >
-                    <li>
+                <li className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}>
+                    <Link
+                        key={route.path}
+                        to={route.path}
+                        style={flexDirection === 'column' ? { textAlign: 'center' } : {}}
+                        onClick={handleClick}
+                    >
                         {route.navbar}
-                    </li>
-                </Link>
+                    </Link>
+                </li>
             )}
         </ul>
     </nav>
