@@ -20,7 +20,7 @@ const TopOffers: React.FC<TopOffersProps> = ({darkStyle}) => {
         description: siteContent?.offers.value || [],
         link: {
             href: routes?.offers.path || "",
-            value: 'Sprawdź pozostałe oferty&nbsp;&nbsp;&nbsp;&gt;'
+            value: siteContent?.offers.button || ''
         }
     }
 

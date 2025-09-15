@@ -62,13 +62,15 @@
         "value": [
             "Każde zdjęcie, które tworzę, to zatrzymany moment pełen emocji i prawdziwych historii. Lubię łapać detale, spojrzenia i ulotne chwile, które często umykają w codziennym biegu.",
             "Moje kadry mają być pamiątką, do której będziesz wracać z uśmiechem i ciepłem w sercu."
-        ]
+        ],
+        "button": "Poznaj inne moje kadry&nbsp;&nbsp;&nbsp;&gt;"
     },
     "offers": {
         "title": "Moje propozycje",
         "value": [
             "Każda sesja to indywidualna historia - dopasowana do Ciebie, Twoich emocji i oczekiwań. Sprawdź, co mogę dla Ciebie sfotografować i wybierz coś dla siebie."
-        ]
+        ],
+        "button": "Sprawdź pozostałe oferty&nbsp;&nbsp;&nbsp;&gt;"
     },
     "contact": {
         "title": "Napisz do mnie",

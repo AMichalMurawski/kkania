@@ -1,14 +1,14 @@
 import React, { ReactNode } from "react";
 import { createDataContext } from "../DataProvider";
-import { AboutMeData, ContentData } from "../../utils";
+import { AboutMeData, ContentData, TopData } from "../../utils";
 
 interface SiteContentProps {
     aboutMe: {
         short: AboutMeData[];
         long: AboutMeData[];
     },
-    gallery: ContentData;
-    offers: ContentData;
+    gallery: TopData;
+    offers: TopData;
     contact: ContentData;
 };
 

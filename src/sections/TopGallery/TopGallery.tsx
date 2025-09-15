@@ -15,8 +15,8 @@ const TopGallery: React.FC = () => {
         title: siteContent?.gallery.title || '',
         description: siteContent?.gallery.value || [],
         link: {
-            href: routes?.categories.path || "",
-            value: "Poznaj inne moje kadry&nbsp;&nbsp;&nbsp;&gt;"
+            href: routes?.categories.path || '',
+            value: siteContent?.gallery.button || '',
         }
     }
 
