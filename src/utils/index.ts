@@ -1,4 +1,4 @@
-export * from "./types/aboutMe"
+export * from "./types/content";
 export * from "./types/gallery";
 export * from "./types/image";
 export * from "./types/offer";

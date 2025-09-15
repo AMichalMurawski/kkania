@@ -3,7 +3,7 @@ export { default as AppProvider } from "./AppProvider";
 export { ModalProvider, useModal } from "./ModalProvider";
 
 // config providers
-export { AboutMeProvider, useAboutMe } from "./ConfigProviders/AboutMeProvider";
+export { SiteContentProvider, useSiteContent } from "./ConfigProviders/SiteContentProvider";
 export { GalleriesProvider, useGalleries } from "./ConfigProviders/GalleriesProvider";
 export { OffersProvider, useOffers } from "./ConfigProviders/OffersProvider";
 export { RoutesProvider, useRoutes } from "./ConfigProviders/RoutesProvider";

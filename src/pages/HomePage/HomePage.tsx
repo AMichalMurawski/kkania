@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./HomePage.module.css";
-import { useAboutMe, useRoutes } from "../../context";
+import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();
-    const { data: aboutMe } = useAboutMe();
+    const { data: siteContent } = useSiteContent();
 
     return <>
         <Hero imageUrl={routes?.home.heroImage || ""} >
@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
                 </div>
             </div>
         </Hero>
-        <AboutMe content={aboutMe?.short || []} flexDirection={['column', 'row', 'row']} />
+        <AboutMe content={siteContent?.aboutMe.short || []} flexDirection={['column', 'row', 'row']} />
         <TopGallery />
         <TopOffers darkStyle />
         <ContactMe />

@@ -1,19 +1,21 @@
 import { ReactNode } from "react"
-import { GalleriesProvider, ModalProvider, OffersProvider, RoutesProvider, SiteInfoProvider } from "./";
+import { GalleriesProvider, ModalProvider, OffersProvider, RoutesProvider, SiteContentProvider, SiteInfoProvider } from "./";
 
 
 const AppProviders = ({ children }: { children: ReactNode }) => {
     return (
         <SiteInfoProvider>
-            <OffersProvider>
-                <RoutesProvider>
-                    <ModalProvider>
-                        <GalleriesProvider>
-                            {children}
-                        </GalleriesProvider>
-                    </ModalProvider>
-                </RoutesProvider>
-            </OffersProvider>
+            <SiteContentProvider>
+                <OffersProvider>
+                    <RoutesProvider>
+                        <ModalProvider>
+                            <GalleriesProvider>
+                                {children}
+                            </GalleriesProvider>
+                        </ModalProvider>
+                    </RoutesProvider>
+                </OffersProvider>
+            </SiteContentProvider>
         </SiteInfoProvider>
     );
 };

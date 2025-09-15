@@ -1,6 +1,6 @@
 import React, { ReactNode, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { AboutMeProvider, useRoutes } from "../context";
+import { useRoutes } from "../context";
 import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
 
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
@@ -17,11 +17,9 @@ const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
 
 const HomePageProvider = ({ children }: { children: ReactNode }) => {
     return (
-        <AboutMeProvider>
-            <TopGalleryProvider>
-                {children}
-            </TopGalleryProvider>
-        </AboutMeProvider>
+        <TopGalleryProvider>
+            {children}
+        </TopGalleryProvider>
     )
 };
 
@@ -35,7 +33,7 @@ const AppRoutes: React.FC = () => {
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<HomePageProvider><HomePage /></HomePageProvider>} />
-                    <Route path={routes.aboutMe.path} element={<AboutMeProvider><AboutMePage /></AboutMeProvider>} />
+                    <Route path={routes.aboutMe.path} element={<AboutMePage />} />
                     <Route path={routes.offers.path} element={<OffersPage />} />
                     <Route path={routes.contact.path} element={<ContactPage />} />
                     <Route path={routes.terms.path} element={<TermsPage />} />
