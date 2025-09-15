@@ -17,11 +17,9 @@ const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
 
 const HomePageProvider = ({ children }: { children: ReactNode }) => {
     return (
-        <AboutMeProvider>
-            <TopGalleryProvider>
-                {children}
-            </TopGalleryProvider>
-        </AboutMeProvider>
+        <TopGalleryProvider>
+            {children}
+        </TopGalleryProvider>
     )
 };
 
