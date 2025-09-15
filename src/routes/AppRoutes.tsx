@@ -1,6 +1,6 @@
 import React, { ReactNode, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import { AboutMeProvider, useRoutes } from "../context";
+import { useRoutes } from "../context";
 import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
 
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
@@ -33,7 +33,7 @@ const AppRoutes: React.FC = () => {
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<HomePageProvider><HomePage /></HomePageProvider>} />
-                    <Route path={routes.aboutMe.path} element={<AboutMeProvider><AboutMePage /></AboutMeProvider>} />
+                    <Route path={routes.aboutMe.path} element={<AboutMePage />} />
                     <Route path={routes.offers.path} element={<OffersPage />} />
                     <Route path={routes.contact.path} element={<ContactPage />} />
                     <Route path={routes.terms.path} element={<TermsPage />} />

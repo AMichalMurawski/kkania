@@ -31,10 +31,8 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 4em) / 2);
-    }
+    flex: 1;
+    max-width: 600px;
 }
 
 .content > * {
@@ -42,7 +40,6 @@
 }
 
 .form {
-    @media screen and (min-width: 1200px) {
-        flex-basis: calc((100% - 4em) / 2);
-    }
+    width: clamp(200px, 100%, 550px);
+    margin-left: auto;
 }

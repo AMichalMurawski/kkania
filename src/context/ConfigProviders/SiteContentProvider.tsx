@@ -9,6 +9,7 @@ interface SiteContentProps {
     },
     gallery: ContentData;
     offers: ContentData;
+    contact: ContentData;
 };
 
 const { Provider: BaseProvider, useData: useBaseData } = createDataContext<SiteContentProps>();

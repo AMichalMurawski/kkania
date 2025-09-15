@@ -69,5 +69,12 @@
         "value": [
             "Każda sesja to indywidualna historia - dopasowana do Ciebie, Twoich emocji i oczekiwań. Sprawdź, co mogę dla Ciebie sfotografować i wybierz coś dla siebie."
         ]
+    },
+    "contact": {
+        "title": "Napisz do mnie",
+        "value": [
+            "Jeżeli masz jakiekolwiek pytania napisz do mnie. Postaram się odpowiedzieć w ciągu 24 godzin.",
+            "Jeśli masz pilną sprawę jestem dostępna pod telefonem w godzinach Pon-Czw 9:00-18:00, Piąt-Sob 10:00-14:00 (chyba, że aktualnie odbywam sesję)."
+        ]
     }
 }
