@@ -1,7 +1,7 @@
 import React from "react";
 import { useRoutes } from "../../context";
 import { Categories, Hero } from "../../sections";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const CategoriesPage: React.FC = () => {
     const { data: routes } = useRoutes();

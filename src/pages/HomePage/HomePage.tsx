@@ -3,7 +3,7 @@ import styles from "./HomePage.module.css";
 import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();

@@ -2,7 +2,7 @@ import React from "react";
 import { useRoutes, useSiteContent } from "../../context";
 import { Hero, Offers, OffersDescription } from "../../sections";
 import { useScrollToHash } from "../../hooks";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const OffersPage: React.FC = () => {
     const { data: routes } = useRoutes();

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, Hero, TopOffers } from "../../sections";
 

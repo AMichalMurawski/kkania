@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, Order } from "../../sections";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useRoutes } from "../../context";
 
 const OrderPage: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactMe, Hero } from "../../sections";
 import { useRoutes } from "../../context";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const ContactPage: React.FC = () => {
     const { data: routes } = useRoutes();

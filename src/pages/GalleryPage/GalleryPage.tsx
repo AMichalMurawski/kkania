@@ -1,9 +1,8 @@
 import React from "react";
-import { useGalleries, useRoutes } from "../../context";
+import { useGalleries } from "../../context";
 import { Gallery, Hero } from "../../sections";
-import { GalleryProps } from "../../utils";
 import { useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const GalleryPage: React.FC = () => {
     const location = useLocation();
