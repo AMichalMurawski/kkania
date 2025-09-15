@@ -8,5 +8,6 @@ export { default as Hero } from "./Hero/Hero";
 export { default as Offers } from "./Offers/Offers";
 export { default as OffersDescription } from "./OffersDescription/OffersDescription";
 export { default as Order } from "./Order/Order";
+export { default as Terms } from "./Terms/Terms";
 export { default as TopGallery } from "./TopGallery/TopGallery";
 export { default as TopOffers } from "./TopOffers/TopOffers";

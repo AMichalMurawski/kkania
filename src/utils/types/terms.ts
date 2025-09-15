@@ -16,9 +16,10 @@ export interface TermsSection {
 
 export interface TermsProps {
     title: string;
+    siteName: string;
     lastUpdated: string;
     sections: TermsSection[];
-    contact: {
+    data: {
         email: string;
         phone: string;
         siteName: string;

@@ -1,0 +1,61 @@
+.section {
+    margin-inline: auto;
+    padding: 4em 1em;
+    width: clamp(320px, 100%, 1000px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 1.5em;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-inline: 2em;
+    }
+}
+
+.siteName {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.lastUpdated {
+    text-align: right;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.content * {
+    margin: 0;
+}
+
+.content h3 {
+    margin-bottom: 1em;
+}
+
+.content p,
+.content li {
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.number {
+    font-weight: 700;
+}
+
+.list {
+    list-style-type: lower-alpha;
+    padding-left: 1em;
+}
+
+.list li::marker {
+    font-weight: 700;
+}

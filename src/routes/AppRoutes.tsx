@@ -11,7 +11,7 @@ const GalleryPage = React.lazy(() => import("../pages/GalleryPage/GalleryPage"))
 const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
 const OffersPage = React.lazy(() => import("../pages/OffersPage/OffersPage"));
 const OrderPage = React.lazy(() => import("../pages/OrderPage/OrderPage"));
-const TermsPage = React.lazy(() => import("../pages/TermsPage"));
+const TermsPage = React.lazy(() => import("../pages/TermsPage/TermsPage"));
 
 const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
 
