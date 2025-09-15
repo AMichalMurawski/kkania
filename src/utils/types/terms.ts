@@ -27,5 +27,6 @@ export interface TermsProps {
         companyNip: string;
         siteUrl: string;
         formUrl: string;
+        updateDate: string;
     }
 }
