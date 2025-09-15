@@ -27,6 +27,7 @@
     "@types/he": "^1.2.3",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "@types/react-helmet": "^6.1.11",
     "@vitejs/plugin-react": "^4.3.1",
     "critical": "^7.2.1",
     "eslint": "^9.8.0",

@@ -3,6 +3,7 @@ import { useGalleries, useRoutes } from "../../context";
 import { Gallery, Hero } from "../../sections";
 import { GalleryProps } from "../../utils";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const GalleryPage: React.FC = () => {
     const location = useLocation();
@@ -23,6 +24,9 @@ const GalleryPage: React.FC = () => {
 
     return (
         <>
+            <Helmet>
+                <link rel="preload" as="image" href="/images/hero/hero-gallery.webp" />
+            </Helmet>
             <Hero imageUrl={galleries?.[galleryIndex].heroImage || ""} heroTitle={galleries?.[galleryIndex].title} />
             {galleries && <Gallery gallery={galleries[galleryIndex]} previous={previous} next={next}/>}
         </>

@@ -3,12 +3,16 @@ import styles from "./HomePage.module.css";
 import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
+import { Helmet } from "react-helmet";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();
     const { data: siteContent } = useSiteContent();
 
     return <>
+        <Helmet>
+            <link rel="preload" as="image" href="/images/hero/hero-home.webp" />
+        </Helmet>
         <Hero imageUrl={routes?.home.heroImage || ""} >
             <div className={styles.heroContent}>
                 <h2>Zachowaj najpiękniejsze wspomnienia</h2>
