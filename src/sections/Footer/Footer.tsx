@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { Link, Logo, SocialIcon } from "../../elements";
 import { Contacts } from "../../components";
-import { useSiteInfo } from "../../context";
+import { useRoutes, useSiteInfo } from "../../context";
 
 const Footer: React.FC = () => {
     const { data: siteInfo } = useSiteInfo();
+    const { data: routes } = useRoutes();
 
     return <footer className={styles.footer}>
         <div className={styles.footerConteiner}>
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className={styles.legal}>
                     <Link href="">Polityka Prywatności</Link>
-                    <Link href="">Regulamin</Link>
+                    <Link href={`${routes?.terms.path}`}>Regulamin</Link>
                     <Link href="">FAQ</Link>
                 </div>
                 <div className={styles.socialMedia}>

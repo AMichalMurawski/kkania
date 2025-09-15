@@ -1,10 +1,10 @@
 {
-  "title": "REGULAMIN STRONY INTERNETOWEJ",
-  "siteName": "[Nazwa Twojej Strony / Imię i nazwisko fotografa]",
-  "lastUpdated": "[wstaw datę]",
+  "title": "Regulamin strony internetowej",
+  "siteName": "[siteName]",
+  "lastUpdated": "[updateDate]",
   "sections": [
     {
-      "id": "",
+      "id": "1",
       "heading": "Definicje",
       "content": [
         {
@@ -21,12 +21,12 @@
       ]
     },
     {
-      "id": "1",
+      "id": "2",
       "heading": "Postanowienia ogólne",
       "content": [
         {
           "type": "paragraph",
-          "text": "Niniejszy regulamin określa zasady korzystania ze strony internetowej [siteUrl], prowadzonej przez [companyName], [companyAddress], [companyNIP]."
+          "text": "Niniejszy regulamin określa zasady korzystania ze strony internetowej [siteUrl], prowadzonej przez [companyName], adres: [companyAddress], NIP: [companyNIP]."
         },
         {
           "type": "paragraph",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "id": "2",
+      "id": "3",
       "heading": "Zakres usług",
       "content": [
         {
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": "4",
       "heading": "Rezerwacja i realizacja usług",
       "content": [
         {
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "id": "3a",
+      "id": "4a",
       "heading": "Sesje plenerowe i warunki pogodowe",
       "content": [
         {
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": "3b",
+      "id": "4b",
       "heading": "Odwoływanie i zmiana terminu sesji",
       "content": [
         {
@@ -127,7 +127,7 @@
       ]
     },
     {
-      "id": "4",
+      "id": "5",
       "heading": "Prawa autorskie",
       "content": [
         {
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "id": "4a",
+      "id": "5a",
       "heading": "Zgoda na publikację wizerunku",
       "content": [
         {
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "id": "4b",
+      "id": "5b",
       "heading": "Akceptacja stylu fotografa",
       "content": [
         {
@@ -179,16 +179,235 @@
           "text": "Fotograf nie wykonuje indywidualnych przeróbek graficznych wykraczających poza standardowy styl prezentowany w portfolio, chyba że zostało to wcześniej uzgodnione."
         }
       ]
+    },
+    {
+      "id": "5c",
+      "heading": "Zakres przekazywanych zdjęć",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Klient otrzymuje wyłącznie zdjęcia poddane autorskiej obróbce graficznej, w ilości określonej w wybranej ofercie."
+        },
+        {
+          "type": "paragraph",
+          "text": "Klient otrzymuje dokładnie taką liczbę zdjęć, jaką wykupił. Nie ma możliwości otrzymania dodatkowych ujęć (obrobionych ani nieobrobionych) bezpłatnie."
+        },
+        {
+          "type": "paragraph",
+          "text": "Nie ma możliwości zakupu zdjęć nieobrobionych (RAW ani JPG). Fotograf udostępnia wyłącznie zdjęcia gotowe, obrobione zgodnie z jego stylem."
+        },
+        {
+          "type": "paragraph",
+          "text": "Istnieje możliwość dokupienia dodatkowych zdjęć z sesji - według obowiązującego cennika."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cena za dodatkowe zdjęcia wynosi 40 zł / 50 zł / 60 zł za sztukę - w zależności od rodzaju sesji i ustaleń indywidualnych."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dodatkowe zdjęcia również podlegają pełnej obróbce graficznej."
+        }
+      ]
+    },
+    {
+      "id": "5d",
+      "heading": "Terminy realizacji zdjęć",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Wstępna galeria zdjęć do wyboru (jeśli dotyczy) udostępniana jest klientowi w terminie do 7 dni roboczych od dnia wykonania sesji."
+        },
+        {
+          "type": "paragraph",
+          "text": "Klient zobowiązany jest do dokonania wyboru zdjęć do obróbki w terminie do 7 dni od otrzymania galerii. Opóźnienie może wpłynąć na termin realizacji usługi."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gotowe, obrobione zdjęcia przekazywane są klientowi w terminie do 15 dni roboczych od daty dokonania wyboru zdjęć."
+        },
+        {
+          "type": "paragraph",
+          "text": "Termin realizacji może ulec wydłużeniu w przypadku wystąpienia siły wyższej lub opóźnienia z winy klienta (np. brak wyboru zdjęć w terminie)."
+        }
+      ]
+    },
+    {
+      "id": "5e",
+      "heading": "Warunki rozpoczęcia obróbki zdjęć",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Fotograf rozpoczyna obróbkę zdjęć dopiero po zaksięgowaniu pełnej płatności za sesję zdjęciową."
+        },
+        {
+          "type": "paragraph",
+          "text": "W przypadku nieuregulowania płatności w ustalonym terminie, realizacja usługi może zostać wstrzymana lub opóźniona."
+        }
+      ]
+    },
+    {
+      "id": "5f",
+      "heading": "Odpowiedzialność za przygotowanie do sesji",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Klient jest zobowiązany do odpowiedniego przygotowania się do sesji fotograficznej, zgodnie z zaleceniami przekazanymi przez fotografa."
+        },
+        {
+          "type": "paragraph",
+          "text": "Odpowiednie przygotowanie obejmuje w szczególności: zadbanie o strój dopasowany do charakteru sesji, ułożenie włosów, makijaż (jeśli wymagany), schludny wygląd oraz punktualne przybycie na miejsce sesji."
+        },
+        {
+          "type": "paragraph",
+          "text": "W przypadku sesji dziecięcych klient ponosi odpowiedzialność za przygotowanie dziecka - w tym za jego nastawienie, ubranie oraz ewentualne rzeczy potrzebne podczas zdjęć (np. ulubione zabawki, przekąski, pieluchy itp.)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf nie ponosi odpowiedzialności za efekt końcowy zdjęć, jeśli został on pogorszony z powodu niewłaściwego przygotowania klienta lub osób uczestniczących w sesji."
+        },
+        {
+          "type": "paragraph",
+          "text": "W przypadku rażących zaniedbań klienta lub niestawienia się w ustalonym czasie, fotograf może odmówić wykonania sesji lub zaproponować jej przeniesienie - za dodatkową opłatą."
+        }
+      ]
+    },
+    {
+      "id": "5g",
+      "heading": "Zasady ingerencji w zdjęcia i styl pracy fotografa",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Klient nie ma prawa dokonywać jakichkolwiek zmian w przekazanych zdjęciach, w tym m.in. nakładania filtrów, zmiany kolorystyki (np. konwersji do czerni i bieli), przycinania czy przerabiania zdjęć."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf wykonuje zdjęcia zgodnie ze swoim stylem artystycznym oraz przyjętym sposobem pracy. Klient nie może ingerować w sposób realizacji sesji, ani narzucać innych metod pracy lub obróbki."
+        }
+      ]
+    },
+    {
+      "id": "5h",
+      "heading": "Usługi graficzne wykraczające poza standardową obróbkę",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Prośby dotyczące zaawansowanych zmian graficznych, takich jak: modyfikacja sylwetki, znaczące zmiany wyglądu (np. przedłużenie włosów, usunięcie wielu kilogramów), rozbudowana ingerencja w tło lub szczegóły obrazu, nie są częścią usługi fotograficznej i nie są realizowane."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fotograf wykonuje wyłącznie autorską obróbkę fotograficzną zgodną z prezentowanym stylem."
+        },
+        {
+          "type": "paragraph",
+          "text": "Klient, decydując się na sesję, akceptuje zakres standardowej obróbki oraz przyjmuje do wiadomości, że usługi graficzne nie są dostępne ani odpłatnie, ani nieodpłatnie."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "heading": "Odpowiedzialność",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Właściciel strony dokłada wszelkich starań, aby informacje na stronie były aktualne i zgodne z rzeczywistością, jednak nie ponosi odpowiedzialności za skutki ich wykorzystania przez użytkowników."
+        }
+      ]
+    },
+    {
+      "id": "6a",
+      "heading": "Odpowiedzialność za sprzęt fotograficzny",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Klient oraz osoby towarzyszące podczas sesji zobowiązani są do zachowania ostrożności i szacunku wobec sprzętu fotograficznego oraz wyposażenia studia/pleneru."
+        },
+        {
+          "type": "paragraph",
+          "text": "W przypadku celowego lub rażąco nieostrożnego uszkodzenia sprzętu fotograficznego przez klienta lub osoby mu towarzyszące, klient ponosi pełną odpowiedzialność finansową za powstałe szkody."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wartość odszkodowania ustalana jest na podstawie kosztów naprawy lub wymiany sprzętu na nowy, zgodnie z obowiązującymi cenami rynkowymi."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "heading": "Dane kontaktowe",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "W razie pytań lub rezerwacji prosimy o kontakt:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "E-mail: [email]",
+            "Telefon: [phone]",
+            "Formularz kontaktowy: [formUrl]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "heading": "Dane osobowe i zgoda na przetwarzanie",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Osoby zainteresowane wykonaniem sesji zdjęciowej zobowiązane są do przekazania Fotografowi swoich danych kontaktowych: imienia i nazwiska, adresu e-mail oraz numeru telefonu."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dane te są niezbędne do świadczenia usług fotograficznych, w tym: kontaktu z klientem, przygotowania galerii online, ustalenia szczegółów sesji oraz przesłania materiałów."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dane nie są przekazywane osobom trzecim ani podmiotom zewnętrznym."
+        },
+        {
+          "type": "paragraph",
+          "text": "Przekazując swoje dane, klient wyraża zgodę na ich przetwarzanie przez fotografa wyłącznie w celach niezbędnych do realizacji zamówionej usługi, zgodnie z przepisami RODO."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dane osobowe Klienta przechowywane są wyłącznie przez okres konieczny do wykonania usługi i przekazania zdjęć. Po upływie maksymalnie 6 miesięcy od zakończenia realizacji usługi dane te zostaną trwale usunięte lub zanonimizowane."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "heading": "Postanowienia końcowe",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Właściciel zastrzega sobie prawo do wprowadzania zmian w regulaminie."
+        },
+        {
+          "type": "paragraph",
+          "text": "Zmieniony regulamin będzie publikowany na stronie z odpowiednim oznaczeniem daty."
+        },
+        {
+          "type": "paragraph",
+          "text": "W sprawach nieuregulowanych niniejszym regulaminem zastosowanie mają przepisy prawa polskiego."
+        },
+        {
+          "type": "paragraph",
+          "text": "<strong>Umówienie się na sesję zdjęciową oznacza zapoznanie się z niniejszym regulaminem oraz jego pełną akceptację przez klienta.</strong>"
+        }
+      ]
     }
   ],
-  "contact": {
+  "data": {
     "email": "kkania@kkania.pl",
     "phone": "(+48) 123 456 789",
     "siteName": "Katarzyna Kania fotografia",
     "companyName": "kkania",
     "companyAddress": "ul. kkania 1/2, kkania 01-234",
-    "companyNip": "0123456789",
+    "companyNIP": "0123456789",
     "siteUrl": "www.KatarzynaKania.fotografia.pl",
-    "formUrl": "www.KatarzynaKania.fotografa.pl/rezerwacja"
+    "formUrl": "www.KatarzynaKania.fotografa.pl/rezerwacja",
+    "updateDate": "15.09.2025"
   }
 }
