@@ -4,6 +4,16 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./styles/fonts.css";
 import "./styles/index.css";
+import { registerSW } from 'virtual:pwa-register';
+
+registerSW({
+  onNeedRefresh() {
+    console.log("🔄 Nowa wersja dostępna");
+  },
+  onOfflineReady() {
+    console.log("✅ Aplikacja offline ready");
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -12,26 +22,3 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/registerSW.js')
-      .then((registration) => {
-        console.log('Service Worker registered:', registration);
-        
-        registration.onupdatefound = () => {
-          const newWorker = registration.installing;
-          if (newWorker) {
-            newWorker.onstatechange = () => {
-              if (newWorker.state === 'installed') {
-                console.log('New Service Worker installed.');
-              }
-            };
-          }
-        };
-      })
-      .catch((error) => {
-        console.error('Service Worker registration failed:', error);
-      });
-  });
-}
