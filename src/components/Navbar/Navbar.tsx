@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => 
             style={{ flexDirection }}
         >
             {navRoutes.map((route: any) =>
-                <li className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}>
+                <li key={route.navbar} className={`${styles.item} ${currentPath === route.path ? styles.active : null}`}>
                     <Link
                         key={route.path}
                         to={route.path}

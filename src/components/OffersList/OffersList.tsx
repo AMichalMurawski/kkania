@@ -12,7 +12,7 @@ const OffersList: React.FC<OffersListProps> = ({ offers }) => {
     return (
         <div className={styles.offersList}>
             {offers?.map(offer =>
-                <OfferItem key={offer.top} offer={offer} active={offer.name === plan} />
+                <OfferItem key={offer.name} offer={offer} active={offer.name === plan} />
             )}
         </div>
     );
