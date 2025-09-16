@@ -1,18 +1,30 @@
 import React from "react";
 import styles from "./OfferDetails.module.css";
 import { IconSVG } from "../../elements";
+import { ContentProps } from "../../utils";
 
-const OfferDetails: React.FC<{details: string[]}> = ({details}) => {
+const OfferDetails: React.FC<ContentProps> = ({ type, text }) => {
+    if (type === 'list') {
+        return (
+            <ul className={styles.list}>
+                {text.map((item, i) =>
+                    <li key={i} className={styles.listItem}>
+                        <IconSVG name="image" alt="ikona zdjęcia" size='1em' />
+                        <p>{item}</p>
+                    </li>
+                )}
+            </ul>
+        );
+    };
+
     return (
-        <ul className={styles.list}>
-            {details.map((detail, i) =>
-                <li key={i} className={styles.listItem}>
-                    <IconSVG name="image" alt="ikona zdjęcia" size='1em' />
-                    <p>{detail}</p>
-                </li>
+        <div>
+            {text.map((item, i) =>
+                <p key={i}>{item}</p>
             )}
-        </ul>
-    );
+        </div>
+    )
+
 };
 
 export default OfferDetails;
