@@ -3,6 +3,7 @@ import styles from "./GalleryList.module.css";
 import { GalleryListProps } from "./types";
 import { Image } from "../../elements";
 import { ImageProps } from "../../utils/types/image";
+import { useModal } from "../../context";
 
 interface PositionedImage extends ImageProps {
   colStart: number;
@@ -13,6 +14,7 @@ interface PositionedImage extends ImageProps {
 const GalleryList: React.FC<GalleryListProps> = ({images}) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [columns, setColumns] = useState(1);
+    const { open, setActiveImageIndex } = useModal();
 
     useEffect(() => {
         const updateColumns = () => {
@@ -108,6 +110,10 @@ const GalleryList: React.FC<GalleryListProps> = ({images}) => {
                         : { aspectRatio: `${image.orientation === 'landscape' ? '3 / 2' : '2 / 3'}`}
                     }
                     className={styles.imageWrapper}
+                    onClick={() => {
+                        setActiveImageIndex(i);
+                        open('ImageModal');
+                    }}
                 >
                     <Image
                         url={image.url}

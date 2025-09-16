@@ -11,19 +11,16 @@ const Hamburger: React.FC<HamburgerProps> = ({darkStyle}) => {
     useEffect(() => {
         if (width >= 840) {
             close("MenuMobile");
-            document.body.style.overflow = "auto";
         };
     }, [width])
 
     const handleClick = () => {
         if (modals.MenuMobile) {
             close('MenuMobile')
-            document.body.style.overflow = "auto";
             return
         }
 
         open('MenuMobile')
-        document.body.style.overflow = "hidden";
     }
     
     return (

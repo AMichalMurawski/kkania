@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode } from "react";
 
 type ModalsState = Record<string, boolean>;
 
@@ -7,6 +7,8 @@ type ModalContextType = {
   open: (name: string) => void;
   close: (name: string) => void;
   toggle: (name: string) => void;
+  activeImageIndex: number;
+  setActiveImageIndex: (index: number) => void;
 };
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
@@ -17,23 +19,32 @@ type ModalProviderProps = {
 };
 
 const initialModals: ModalsState = {
-    MenuModal: false
+  MenuModal: false,
+  ImageModal: false,
 }
 
 export const ModalProvider = ({ children }: ModalProviderProps) => {
-    const [modals, setModals] = useState<ModalsState>(initialModals);
+  const [modals, setModals] = useState<ModalsState>(initialModals);
+  const [activeImageIndex, setActiveImageIndex] = useState<number>(0);
 
-  const open = (name: string) =>
+  const open = (name: string) => {
+    document.body.style.overflow = "hidden";
     setModals((prev) => ({ ...prev, [name]: true }));
+  }
 
-  const close = (name: string) =>
+  const close = (name: string) => {
+    document.body.style.overflow = "auto";
     setModals((prev) => ({ ...prev, [name]: false }));
+  }
 
-  const toggle = (name: string) =>
+  const toggle = (name: string) => {
+    if (modals[name]) document.body.style.overflow = "auto";
+    if (!modals[name]) document.body.style.overflow = "hidden";
     setModals((prev) => ({ ...prev, [name]: !prev[name] }));
+  }
 
   return (
-    <ModalContext.Provider value={{ modals, open, close, toggle }}>
+    <ModalContext.Provider value={{ modals, open, close, toggle,activeImageIndex, setActiveImageIndex }}>
       {children}
     </ModalContext.Provider>
   );

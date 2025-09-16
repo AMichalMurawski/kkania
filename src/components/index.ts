@@ -3,6 +3,7 @@ export { default as ContactForm } from "./Forms/ContactForm/ContactForm";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as GalleryList } from "./GalleryList/GalleryList";
 export { default as MobileMenu } from "./MobileMenu/MobileMenu";
+export { default as ModalImages } from "./Modals/ModalImages/ModalImages";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as OfferDescription } from "./OfferDescription/OfferDescription";
 export { default as OfferDetails } from "./OfferDetails/OfferDetails";

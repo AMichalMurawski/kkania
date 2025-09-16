@@ -4,6 +4,7 @@ import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
 import { Helmet } from "react-helmet-async";
+import { ModalImages } from "../../components";
 
 const HomePage: React.FC = () => {
     const { data: routes } = useRoutes();

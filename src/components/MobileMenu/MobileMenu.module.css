@@ -27,6 +27,7 @@
     align-items: start;
     gap: 4em;
     padding-inline: 1em;
+    margin-top: 110px;
 }
 
 .menuWrapper > * {
