@@ -3,6 +3,7 @@ import { useGalleries } from "../../context";
 import { Gallery, Hero } from "../../sections";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ModalImages } from "../../components";
 
 const GalleryPage: React.FC = () => {
     const location = useLocation();
@@ -27,7 +28,11 @@ const GalleryPage: React.FC = () => {
                 <link rel="preload" as="image" href="/images/hero/hero-gallery.webp" />
             </Helmet>
             <Hero imageUrl={galleries?.[galleryIndex].heroImage || ""} heroTitle={galleries?.[galleryIndex].title} />
-            {galleries && <Gallery gallery={galleries[galleryIndex]} previous={previous} next={next}/>}
+            {galleries &&
+                <>
+                    <Gallery gallery={galleries[galleryIndex]} previous={previous} next={next} />
+                    <ModalImages images={galleries[galleryIndex].images} />
+                </>}
         </>
     )
 };

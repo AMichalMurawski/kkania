@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./TopGallery.module.css";
 import { useTopGallery } from "../../context/ConfigProviders/TopGalleryProvider";
-import { GalleryList, TopSection } from "../../components";
-import { LinkTo } from "../../elements";
+import { GalleryList, ModalImages, TopSection } from "../../components";
 import { useRoutes, useSiteContent } from "../../context";
 import { TopSectionProps } from "../../utils";
 
@@ -21,11 +20,14 @@ const TopGallery: React.FC = () => {
     }
 
     return (
-        <section className={styles.topGalleryConteiner}>
-            <TopSection {...galleryData}>
-                <GalleryList images={gallery || []} />
-            </TopSection>
-        </section>
+        <>
+            <section className={styles.topGalleryConteiner}>
+                <TopSection {...galleryData}>
+                    <GalleryList images={gallery || []} />
+                </TopSection>
+            </section>
+            <ModalImages images={gallery || []} />
+        </>
     );
 };
 
