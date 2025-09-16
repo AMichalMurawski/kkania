@@ -10,9 +10,9 @@ const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, darkStyle}) =
             <p>{offer?.description}</p>
             <p className={styles.price}>{offer?.price} zł</p>
             <p className={styles.listTitle}>Co obejmuje:</p>
-            <OfferDetails details={offer?.details || []}/>
+            <OfferDetails type={offer?.details.type || "list"} text={offer?.details.text || []} />
             <p className={styles.listTitle}>Dlaczego warto?</p>
-            <OfferDetails details={offer?.whyChoose || []}/>
+            <OfferDetails type={offer?.whyChoose.type || "list"} text={offer?.whyChoose.text || []} />
         </div>
     );
 };

@@ -14,7 +14,7 @@ const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {
             <p className={styles.description}>{offer.description}</p>
             <p className={styles.price}>{offer.price} zł</p>
             <Button darkStyle view="full" linkTo={`${routes?.offers.path}?plan=${offer.name}#offersDescription` || ""}>Sprawdź szczegóły</Button>
-            <OfferDetails details={offer.details} />
+            <OfferDetails type={offer.details.type} text={offer.details.text || []} />
             <Button view="full" linkTo={`${routes?.order.path}?plan=${offer.name}` || ""}>Zapytaj o termin</Button>
         </div>
     );

@@ -7,19 +7,25 @@
       "Naturalne, ciepłe kadry pełne emocji - uchwycone w Waszym codziennym rytmie. Sesja rodzinna pozwala zachować wyjątkowe wspomnienia z czasu spędzonego razem. Starannie dobrane kadry oddają bliskość i autentyczne emocje, tworząc pamiątkę na lata.",
       "Podczas sesji nie musisz się martwić o pozowanie - zależy mi na tym, aby zdjęcia były naturalne i pełne życia. Podpowiem Wam, jak ustawić się w świetle, zaproponuję proste aktywności, które wywołają uśmiech i spontaniczne reakcje."
     ],
-    "price": 750,
-    "details": [
-      "1,5 godziny zdjęć w plenerze",
-      "12 obrobionych zdjęć w galerii online + 12 odbitek w formacie 15x21 cm",
-      "możliwość dokupienia dodatkowych ujęć",
-      "prywatny dostęp do galerii dla całej rodziny"
-    ],
-    "whyChoose": [
-      "Zatrzymasz ulotne chwile dzieciństwa i bliskości rodzinnej",
-      "Naturalne, szczere emocje zamiast sztucznego pozowania",
-      "Pamiątka na lata, do której będziecie wracać z uśmiechem",
-      "Zdjęcia idealne do rodzinnego albumu lub na ścianę"
-    ]
+    "price": 600,
+    "details": {
+      "type": "list",
+      "text": [
+        "1,5 godziny zdjęć w ustalonej wspólnie lokalizacji",
+        "12 obrobionych zdjęć w galerii online + 12 odbitek w formacie 15x21 cm",
+        "możliwość dokupienia dodatkowych ujęć",
+        "prywatny dostęp do galerii dla całej rodziny"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "Zatrzymasz ulotne chwile dzieciństwa i bliskości rodzinnej",
+        "Naturalne, szczere emocje zamiast sztucznego pozowania",
+        "Pamiątka na lata, do której będziecie wracać z uśmiechem",
+        "Zdjęcia idealne do rodzinnego albumu lub na ścianę"
+      ]
+    }
   },
   {
     "top": 2,
@@ -29,20 +35,25 @@
       "Zakochani wyglądają najpiękniej właśnie wtedy, gdy są sobą - gdy trzymają się za ręce, śmieją się do siebie, opowiadają wspólne historie. Sesja plenerowa dla par to doskonały sposób, aby uchwycić Waszą więź i uczucia w wyjątkowej, romantycznej oprawie natury lub miejskiego klimatu.",
       "To nie jest tylko sesja zdjęciowa - to czas spędzony razem, pełen bliskości, rozmów i wspólnych przygód. Dzięki moim wskazówkom nie musicie się martwić, że nie wiecie jak pozować. Będziemy spacerować, śmiać się i cieszyć chwilą, a ja uchwycę to, co w Was najpiękniejsze - prawdziwe emocje."
     ],
-    "price": 700,
-    "details": [
-      "1,5 godziny zdjęć w wybranej lokalizacji",
-      "10 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 10 odbitek w formacie 15x21 cm",
-      "możliwość dokupienia dodatkowych ujęć",
-      "prywatną galerię online do wyboru i pobrania",
-      "możliwość zamówienia eleganckiego fotoalbumu - za dodatkową opłatą"
-    ],
-    "whyChoose": [
-      "Wspaniała pamiątka przed ślubem lub rocznicą",
-      "Zdjęcia pełne miłości i naturalnych emocji",
-      "Sesja, którą można podarować jako prezent drugiej osobie",
-      "Idealny materiał do zaproszeń ślubnych lub dekoracji weselnych"
-    ]
+    "price": 500,
+    "details": {
+      "type": "list",
+      "text": [
+        "1,5 godziny zdjęć w ustalonej wspólnie lokalizacji",
+        "10 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 10 odbitek w formacie 15x21 cm",
+        "możliwość dokupienia dodatkowych ujęć",
+        "prywatną galerię online do wyboru i pobrania"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "Wspaniała pamiątka przed ślubem lub rocznicą",
+        "Zdjęcia pełne miłości i naturalnych emocji",
+        "Sesja, którą można podarować jako prezent drugiej osobie",
+        "Idealny materiał do zaproszeń ślubnych lub dekoracji weselnych"
+      ]
+    }
   },
   {
     "top": 3,
@@ -55,20 +66,25 @@
       "Zdjęcia z takiej sesji możesz wykorzystać na wiele sposobów - jako artystyczną pamiątkę, profesjonalny portret do CV czy LinkedIn, piękne fotografie do mediów społecznościowych, albo po prostu prezent dla siebie lub bliskiej osoby."
     ],
     "price": 550,
-    "details": [
-      "1  godzina zdjęć w plenerze",
-      "8 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 8 odbitek w formacie 15x21 cm",
-      "prywatną galerię online z możliwością wygodnego pobrania",
-      "wskazówki dotyczące stylizacji, makijażu i przygotowania do sesji",
-      "możliwość zamówienia dodatkowych wydruków, fotoobrazów i albumów"
-    ],
-    "whyChoose": [
-      "Zyskasz profesjonalne, piękne zdjęcia, które podkreślą Twoją osobowość",
-      "Poczujesz się pewniej przed obiektywem i odkryjesz swój najlepszy wizerunek",
-      "Otrzymasz fotografie zarówno w wersji cyfrowej, jak i odbitki w wysokiej jakości",
-      "Będziesz mieć pamiątkę, do której z przyjemnością będziesz wracać latami",
-      "Zdjęcia sprawdzą się zarówno jako prywatna pamiątka, jak i profesjonalny wizerunek"
-    ]
+    "details": {
+      "type": "list",
+      "text": [
+        "1  godzina zdjęć w ustalonej wspólnie lokalizacji",
+        "8 profesjonalnie obrobionych zdjęć w wersji elektronicznej + 8 odbitek w formacie 15x21 cm",
+        "prywatną galerię online z możliwością wygodnego pobrania",
+        "wskazówki dotyczące stylizacji, makijażu i przygotowania do sesji"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "Zyskasz profesjonalne, piękne zdjęcia, które podkreślą Twoją osobowość",
+        "Poczujesz się pewniej przed obiektywem i odkryjesz swój najlepszy wizerunek",
+        "Otrzymasz fotografie zarówno w wersji cyfrowej, jak i odbitki w wysokiej jakości",
+        "Będziesz mieć pamiątkę, do której z przyjemnością będziesz wracać latami",
+        "Zdjęcia sprawdzą się zarówno jako prywatna pamiątka, jak i profesjonalny wizerunek"
+      ]
+    }
   },
   {
     "top": 4,
@@ -81,16 +97,22 @@
       "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
     ],
     "price": 500,
-    "details": [
-      "Reportaż z kościoła",
-      "Sesja około 1 godziny podczas przyjęcia",
-      "Około 50 zdjęć w wersji cyfrowej",
-      "Profesjonalna obróbka zdjęć",
-      "Galeria online ze zdjęciami"
-    ],
-    "whyChoose": [
-      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
-    ]
+    "details": {
+      "type": "list",
+      "text": [
+        "Reportaż z kościoła",
+        "Sesja około 1 godziny podczas przyjęcia",
+        "Około 50 zdjęć w wersji cyfrowej",
+        "Profesjonalna obróbka zdjęć",
+        "Galeria online ze zdjęciami"
+      ]
+    },
+    "whyChoose": {
+      "type": "paragraph",
+      "text": [
+        "Chrzest to moment, który przemija w mgnieniu oka, ale emocje i wzruszenia zostają w sercu na całe życie. Fotografie sprawiają, że te chwile nie giną w pamięci - stają się mostem do wspomnień, które możecie przeżywać na nowo, za każdym razem sięgając po album. Każdy uśmiech dziecka, czuły gest rodzica czy duma wypisana na twarzach dziadków - to drobiazgi, które tworzą Waszą niepowtarzalną historię rodzinną. Dzięki zdjęciom nie tylko zatrzymacie ulotne chwile, ale też podarujecie sobie i najbliższym bezcenną pamiątkę, do której będziecie wracać przez wiele lat."
+      ]
+    }
   },
   {
     "name": "chrzest-wariant-2",
@@ -102,16 +124,22 @@
       "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
     ],
     "price": 800,
-    "details": [
-      "Reportaż z kościoła",
-      "2 godziny fotografowania podczas przyjęcia",
-      "Około 80 zdjęć w wersji cyfrowej",
-      "Profesjonalna obróbka zdjęć",
-      "Galeria online ze zdjęciami"
-    ],
-    "whyChoose": [
-      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
-    ]
+    "details": {
+      "type": "list",
+      "text": [
+        "Reportaż z kościoła",
+        "2 godziny fotografowania podczas przyjęcia",
+        "Około 80 zdjęć w wersji cyfrowej",
+        "Profesjonalna obróbka zdjęć",
+        "Galeria online ze zdjęciami"
+      ]
+    },
+    "whyChoose": {
+      "type": "paragraph",
+      "text": [
+        "Chrzest to moment, który przemija w mgnieniu oka, ale emocje i wzruszenia zostają w sercu na całe życie. Fotografie sprawiają, że te chwile nie giną w pamięci - stają się mostem do wspomnień, które możecie przeżywać na nowo, za każdym razem sięgając po album. Każdy uśmiech dziecka, czuły gest rodzica czy duma wypisana na twarzach dziadków - to drobiazgi, które tworzą Waszą niepowtarzalną historię rodzinną. Dzięki zdjęciom nie tylko zatrzymacie ulotne chwile, ale też podarujecie sobie i najbliższym bezcenną pamiątkę, do której będziecie wracać przez wiele lat."
+      ]
+    }
   },
   {
     "name": "chrzest-wariant-3",
@@ -123,17 +151,23 @@
       "Podczas sesji dbam o każdy detal - od naturalnych przygotowań, przez wzruszające momenty w kościele, po radosne chwile na przyjęciu. Każde zdjęcie jest starannie komponowane i profesjonalnie obrobione, abyście mogli cieszyć się nimi przez lata i przekazywać kolejnym pokoleniom."
     ],
     "price": 1200,
-    "details": [
-      "Przygotowania dziecka i rodziny",
-      "Reportaż z kościoła",
-      "2 godziny fotografowania podczas przyjęcia",
-      "Około 100 zdjęć w wersji cyfrowej",
-      "Profesjonalna obróbka zdjęć",
-      "Galeria online ze zdjęciami"
-    ],
-    "whyChoose": [
-      "Chrzest to moment, który przemija w mgnieniu oka, a emocje pozostają w sercu na zawsze. Fotografie są nie tylko zapisem wydarzeń, ale też mostem do wspomnień, które możecie przeżywać raz jeszcze. Każde zdjęcie pozwala zatrzymać ulotne chwile - uśmiechy, gesty i emocje - które tworzą Waszą wyjątkową historię rodzinną."
-    ]
+    "details": {
+      "type": "list",
+      "text": [
+        "Przygotowania dziecka i rodziny",
+        "Reportaż z kościoła",
+        "2 godziny fotografowania podczas przyjęcia",
+        "Około 100 zdjęć w wersji cyfrowej",
+        "Profesjonalna obróbka zdjęć",
+        "Galeria online ze zdjęciami"
+      ]
+    },
+    "whyChoose": {
+      "type": "paragraph",
+      "text": [
+        "Chrzest to moment, który przemija w mgnieniu oka, ale emocje i wzruszenia zostają w sercu na całe życie. Fotografie sprawiają, że te chwile nie giną w pamięci - stają się mostem do wspomnień, które możecie przeżywać na nowo, za każdym razem sięgając po album. Każdy uśmiech dziecka, czuły gest rodzica czy duma wypisana na twarzach dziadków - to drobiazgi, które tworzą Waszą niepowtarzalną historię rodzinną. Dzięki zdjęciom nie tylko zatrzymacie ulotne chwile, ale też podarujecie sobie i najbliższym bezcenną pamiątkę, do której będziecie wracać przez wiele lat."
+      ]
+    }
   },
   {
     "name": "studio-wariant-1",
@@ -142,21 +176,25 @@
       "Doskonały wybór dla osób, które chcą w szybki i przyjemny sposób uzyskać kilka profesjonalnych portretów. Idealny na pierwszą sesję, prezent dla bliskiej osoby lub jako uzupełnienie portfolio.",
       "Chcesz spróbować swoich sił przed obiektywem lub potrzebujesz kilku profesjonalnych kadrów w krótkim czasie? Pakiet MINI to idealny wybór na start. W pół godziny stworzymy serię ujęć, które będą świetną pamiątką, a przy okazji poczujesz, jak wygląda praca w studiu fotograficznym."
       ],
-    "price": 0,
-    "details": [
-      "30 minut sesji studyjnej",
-      "1 stylizacja",
-      "5 profesjonalnie obrobionych zdjęć",
-      "5 odbitek w formacie 15x21 cm",
-      "zdjęcia w wersji elektronicznej (do ponownego druku)",
-      "dodatkowe zdjęcie - 50 zł",
-      "wysyłka odbitek paczkomatem - 20 zł"
-    ],
-    "whyChoose": [
-      "krótki i bezstresowy czas sesji - idealny dla osób początkujących",
-      "możliwość uzyskania naturalnych i profesjonalnych portretów",
-      "gotowe odbitki - nie musisz martwić się o druk"
-    ]
+    "price": 400,
+    "details": {
+      "type": "list",
+      "text": [
+        "30 minut sesji studyjnej",
+        "1 stylizacja",
+        "5 profesjonalnie obrobionych zdjęć",
+        "5 odbitek w formacie 15x21 cm",
+        "zdjęcia w wersji elektronicznej (do ponownego druku)"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "krótki i bezstresowy czas sesji - idealny dla osób początkujących",
+        "możliwość uzyskania naturalnych i profesjonalnych portretów",
+        "pamiątkę, do której z przyjemnością będziesz wracać przez lata"
+      ]
+    }
   },
   {
     "name": "studio-wariant-2",
@@ -164,21 +202,25 @@
     "description": [
         "Najczęściej wybierany przez klientów! Idealny kompromis między czasem trwania sesji a liczbą zdjęć. Masz możliwość zmiany stylizacji i większego zróżnicowania kadrów, dzięki czemu sesja będzie bardziej urozmaicona. To świetna propozycja zarówno dla osób prywatnych, jak i biznesowych."
       ],
-    "price": 0,
-    "details": [
-      "60 minut sesji studyjnej",
-      "2-3 stylizacje",
-      "10 profesjonalnie obrobionych zdjęć",
-      "10 odbitek w formacie 15x21 cm",
-      "zdjęcia w wersji elektronicznej (do ponownego druku)",
-      "dodatkowe zdjęcie - 40 zł",
-      "wysyłka odbitek paczkomatem - 20 zł"
-    ],
-    "whyChoose": [
-      "większa swoboda w doborze stylizacji i pozowania",
-      "więcej ujęć - łatwiej wybrać ulubione zdjęcia",
-      "idealna opcja na zdjęcia do portfolio, social mediów czy sesję rodzinną"
-    ]
+    "price": 700,
+    "details": {
+      "type": "list",
+      "text": [
+        "60 minut sesji studyjnej",
+        "2-3 stylizacje",
+        "10 profesjonalnie obrobionych zdjęć",
+        "10 odbitek w formacie 15x21 cm",
+        "zdjęcia w wersji elektronicznej (do ponownego druku)"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "większa swoboda w doborze stylizacji i pozowania",
+        "więcej ujęć - łatwiej wybrać ulubione zdjęcia",
+        "idealna opcja na zdjęcia do portfolio, social mediów czy sesję rodzinną"
+      ]
+    }
   },
   {
     "name": "studio-wariant-3",
@@ -187,20 +229,24 @@
       "Rozbudowana sesja z większą swobodą stylizacji i większą liczbą zdjęć. Idealny dla osób, które chcą stworzyć bogatszy materiał - do portfolio, social mediów czy albumu rodzinnego.",
       "Pakiet dla osób, które chcą więcej - więcej czasu, więcej zdjęć i większej różnorodności. Dzięki kilku stylizacjom i dłuższej pracy w studio możemy stworzyć zarówno eleganckie portrety, jak i kreatywne ujęcia. To opcja, która świetnie sprawdzi się przy budowaniu portfolio, sesji wizerunkowej lub wyjątkowej pamiątki dla całej rodziny."
       ],
-    "price": 0,
-    "details": [
-      "90 minut sesji studyjnej",
-      "4-5 stylizacji",
-      "15 profesjonalnie obrobionych zdjęć",
-      "15 odbitek w formacie 15x21 cm",
-      "zdjęcia w wersji elektronicznej (do ponownego druku)",
-      "dodatkowe zdjęcie - 40 zł",
-      "wysyłka odbitek paczkomatem - 20 zł"
-    ],
-    "whyChoose": [
-      "dłuższa sesja = większy komfort i brak pośpiechu",
-      "możliwość wielu zmian stylizacji i tła",
-      "bogaty zestaw zdjęć i odbitek, który wystarczy na lata"
-    ]
+    "price": 1000,
+    "details": {
+      "type": "list",
+      "text": [
+        "90 minut sesji studyjnej",
+        "4-5 stylizacji",
+        "15 profesjonalnie obrobionych zdjęć",
+        "15 odbitek w formacie 15x21 cm",
+        "zdjęcia w wersji elektronicznej (do ponownego druku)"
+      ]
+    },
+    "whyChoose": {
+      "type": "list",
+      "text": [
+        "dłuższa sesja = większy komfort i brak pośpiechu",
+        "możliwość wielu zmian stylizacji i tła",
+        "bogaty zestaw zdjęć i odbitek, który wystarczy na lata"
+      ]
+    }
   }
 ]
