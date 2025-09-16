@@ -32,13 +32,13 @@ const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
         <div className={styles.modalConteiner} onClick={e => backdropExit(e)}>
             <div className={styles.modalWrapper} onClick={e => backdropExit(e)}>
                 <div className={styles.sign + " " + styles.rotate} onClick={(e) => changeImage(e, 'prev')}>
-                    <IconSVG name="play" fill="var(--color-primary)" size="2svw" />
+                    <IconSVG name="play" fill="var(--color-primary)" size="60%" />
                 </div>
-                <div className={styles.imageWrapper} style={currentImage.orientation === 'landscape' ? { aspectRatio: '3 / 2', width: '100%'} : {aspectRatio: '2 / 3', height: '100%'}} >
+                <div className={styles.imageWrapper} style={currentImage.orientation === 'landscape' ? { aspectRatio: '3 / 2'} : {aspectRatio: '2 / 3'}} >
                     <Image url={`${currentImage.url}`} alt={currentImage.alt || ""} orientation={currentImage.orientation || "landscape"} />
                 </div>
                 <div className={styles.sign} onClick={(e) => changeImage(e, 'next')}>
-                    <IconSVG name="play" fill="var(--color-primary)" size="2svw" />
+                    <IconSVG name="play" fill="var(--color-primary)" size="60%" />
                 </div>
             </div>
             <div className={styles.iconWrapper} onClick={handleExit}>
