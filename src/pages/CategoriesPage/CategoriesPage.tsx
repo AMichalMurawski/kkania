@@ -11,7 +11,7 @@ const CategoriesPage: React.FC = () => {
             <Helmet>
                 <link rel="preload" as="image" href="/images/hero/hero-gallery.webp" />
             </Helmet>
-            <Hero imageUrl={routes?.categories.heroImage || ""} heroTitle={routes?.categories.hero} />
+            <Hero imageName={routes?.categories.heroImageName || ""} imageType={routes?.categories.heroImageType || ""} heroTitle={routes?.categories.hero} />
             <Categories />
         </>
     )

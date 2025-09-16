@@ -12,7 +12,7 @@ const AboutMePage: React.FC = () => {
             <Helmet>
                 <link rel="preload" as="image" href="/images/hero/hero-about-me.webp" />
             </Helmet>
-            <Hero imageUrl={routes?.aboutMe.heroImage || ""} heroTitle={routes?.aboutMe.hero} />
+            <Hero imageName={routes?.aboutMe.heroImageName || ""} imageType={routes?.aboutMe.heroImageType || ""} heroTitle={routes?.aboutMe.hero} />
             <AboutMe content={siteContent?.aboutMe.long || []} flexDirection={['column', 'row', 'row']} />
             <TopOffers />
         </>

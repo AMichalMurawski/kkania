@@ -22,9 +22,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ content, flexDirection }) => {
                                 <h2>{item.title}</h2>
                             </div>
                             {item.image && <div className={styles.imageWrapper} style={item.image.orientation === "landscape" ? { aspectRatio: '3 / 2' } : { aspectRatio: '2 / 3' }}>
-                                <Image url={item.image.url} alt={item.image.alt} orientation={item.image.orientation} />
+                                <Image name={item.image.name} fileType={item.image.fileType} alt={item.image.alt} orientation={item.image.orientation} />
                             </div>}
-                            {item.value.map((val, j) =>
+                            {item.value.map((val: any, j: number) =>
                                 <p key={`val${j}`}>{val}</p>
                             )}
                         </div>
@@ -38,12 +38,12 @@ const AboutMe: React.FC<AboutMeProps> = ({ content, flexDirection }) => {
                                 <IconSVG name="camera" size="2em" fill="var(--color-secondary)" />
                                 <h2>{item.title}</h2>
                             </div>
-                            {item.value.map((val, j) =>
+                            {item.value.map((val: any, j: number) =>
                                 <p key={`val${j}`}>{val}</p>
                             )}
                         </div>
                         <div className={styles.imageWrapper}>
-                            <Image url={item.image.url} alt={item.image.alt} orientation={item.image.orientation} />
+                            <Image name={item.image.name} fileType={item.image.fileType} alt={item.image.alt} orientation={item.image.orientation} />
                         </div>
                     </div>
                 )

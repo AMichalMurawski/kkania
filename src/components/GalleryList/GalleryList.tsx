@@ -116,7 +116,8 @@ const GalleryList: React.FC<GalleryListProps> = ({images}) => {
                     }}
                 >
                     <Image
-                        url={image.url}
+                        name={image.name}
+                        fileType={image.fileType}
                         alt={image.alt}
                         orientation={image.orientation} />
                 </div>

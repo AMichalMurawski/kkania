@@ -1,44 +1,53 @@
 [
     {
-        "url": "/o-mnie-1.webp",
+        "name": "o-mnie-1",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l1.webp",
+        "name": "l1",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/p1.webp",
+        "name": "p1",
+        "fileType": "webp",
         "alt": "",
         "orientation": "portrait"
     },{
-        "url": "/o-mnie-1.webp",
+        "name": "o-mnie-1",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l2.webp",
+        "name": "l2",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/p2.webp",
+        "name": "p2",
+        "fileType": "webp",
         "alt": "",
         "orientation": "portrait"
     },{
-        "url": "/o-mnie-2.webp",
+        "name": "o-mnie-2",
+        "fileType": "webp",
         "alt": "",
         "orientation": "portrait"
     },
     {
-        "url": "/l3.webp",
+        "name": "l3",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     },
     {
-        "url": "/l4.webp",
+        "name": "l4",
+        "fileType": "webp",
         "alt": "",
         "orientation": "landscape"
     }
