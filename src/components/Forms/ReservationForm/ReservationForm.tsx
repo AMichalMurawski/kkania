@@ -6,7 +6,7 @@ import { Button, Input } from "../../../elements";
 
 import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useOffers, useToast } from "../../../context";
 import { Toast } from "../../../utils";
 
@@ -16,6 +16,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     const { data: offers } = useOffers();
     const { addToast } = useToast();
     const navigate = useNavigate();
+    const location = useLocation();
     const [sessions, setSessions] = useState<{ value: string; label: string }[]>([]);
 
     const {
@@ -41,10 +42,10 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
         if (!sessions.length) return;
 
         const currentUrl = new URL(window.location.href);
-        const planFromUrl = currentUrl.searchParams.get("plan") || sessions[0].value;
+        const planFromUrl = currentUrl.searchParams.get("plan") || "";
 
         setValue("session", planFromUrl);
-    }, [sessions, setValue]);
+    }, [sessions, setValue, location]);
 
     const handleSessionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const plan = e.target.value;
@@ -94,9 +95,9 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 options={sessions}
                 error={errors.session?.message}
                 {...register("session")}
-                onChange={() => {
-                    handleSessionChange;
-                    handleFieldChange("session")
+                onChange={(e) => {
+                    handleSessionChange(e);
+                    handleFieldChange("session");
                 }}
             />
 
