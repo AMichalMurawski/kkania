@@ -8,6 +8,8 @@ import { ContactFormData, ContactFormProps } from "./types";
 import { useToast } from "../../../context";
 import { Toast } from "../../../utils";
 
+type FormFields = keyof ContactFormData;
+
 const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
     const { addToast } = useToast();
 
@@ -16,9 +18,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
         handleSubmit,
         formState: { errors },
         reset,
+        clearErrors,
     } = useForm<ContactFormData>({
         resolver: yupResolver(contactSchema),
     });
+
+    const handleFieldChange = (field: FormFields) => {
+        clearErrors(field);
+    };
 
     const onSubmit = (data: ContactFormData) => {
         const toast: Omit<Toast, 'id'> = {
@@ -37,6 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
                 label="Imię"
                 error={errors.name?.message}
                 {...register("name")}
+                onChange={() => handleFieldChange("name")}
             />
 
             <Input
@@ -45,6 +53,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
                 label="Email"
                 error={errors.email?.message}
                 {...register("email")}
+                onChange={() => handleFieldChange("email")}
             />
 
             <Input
@@ -54,6 +63,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
                 placeholder="Napisz swoją wiadomość..."
                 error={errors.message?.message}
                 {...register("message")}
+                onChange={() => handleFieldChange("message")}
             />
 
             <Button type="submit" linkTo="" darkStyle>Wyślij wiadomość</Button>

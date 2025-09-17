@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import { useOffers, useToast } from "../../../context";
 import { Toast } from "../../../utils";
 
+type FormFields = keyof ReservationFormData;
+
 const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     const { data: offers } = useOffers();
     const { addToast } = useToast();
@@ -22,6 +24,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
         formState: { errors },
         reset,
         setValue,
+        clearErrors,
     } = useForm<ReservationFormData>({
         resolver: yupResolver(reservationSchema),
     });
@@ -51,13 +54,17 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
         navigate(newPath, {replace: true});
     };
 
+    const handleFieldChange = (field: FormFields) => {
+        clearErrors(field);
+    };
+
     const onSubmit: SubmitHandler<ReservationFormData> = (data) => {
         const toast: Omit<Toast, 'id'> = {
             type: "emailSend",
             message: "Zapytanie o sesję zostało wysłane"
         };
         addToast(toast);
-        // reset();
+        reset();
     };
 
     return (
@@ -68,6 +75,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 label="Imię i Nazwisko"
                 error={errors.name?.message}
                 {...register("name")}
+                onChange={() => handleFieldChange("name")}
             />
 
             <Input
@@ -76,6 +84,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 label="Email"
                 error={errors.email?.message}
                 {...register("email")}
+                onChange={() => handleFieldChange("email")}
             />
 
             <Input
@@ -85,7 +94,10 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 options={sessions}
                 error={errors.session?.message}
                 {...register("session")}
-                onChange={handleSessionChange}
+                onChange={() => {
+                    handleSessionChange;
+                    handleFieldChange("session")
+                }}
             />
 
             <Input
@@ -94,6 +106,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 label="Data"
                 error={errors.date?.message}
                 {...register("date")}
+                onChange={() => handleFieldChange("date")}
             />
 
             <Input
@@ -103,6 +116,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 placeholder="Podaj dodatkowe informacje..."
                 error={errors.info?.message}
                 {...register("info")}
+                onChange={() => handleFieldChange("info")}
             />
 
             <Button type="submit" linkTo="" darkStyle>
