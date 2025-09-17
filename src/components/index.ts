@@ -10,4 +10,5 @@ export { default as OfferDetails } from "./OfferDetails/OfferDetails";
 export { default as OfferItem } from "./OfferItem/OfferItem";
 export { default as OffersList } from "./OffersList/OffersList";
 export { default as ReservationForm } from "./Forms/ReservationForm/ReservationForm";
+export { default as Toast } from "./Modals/Toast/Toast";
 export { default as TopSection } from "./TopSection/TopSection";

@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import { GalleriesProvider, ModalProvider, OffersProvider, RoutesProvider, SiteContentProvider, SiteInfoProvider } from "./";
 import { HelmetProvider } from "react-helmet-async";
+import { ToastProvider } from "./ToastProvider";
 
 
 const AppProviders = ({ children }: { children: ReactNode }) => {
@@ -12,7 +13,9 @@ const AppProviders = ({ children }: { children: ReactNode }) => {
                         <RoutesProvider>
                             <ModalProvider>
                                 <GalleriesProvider>
-                                    {children}
+                                    <ToastProvider>
+                                        {children}
+                                    </ToastProvider>
                                 </GalleriesProvider>
                             </ModalProvider>
                         </RoutesProvider>

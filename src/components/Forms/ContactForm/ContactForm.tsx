@@ -5,8 +5,12 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Input } from "../../../elements";
 import { contactSchema } from "./contactValidation";
 import { ContactFormData, ContactFormProps } from "./types";
+import { useToast } from "../../../context";
+import { Toast } from "../../../utils";
 
 const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
+    const { addToast } = useToast();
+
     const {
         register,
         handleSubmit,
@@ -17,7 +21,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
     });
 
     const onSubmit = (data: ContactFormData) => {
-        window.alert(`Form data: ${JSON.stringify(data)}`);
+        const toast: Omit<Toast, 'id'> = {
+            type: "emailSend",
+            message: "Wiadomość została wysłana"
+        }
+        addToast(toast);
         reset();
     };
 
