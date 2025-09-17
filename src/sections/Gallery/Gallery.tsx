@@ -23,8 +23,8 @@ const Gallery: React.FC<GallerySectionProps> = ({ gallery, previous, next }) => 
                 </div>
                 <GalleryList images={gallery.images} />
                 <div className={styles.linksConteiner}>
-                    {previous && <div><Link href={`${routes?.categories.path}/${previous?.url}`} >{he.decode('&lt;&nbsp;&nbsp;&nbsp;')}{previous.value}</Link></div>}
-                    {next && <div><Link href={`${routes?.categories.path}/${next?.url}`} >{next.value}{he.decode('&nbsp;&nbsp;&nbsp;&gt;')}</Link></div>}
+                    <div>{previous && <Link href={`${routes?.categories.path}/${previous?.url}`} >{he.decode('&lt;&nbsp;&nbsp;&nbsp;')}{previous.value}</Link>}</div>
+                    <div>{next && <Link href={`${routes?.categories.path}/${next?.url}`} >{next.value}{he.decode('&nbsp;&nbsp;&nbsp;&gt;')}</Link>}</div>
                 </div>
             </div>
         </section>
