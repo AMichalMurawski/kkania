@@ -11,7 +11,7 @@ const OrderPage: React.FC = () => {
             <Helmet>
                 <link rel="preload" as="image" href="/images/hero/hero-offer.webp" />
             </Helmet>
-            <Hero imageUrl={routes?.offers.heroImage || ""} heroTitle={routes?.offers.hero} />
+            <Hero imageName={routes?.offers.heroImageName || ""} imageType={routes?.offers.heroImageType || ""} heroTitle={routes?.offers.hero} />
             <Order />
         </>
     )

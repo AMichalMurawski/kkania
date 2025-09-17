@@ -27,7 +27,7 @@ const GalleryPage: React.FC = () => {
             <Helmet>
                 <link rel="preload" as="image" href="/images/hero/hero-gallery.webp" />
             </Helmet>
-            <Hero imageUrl={galleries?.[galleryIndex].heroImage || ""} heroTitle={galleries?.[galleryIndex].title} />
+            <Hero imageName={galleries?.[galleryIndex].heroImageName || ""} imageType={galleries?.[galleryIndex].heroImageType || ""} heroTitle={galleries?.[galleryIndex].title} />
             {galleries &&
                 <>
                     <Gallery gallery={galleries[galleryIndex]} previous={previous} next={next} />

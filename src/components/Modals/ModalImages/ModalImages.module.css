@@ -7,7 +7,7 @@
     background-color: var(--color-glass);
     backdrop-filter: blur(1px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
-    padding: 3svw;
+    padding: clamp(15px, 3svw, 35px);
     z-index: 900;
 }
 
@@ -19,26 +19,38 @@
     justify-content: space-between;
     align-items: center;
     gap: 2svw;
+    z-index: 910;
 }
 
 .imageWrapper {
-    z-index: 910;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
-    pointer-events: none;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 920;
 }
 
 .sign {
     cursor: pointer;
-    width: 4svw;
-    min-width: 4svw;
-    height: 3svw;
+    width: clamp(20px, 4svw, 40px);
+    height: clamp(15px, 3svw, 30px);
+    min-width: clamp(20px, 4svw, 40px);
+    min-height: clamp(15px, 3svw, 30px);
     background-color: var(--color-accent);
     border: 1px solid var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sign:hover,
+.sign:focus-visible {
+    scale: 1.2;
 }
 
 .rotate {
@@ -50,4 +62,9 @@
     top: 2svw;
     right: 2svw;
     cursor: pointer;
+}
+
+.iconWrapper:hover,
+.iconWrapper:focus-visible {
+    scale: 1.2;
 }

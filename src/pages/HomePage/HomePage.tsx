@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
         <Helmet>
             <link rel="preload" as="image" href="/images/hero/hero-home.webp" />
         </Helmet>
-        <Hero imageUrl={routes?.home.heroImage || ""} >
+        <Hero imageName={routes?.home.heroImageName || ""} imageType={routes?.home.heroImageType || ""} >
             <div className={styles.heroContent}>
                 <h2>Zachowaj najpiękniejsze wspomnienia</h2>
                 <h1>Profesjonalne sesje fotograficzne</h1>

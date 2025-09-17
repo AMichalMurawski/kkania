@@ -11,7 +11,7 @@ const ContactPage: React.FC = () => {
             <Helmet>
                 <link rel="preload" as="image" href="/images/hero/hero-contact.webp" />
             </Helmet>
-            <Hero imageUrl={routes?.contact.heroImage || ""} heroTitle={routes?.contact.hero} />
+            <Hero imageName={routes?.contact.heroImageName || ""} imageType={routes?.contact.heroImageType || ""} heroTitle={routes?.contact.hero} />
             <ContactMe />
         </>
     )

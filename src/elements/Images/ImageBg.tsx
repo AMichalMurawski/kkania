@@ -2,17 +2,16 @@ import React from "react";
 import styles from "./ImageBg.module.css";
 import { ImageBgProps } from "./types";
 
-const ImageBg: React.FC<ImageBgProps> = ({ url, alt }) => {
+const ImageBg: React.FC<ImageBgProps> = ({ name, fileType }) => {
     return (
         <>
             <img
-                src={`/images/${url}`}
-                alt={alt}
+                src={`/images/${name}.${fileType}`}
                 style={{ display: 'none' }}
             />
             <div
                 className={styles.imageBg}
-                style={{ backgroundImage: `url(/images/${url})` }}
+                style={{ backgroundImage: `url(/images/${name}.${fileType})` }}
             />
         </>
     );

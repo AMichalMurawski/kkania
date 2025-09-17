@@ -1,4 +1,5 @@
 export interface HeroProps {
-    imageUrl: string;
+    imageName: string;
+    imageType: string;
     heroTitle?: string;
 }
