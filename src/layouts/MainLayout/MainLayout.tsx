@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainLayout.module.css";
 import { Outlet } from "react-router-dom";
 import { Footer, Header } from "../../sections";
-import { MobileMenu } from "../../components";
+import { MobileMenu, Toast } from "../../components";
 
 const MainLayout: React.FC = () => {
     return (
@@ -10,6 +10,7 @@ const MainLayout: React.FC = () => {
             <Header />
             <main className={styles.main}>
                 <Outlet />
+                <Toast />
             </main>
             <Footer />
             <MobileMenu />

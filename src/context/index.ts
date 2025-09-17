@@ -1,6 +1,7 @@
 export { default as AppProvider } from "./AppProvider";
 
 export { ModalProvider, useModal } from "./ModalProvider";
+export { ToastProvider, useToast } from "./ToastProvider";
 
 // config providers
 export { SiteContentProvider, useSiteContent } from "./ConfigProviders/SiteContentProvider";

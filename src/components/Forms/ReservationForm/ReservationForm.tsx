@@ -7,10 +7,12 @@ import { Button, Input } from "../../../elements";
 import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
 import { useNavigate } from "react-router-dom";
-import { useOffers } from "../../../context";
+import { useOffers, useToast } from "../../../context";
+import { Toast } from "../../../utils";
 
 const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     const { data: offers } = useOffers();
+    const { addToast } = useToast();
     const navigate = useNavigate();
     const [sessions, setSessions] = useState<{ value: string; label: string }[]>([]);
 
@@ -50,8 +52,12 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     };
 
     const onSubmit: SubmitHandler<ReservationFormData> = (data) => {
-        window.alert(`Form data: ${JSON.stringify(data)}`);
-        reset();
+        const toast: Omit<Toast, 'id'> = {
+            type: "emailSend",
+            message: "Zapytanie o sesję zostało wysłane"
+        };
+        addToast(toast);
+        // reset();
     };
 
     return (
