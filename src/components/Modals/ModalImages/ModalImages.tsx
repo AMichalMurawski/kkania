@@ -12,13 +12,14 @@ const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
     if (!currentImage) return null;
 
     const backdropExit = (e: React.MouseEvent<HTMLDivElement>) => {
+        console.log(e.target, e.currentTarget);
         if (e.target !== e.currentTarget) return;
         close("ImageModal");
     }
 
     const handleExit = () => close("ImageModal")
 
-    const changeImage = (e: any, direction: "next" | "prev") => {
+    const changeImage = (direction: "next" | "prev") => {
         let newIndex =
             direction === 'next'
                 ? activeImageIndex + 1
@@ -31,13 +32,13 @@ const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
     return (
         <div className={styles.modalConteiner} onClick={e => backdropExit(e)}>
             <div className={styles.modalWrapper} onClick={e => backdropExit(e)}>
-                <div className={styles.sign + " " + styles.rotate} onClick={(e) => changeImage(e, 'prev')}>
+                <div className={styles.sign + " " + styles.rotate} onClick={(e) => changeImage('prev')}>
                     <IconSVG name="play" fill="var(--color-primary)" size="60%" />
                 </div>
                 <div className={styles.imageWrapper} style={currentImage.orientation === 'landscape' ? { aspectRatio: '3 / 2'} : {aspectRatio: '2 / 3'}} >
                     <Image name={`${currentImage.name}`} fileType={`${currentImage.fileType}`} alt={currentImage.alt || ""} orientation={currentImage.orientation || "landscape"} />
                 </div>
-                <div className={styles.sign} onClick={(e) => changeImage(e, 'next')}>
+                <div className={styles.sign} onClick={(e) => changeImage('next')}>
                     <IconSVG name="play" fill="var(--color-primary)" size="60%" />
                 </div>
             </div>
