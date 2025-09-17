@@ -12,7 +12,6 @@ const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
     if (!currentImage) return null;
 
     const backdropExit = (e: React.MouseEvent<HTMLDivElement>) => {
-        console.log(e.target, e.currentTarget);
         if (e.target !== e.currentTarget) return;
         close("ImageModal");
     }
@@ -36,7 +35,7 @@ const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
                     <IconSVG name="play" fill="var(--color-primary)" size="60%" />
                 </div>
                 <div className={styles.imageWrapper} style={currentImage.orientation === 'landscape' ? { aspectRatio: '3 / 2'} : {aspectRatio: '2 / 3'}} >
-                    <Image name={`${currentImage.name}`} fileType={`${currentImage.fileType}`} alt={currentImage.alt || ""} orientation={currentImage.orientation || "landscape"} />
+                    <Image name={`${currentImage.name}`} fileType={`${currentImage.fileType}`} alt={currentImage.alt || ""} orientation={currentImage.orientation || "landscape"} srcSet/>
                 </div>
                 <div className={styles.sign} onClick={(e) => changeImage('next')}>
                     <IconSVG name="play" fill="var(--color-primary)" size="60%" />
