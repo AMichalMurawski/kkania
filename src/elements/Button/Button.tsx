@@ -4,7 +4,7 @@ import { ButtonProps } from "./types";
 import { useNavigate } from "react-router-dom";
 
 
-const Button: React.FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'button', linkTo = '', darkStyle, view = 'short' }) => {
+const Button: React.FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'button', linkTo = '', darkStyle, view = 'short', disabled = false }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -18,6 +18,7 @@ const Button: React.FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'bu
             type={type}
             className={`${styles.button} ${darkStyle ? styles.buttonDark : styles.buttonLight} ${view === 'short' ? styles.buttonShort : styles.buttonFull}`}
             onClick={handleClick}
+            disabled={disabled}
         >{children}</button>
     )
 };

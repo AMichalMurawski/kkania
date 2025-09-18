@@ -8,7 +8,7 @@ import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useOffers, useToast } from "../../../context";
-import { Toast } from "../../../utils";
+import { sendEmail, Toast } from "../../../utils";
 
 type FormFields = keyof ReservationFormData;
 
@@ -22,7 +22,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
         reset,
         setValue,
         clearErrors,
@@ -59,13 +59,46 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
         clearErrors(field);
     };
 
-    const onSubmit: SubmitHandler<ReservationFormData> = (data) => {
-        const toast: Omit<Toast, 'id'> = {
-            type: "emailSend",
-            message: "Zapytanie o sesję zostało wysłane"
-        };
-        addToast(toast);
-        reset();
+    const onSubmit: SubmitHandler<ReservationFormData> = async (data) => {
+
+        try {
+            addToast({
+                message: "Wysyłanie wiadomości",
+                type: "loading"
+            })
+        
+            const response = await sendEmail({
+                userName: data.name,
+                userEmail: data.email,
+                message: `
+                    Zapytanie o rezerwację sesji:
+                    data: ${data.date}
+                    sesja: ${data.session}
+                    wiadomość: ${data.info}
+                `,
+                formType: "kontakt"
+            });
+            
+            if (!response.success) {
+                addToast({
+                    message: "Nastąpił problem z wysłaniem wiadomości",
+                    type: "error"
+                })
+                return
+            };
+        
+            addToast({
+                message: "Wiadomość wysłana pomyślnie",
+                type: "emailSend"
+            })
+            reset();
+        } catch (err: any) {
+            console.log("Błąd wysyłki email:", err)
+            addToast({
+                message: "Wystąpił błąd przy wysyłaniu wiadomośći",
+                type: "error"
+            })
+        }
     };
 
     return (
@@ -120,7 +153,7 @@ const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
                 onChange={() => handleFieldChange("info")}
             />
 
-            <Button type="submit" linkTo="" darkStyle>
+            <Button type="submit" linkTo="" darkStyle disabled={isSubmitting}>
                 Wyślij wiadomość
             </Button>
         </form>

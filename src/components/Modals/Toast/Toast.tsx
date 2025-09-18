@@ -16,13 +16,16 @@ const Toast: React.FC = () => {
                     iconName = "envelop";
                     iconFill = "green";
                 };
-                if (toast.type === "wrong") {
+                if (toast.type === "error") {
                     iconName = "cross";
                     iconFill = "red";
                 };
+                if (toast.type === "loading") {
+                    iconName = "spinner6";
+                    iconFill = "var(--color-secondary)";
+                };
                 
                 const timeDelay: number = (toast?.timeExist || 3000) - 2000;
-                const offset = index * 100;
                 
                 return (
                     <div
@@ -34,7 +37,9 @@ const Toast: React.FC = () => {
                             className={styles.toastWrapper}
                             style={{ '--toast-delay': `${timeDelay}ms` } as React.CSSProperties}
                         >
-                            <IconSVG name={iconName} fill={iconFill} size="2em" />
+                            <div className={`${styles.iconWrapper} ${toast.type === "loading" ? styles.iconRotate : null}`}>
+                                <IconSVG name={iconName} fill={iconFill} />
+                            </div>
                             <p>{toast.message}</p>
                         </div>
                     </div>
