@@ -3,4 +3,5 @@ export interface ButtonProps {
     linkTo: string;
     darkStyle?: boolean;
     view?: 'short' | 'full';
+    disabled?: boolean;
 }

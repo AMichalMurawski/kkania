@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,7 +6,7 @@ import { Button, Input } from "../../../elements";
 import { contactSchema } from "./contactValidation";
 import { ContactFormData, ContactFormProps } from "./types";
 import { useToast } from "../../../context";
-import { Toast } from "../../../utils";
+import { sendEmail } from "../../../utils";
 
 type FormFields = keyof ContactFormData;
 
@@ -16,7 +16,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { errors, isSubmitting },
         reset,
         clearErrors,
     } = useForm<ContactFormData>({
@@ -27,13 +27,40 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
         clearErrors(field);
     };
 
-    const onSubmit = (data: ContactFormData) => {
-        const toast: Omit<Toast, 'id'> = {
-            type: "emailSend",
-            message: "Wiadomość została wysłana"
+    const onSubmit = async (data: ContactFormData) => {        
+        try {
+            addToast({
+                message: "Wysyłanie wiadomości",
+                type: "loading"
+            })
+
+            const response = await sendEmail({
+                userName: data.name,
+                userEmail: data.email,
+                message: data.message,
+                formType: "kontakt"
+            });
+
+            if (!response.success) {
+                addToast({
+                    message: "Nastąpił problem z wysłaniem wiadomości",
+                    type: "error"
+                })
+                return
+            };
+
+            addToast({
+                message: "Wiadomość wysłana pomyślnie",
+                type: "emailSend"
+            })
+            reset();
+        } catch (err: any) {
+            console.log("Błąd wysyłki email:", err)
+            addToast({
+                message: "Wystąpił błąd przy wysyłaniu wiadomośći",
+                type: "error"
+            })
         }
-        addToast(toast);
-        reset();
     };
 
     return (
@@ -66,7 +93,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
                 onChange={() => handleFieldChange("message")}
             />
 
-            <Button type="submit" linkTo="" darkStyle>Wyślij wiadomość</Button>
+            <Button type="submit" linkTo="" darkStyle disabled={isSubmitting}>Wyślij wiadomość</Button>
         </form>
     );
 };

@@ -1,4 +1,4 @@
-export type ToastType = 'emailSend' | 'wrong';
+export type ToastType = 'emailSend' | 'error' | 'loading';
 
 export interface Toast {
   id: string;

@@ -1,3 +1,6 @@
+export * from "./sendEmail";
+
+// types
 export * from "./types/content";
 export * from "./types/gallery";
 export * from "./types/image";
