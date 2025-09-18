@@ -1,18 +1,18 @@
 import React from "react";
 import { useGalleries } from "../../context";
 import { Gallery, Hero } from "../../sections";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ModalImages } from "../../components";
 
 const GalleryPage: React.FC = () => {
-    const location = useLocation();
     const { data: galleries } = useGalleries();
+    const { galleryName } = useParams<{ galleryName: string }>();
 
-    const galleryName = location.pathname.split("/").pop();
     const galleryIndex: number = galleries?.findIndex(gallery =>
         gallery.name === galleryName
     ) ?? -1;
+
     const previous: { value: string; url: string} | null = galleries && galleryIndex > 0 ? {
         value: galleries?.[galleryIndex - 1].title,
         url: galleries?.[galleryIndex - 1].name
