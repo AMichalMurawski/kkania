@@ -17,6 +17,10 @@
     border-radius: 1em;
 }
 
+.image {
+    border: 0.1px solid var(--color-glass);
+}
+
 .informationsWrapper{
     display: flex;
     flex-direction: column;
