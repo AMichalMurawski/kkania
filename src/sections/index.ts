@@ -1,6 +1,7 @@
 export { default as AboutMe } from "./AboutMe/AboutMe";
 export { default as Categories } from "./Categories/Categories";
 export { default as ContactMe } from "./ContactMe/ContactMe";
+export { default as MainFallback } from "./Fallbacks/MainFallback/MainFallback";
 export { default as Footer } from "./Footer/Footer";
 export { default as Gallery } from "./Gallery/Gallery";
 export { default as Header } from "./Header/Header";
@@ -8,6 +9,7 @@ export { default as Hero } from "./Hero/Hero";
 export { default as Offers } from "./Offers/Offers";
 export { default as OffersDescription } from "./OffersDescription/OffersDescription";
 export { default as Order } from "./Order/Order";
+export { default as SecondFallback } from "./Fallbacks/SecondFallback/SecondFallback";
 export { default as Terms } from "./Terms/Terms";
 export { default as TopGallery } from "./TopGallery/TopGallery";
 export { default as TopOffers } from "./TopOffers/TopOffers";

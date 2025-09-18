@@ -1,0 +1,64 @@
+.fallbackConteiner {
+    position: fixed;
+    margin-top: 110px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100svh - 110px);
+}
+
+.fallbackWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(100px, 50vmin, 500px);
+    translate: -50% -50%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100vmax;
+    animation: rotateFallbackAnimation 3s linear infinite;
+}
+
+@keyframes rotateFallbackAnimation {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.spinnerElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+.spinnerIcon {
+    position: relative;
+    animation: spinnerAnimation 3s linear infinite;
+}
+
+.spinnerIcon::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    width: 95%;
+    height: 75%;
+    background-color: white;
+    z-index: -1;
+}
+
+@keyframes spinnerAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,7 +1,8 @@
-import React, { ReactNode, Suspense } from "react";
+import React, { ReactNode, Suspense, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useRoutes } from "../context";
 import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
+import { MainFallback } from "../sections";
 
 const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
 const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage/CategoriesPage"));
@@ -25,11 +26,42 @@ const HomePageProvider = ({ children }: { children: ReactNode }) => {
 
 const AppRoutes: React.FC = () => {
     const { data: routes } = useRoutes();
+    const [fallbackLoad, setFallbackLaod] = useState<{
+        isLoad: boolean;
+        isAnimate: boolean;
+    }>({
+        isLoad: false,
+        isAnimate: false
+    });
 
-    if (!routes) return <div>Loading...</div>;
+    useEffect(() => {
+
+    })
+    useEffect(() => {
+        const handleLoad = () => {
+            setFallbackLaod((prev) => ({
+                ...prev,
+                isLoad: true
+            }));
+        };
+
+        setTimeout(() => {
+            setFallbackLaod((prev) => ({
+                ...prev,
+                isAnimate: true
+            }))
+        }, 5000)
+
+        window.addEventListener("load", handleLoad);
+
+        return () => {
+            window.removeEventListener("load", handleLoad);
+        };
+    }, [])
+    
+    if (!routes || !fallbackLoad.isLoad || !fallbackLoad.isAnimate) return <MainFallback />;
 
     return (
-        <Suspense fallback={<div>Loading...</div>}>
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<HomePageProvider><HomePage /></HomePageProvider>} />
@@ -43,7 +75,6 @@ const AppRoutes: React.FC = () => {
                     <Route path="*" element={<NotFoundPage />} />
                 </Route>
             </Routes>
-        </Suspense>
     );
 };
 
