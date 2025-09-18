@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import { FC } from "react";
 import styles from "./OfferItem.module.css";
-import { Button, IconSVG } from "../../elements";
+import { Button } from "../../elements";
 import { OfferItemProps } from "./types";
 import { useRoutes } from "../../context";
 import OfferDetails from "../OfferDetails/OfferDetails";
 
-const OfferItem: React.FC<OfferItemProps> = ({ offer, active = false }) => {
+const OfferItem: FC<OfferItemProps> = ({ offer, active = false }) => {
     const { data: routes } = useRoutes();
 
     return (

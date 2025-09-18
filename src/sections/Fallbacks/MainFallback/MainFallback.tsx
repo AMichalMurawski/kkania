@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./MainFallback.module.css";
 import { IconSVG } from "../../../elements";
 
-const Fallback: React.FC = () => {
+const Fallback: FC = () => {
     return (
         <div className={styles.fallbackConteiner}>
             <div className={styles.fallbackWrapper}>

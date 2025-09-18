@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Header.module.css";
 import { Button, Hamburger, Logo } from "../../elements";
 import { Navbar } from "../../components";
 import { useRoutes } from "../../context";
 import { useWindowWidth } from "../../hooks";
 
-const Header: React.FC = () => {
+const Header: FC = () => {
     const { data: routes } = useRoutes();
     const width = useWindowWidth();
 

@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./TopGallery.module.css";
 import { useTopGallery } from "../../context/ConfigProviders/TopGalleryProvider";
 import { GalleryList, ModalImages, TopSection } from "../../components";
 import { useRoutes, useSiteContent } from "../../context";
 import { TopSectionProps } from "../../utils";
 
-const TopGallery: React.FC = () => {
+const TopGallery: FC = () => {
     const { data: gallery } = useTopGallery();
     const { data: routes } = useRoutes();
     const { data: siteContent } = useSiteContent();

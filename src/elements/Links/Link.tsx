@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import styles from "./Link.module.css";
 import { LinkProps } from "./types";
 import { Link as RouterLink } from "react-router-dom";
 
-const Link: React.FC<PropsWithChildren<LinkProps>> = ({ children, href = '', ariaLabel, anotherSite = false }) => {
+const Link: FC<PropsWithChildren<LinkProps>> = ({ children, href = '', ariaLabel, anotherSite = false }) => {
     
     if (anotherSite) {
         return (

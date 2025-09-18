@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./OffersList.module.css";
 import { OffersListProps } from "./types";
 import { OfferItem } from "../";
 import { asString, useValidatedQuery } from "../../hooks/useValidateQuery";
 
-const OffersList: React.FC<OffersListProps> = ({ offers }) => {
+const OffersList: FC<OffersListProps> = ({ offers }) => {
     const { plan } = useValidatedQuery({
         plan: asString
     });

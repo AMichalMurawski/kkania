@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import styles from './SocialIcon.module.css';
 import { IconSVG, Link } from "../";
 import { SocialIconProps } from "./types";
 
-const SocialIcon: React.FC<SocialIconProps> = ({ name, darkStyle, alt = '', href='' }) => {
+const SocialIcon: FC<SocialIconProps> = ({ name, darkStyle, alt = '', href='' }) => {
     return (
         <Link href={href} anotherSite ariaLabel={name}>
             <div className={`${styles.icon} ${darkStyle ? styles.dark : styles.light}`}>

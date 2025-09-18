@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Order.module.css";
 import { OfferDescription, ReservationForm } from "../../components";
 import { useOffers } from "../../context";
 import { asString, useValidatedQuery } from "../../hooks";
 
-const Order: React.FC = () => {
+const Order: FC = () => {
     const { data: offers } = useOffers();
     const { plan } = useValidatedQuery({
         plan: asString

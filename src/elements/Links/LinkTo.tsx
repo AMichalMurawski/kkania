@@ -1,8 +1,8 @@
-import React, { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import styles from "./LinkTo.module.css";
 import { LinkToProps } from "./types";
 
-const LinkTo: React.FC<PropsWithChildren<LinkToProps>> = ({ children, href = '', ariaLabel, darkStyle }) => {
+const LinkTo: FC<PropsWithChildren<LinkToProps>> = ({ children, href = '', ariaLabel, darkStyle }) => {
     return (
         <a
             href={href}

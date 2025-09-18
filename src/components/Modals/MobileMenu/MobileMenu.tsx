@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./MobileMenu.module.css";
 import { Contacts, Navbar } from "../..";
 import { useModal, useRoutes } from "../../../context";
 import { Button } from "../../../elements";
 
-const MobileMenu: React.FC = () => {
+const MobileMenu: FC = () => {
     const { data: routes } = useRoutes();
     const { modals } = useModal()
     

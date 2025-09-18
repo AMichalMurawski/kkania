@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./SecondFallback.module.css";
 import { IconSVG } from "../../../elements";
 
-const SecondFallback: React.FC = () => {
+const SecondFallback: FC = () => {
     const spinnerElements = new Array(10).fill(null);
 
     return (

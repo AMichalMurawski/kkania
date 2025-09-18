@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef, InputHTMLAttributes, Ref, SelectHTMLAttributes, TextareaHTMLAttributes } from "react";
 import styles from "./Input.module.css";
 import { InputProps } from "./types";
 
@@ -18,8 +18,8 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElem
             name={name}
             type={type}
             className={styles.input}
-            ref={ref as React.Ref<HTMLInputElement>}
-            {...(rest as React.InputHTMLAttributes<HTMLInputElement>)}
+            ref={ref as Ref<HTMLInputElement>}
+            {...(rest as InputHTMLAttributes<HTMLInputElement>)}
           />
         ) : type === "textarea" ? (
           <textarea
@@ -29,8 +29,8 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElem
             maxLength={250}
             placeholder={placeholder}
             className={styles.textarea}
-            ref={ref as React.Ref<HTMLTextAreaElement>}
-            {...(rest as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
+            ref={ref as Ref<HTMLTextAreaElement>}
+            {...(rest as TextareaHTMLAttributes<HTMLTextAreaElement>)}
           />
         ) : type === "select" ? (
           <select
@@ -38,8 +38,8 @@ const Input = forwardRef<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElem
             name={name}
             className={styles.select}
             defaultValue=""
-            ref={ref as React.Ref<HTMLSelectElement>}
-            {...(rest as React.SelectHTMLAttributes<HTMLSelectElement>)}
+            ref={ref as Ref<HTMLSelectElement>}
+            {...(rest as SelectHTMLAttributes<HTMLSelectElement>)}
           >
             <option value="" disabled>
               Wybierz sesję

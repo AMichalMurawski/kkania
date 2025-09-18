@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./AboutMe.module.css";
 import { AboutMeProps, FlexDirection } from "./types";
 import { IconSVG, Image } from "../../elements";
 import { useWindowWidth } from "../../hooks";
 
-const AboutMe: React.FC<AboutMeProps> = ({ content, flexDirection }) => {
+const AboutMe: FC<AboutMeProps> = ({ content, flexDirection }) => {
     const width = useWindowWidth();
 
     return (

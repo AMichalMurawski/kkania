@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./ContactMe.module.css";
 import { ContactForm, Contacts } from "../../components";
 import { Link } from "../../elements";
 import { useSiteContent, useSiteInfo } from "../../context";
 
-const ContactMe: React.FC = () => {
+const ContactMe: FC = () => {
     const { data: siteInfo } = useSiteInfo();
     const { data: siteContent } = useSiteContent();
 

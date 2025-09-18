@@ -1,7 +1,7 @@
-import React from "react";
+import { FC } from "react";
 import { IconSVGProps } from "./types";
 
-const IconSVG: React.FC<IconSVGProps> = ({ name, size = '100%', fill='inherit', alt='' }) => {
+const IconSVG: FC<IconSVGProps> = ({ name, size = '100%', fill='inherit', alt='' }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

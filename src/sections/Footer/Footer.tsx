@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Footer.module.css";
 import { Link, Logo, SocialIcon } from "../../elements";
 import { Contacts } from "../../components";
 import { useRoutes, useSiteInfo } from "../../context";
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
     const { data: siteInfo } = useSiteInfo();
     const { data: routes } = useRoutes();
 

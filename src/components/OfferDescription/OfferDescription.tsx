@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./OfferDescription.module.css";
 import { OfferDescriptionProps } from "./types";
 import { OfferDetails } from "../";
 
-const OfferDescription: React.FC<OfferDescriptionProps> = ({offer, darkStyle}) => {
+const OfferDescription: FC<OfferDescriptionProps> = ({offer, darkStyle}) => {
     return (
         <div className={`${styles.conteiner} ${darkStyle ? styles.dark : styles.light}`}>
             <h2>{offer?.title}</h2>

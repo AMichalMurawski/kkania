@@ -1,8 +1,8 @@
-import { AboutMeContent } from "../../utils";
+import { AboutMeData } from "../../utils";
 
 export type FlexDirection = 'row' | 'column'
 
 export interface AboutMeProps {
-    content: AboutMeContent[];
+    content: AboutMeData[];
     flexDirection: [FlexDirection, FlexDirection, FlexDirection];
 }

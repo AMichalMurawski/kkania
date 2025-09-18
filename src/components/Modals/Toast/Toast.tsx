@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
+import { FC, CSSProperties } from "react";
 import styles from "./Toast.module.css";
 import { IconSVG } from "../../../elements";
 import { useToast } from "../../../context";
 
-const Toast: React.FC = () => {
+const Toast: FC = () => {
     const { toasts } = useToast();
 
     return (
         <div className={styles.toastsList}>
-            {toasts.map((toast, index) => {
+            {toasts.map(toast => {
                 let iconName = "";
                 let iconFill = "";
 
@@ -31,11 +31,11 @@ const Toast: React.FC = () => {
                     <div
                         key={toast.id}
                         className={styles.toastConteiner}
-                        style={{ '--toast-delay': `${timeDelay}ms` } as React.CSSProperties}
+                        style={{ '--toast-delay': `${timeDelay}ms` } as CSSProperties}
                     >
                         <div
                             className={styles.toastWrapper}
-                            style={{ '--toast-delay': `${timeDelay}ms` } as React.CSSProperties}
+                            style={{ '--toast-delay': `${timeDelay}ms` } as CSSProperties}
                         >
                             <div className={`${styles.iconWrapper} ${toast.type === "loading" ? styles.iconRotate : null}`}>
                                 <IconSVG name={iconName} fill={iconFill} />

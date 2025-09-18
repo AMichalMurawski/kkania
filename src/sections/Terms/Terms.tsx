@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "./Terms.module.css";
 import { useTerms } from "../../context";
 import { ContentItem, TermsProps, TermsSection } from "../../utils";
 import parse from "html-react-parser";
 
-const Terms: React.FC = () => {
+const Terms: FC = () => {
     const { data: terms } = useTerms();
     const [newTerms, setNewTerms] = useState<TermsProps | null>(null);
     

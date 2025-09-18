@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, FC, useContext, useState, ReactNode } from 'react';
 import { Toast } from '../utils';
 
 interface ToastContextType {
@@ -21,7 +21,7 @@ interface ToastProviderProps {
     children: ReactNode;
 };
 
-export const ToastProvider: React.FC<ToastProviderProps> = ({ children }) => {
+export const ToastProvider: FC<ToastProviderProps> = ({ children }) => {
     const [toasts, setToasts] = useState<Toast[]>([]);
 
     const addToast = (toast: Omit<Toast, 'id'>) => {

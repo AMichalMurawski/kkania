@@ -1,17 +1,17 @@
-import React from "react";
+import { FC, MouseEvent } from "react";
 import styles from "./ModalImages.module.css";
 import { IconSVG, Image } from "../../../elements";
 import { ModalImagesProps } from "./types";
 import { useModal } from "../../../context";
 
-const ModalImages: React.FC<ModalImagesProps> = ({ images }) => {
+const ModalImages: FC<ModalImagesProps> = ({ images }) => {
     const { close, modals, activeImageIndex, setActiveImageIndex } = useModal();
     const currentImage = images?.[activeImageIndex]
 
     if (!modals.ImageModal) return null;
     if (!currentImage) return null;
 
-    const backdropExit = (e: React.MouseEvent<HTMLDivElement>) => {
+    const backdropExit = (e: MouseEvent<HTMLDivElement>) => {
         if (e.target !== e.currentTarget) return;
         close("ImageModal");
     }

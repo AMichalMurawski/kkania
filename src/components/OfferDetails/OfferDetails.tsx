@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./OfferDetails.module.css";
 import { IconSVG } from "../../elements";
 import { ContentProps } from "../../utils";
 
-const OfferDetails: React.FC<ContentProps> = ({ type, text }) => {
+const OfferDetails: FC<ContentProps> = ({ type, text }) => {
     if (type === 'list') {
         return (
             <ul className={styles.list}>

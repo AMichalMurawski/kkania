@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import styles from './LogoIcon.module.css';
 import { IconSVG } from "../";
 
-const LogoIcon: React.FC = () => {
+const LogoIcon: FC = () => {
     return (
         <div className={styles.logoConteiner}>
             <div className={styles.logo}>

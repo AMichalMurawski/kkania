@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import { useGalleries } from "../../context";
 import { Gallery, Hero } from "../../sections";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ModalImages } from "../../components";
 
-const GalleryPage: React.FC = () => {
+const GalleryPage: FC = () => {
     const { data: galleries } = useGalleries();
     const { galleryName } = useParams<{ galleryName: string }>();
 
@@ -25,6 +25,9 @@ const GalleryPage: React.FC = () => {
     return (
         <>
             <Helmet>
+                {galleries?.[galleryIndex]
+                    && <link rel="preload" as="image" href={`/images/${galleries?.[galleryIndex].heroImageName}.${galleries?.[galleryIndex].heroImageType}`} /> 
+                }
                 <link rel="preload" as="image" href="/images/hero/hero-gallery.webp" />
             </Helmet>
             <Hero imageName={galleries?.[galleryIndex].heroImageName || ""} imageType={galleries?.[galleryIndex].heroImageType || ""} heroTitle={galleries?.[galleryIndex].title} />

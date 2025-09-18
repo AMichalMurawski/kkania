@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./TopOffers.module.css";
 import { useOffers, useRoutes, useSiteContent } from "../../context";
 import { TopSectionProps } from "../../utils";
-import { OfferItem, OffersList, TopSection } from "../../components";
+import { OffersList, TopSection } from "../../components";
 import { TopOffersProps } from "./types";
 
-const TopOffers: React.FC<TopOffersProps> = ({darkStyle}) => {
+const TopOffers: FC<TopOffersProps> = ({darkStyle}) => {
     const { data: routes } = useRoutes();
     const { data: offers } = useOffers();
     const { data: siteContent } = useSiteContent();

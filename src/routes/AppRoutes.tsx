@@ -1,20 +1,20 @@
-import React, { ReactNode, Suspense, useEffect, useState } from "react";
+import { FC, lazy, ReactNode, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useRoutes } from "../context";
 import { TopGalleryProvider } from "../context/ConfigProviders/TopGalleryProvider";
-import { MainFallback } from "../sections";
+import { SecondFallback } from "../sections";
 
-const AboutMePage = React.lazy(() => import("../pages/AboutMePage/AboutMePage"));
-const CategoriesPage = React.lazy(() => import("../pages/CategoriesPage/CategoriesPage"));
-const ContactPage = React.lazy(() => import("../pages/ContactPage/ContactPage"));
-const HomePage = React.lazy(() => import("../pages/HomePage/HomePage"));
-const GalleryPage = React.lazy(() => import("../pages/GalleryPage/GalleryPage"));
-const NotFoundPage = React.lazy(() => import("../pages/NotFoundPage"));
-const OffersPage = React.lazy(() => import("../pages/OffersPage/OffersPage"));
-const OrderPage = React.lazy(() => import("../pages/OrderPage/OrderPage"));
-const TermsPage = React.lazy(() => import("../pages/TermsPage/TermsPage"));
+const AboutMePage = lazy(() => import("../pages/AboutMePage/AboutMePage"));
+const CategoriesPage = lazy(() => import("../pages/CategoriesPage/CategoriesPage"));
+const ContactPage = lazy(() => import("../pages/ContactPage/ContactPage"));
+const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
+const GalleryPage = lazy(() => import("../pages/GalleryPage/GalleryPage"));
+const NotFoundPage = lazy(() => import("../pages/NotFoundPage"));
+const OffersPage = lazy(() => import("../pages/OffersPage/OffersPage"));
+const OrderPage = lazy(() => import("../pages/OrderPage/OrderPage"));
+const TermsPage = lazy(() => import("../pages/TermsPage/TermsPage"));
 
-const MainLayout = React.lazy(() => import("../layouts/MainLayout/MainLayout"));
+const MainLayout = lazy(() => import("../layouts/MainLayout/MainLayout"));
 
 const HomePageProvider = ({ children }: { children: ReactNode }) => {
     return (
@@ -24,33 +24,17 @@ const HomePageProvider = ({ children }: { children: ReactNode }) => {
     )
 };
 
-const AppRoutes: React.FC = () => {
+const AppRoutes: FC = () => {
     const { data: routes } = useRoutes();
-    const [fallbackLoad, setFallbackLaod] = useState<{
-        isLoad: boolean;
-        isAnimate: boolean;
-    }>({
-        isLoad: false,
-        isAnimate: false
-    });
+    const [fallbackLoad, setFallbackLaod] = useState<boolean>(false)
 
     useEffect(() => {
 
     })
     useEffect(() => {
         const handleLoad = () => {
-            setFallbackLaod((prev) => ({
-                ...prev,
-                isLoad: true
-            }));
+            setFallbackLaod(true);
         };
-
-        setTimeout(() => {
-            setFallbackLaod((prev) => ({
-                ...prev,
-                isAnimate: true
-            }))
-        }, 5000)
 
         window.addEventListener("load", handleLoad);
 
@@ -59,7 +43,7 @@ const AppRoutes: React.FC = () => {
         };
     }, [])
     
-    if (!routes || !fallbackLoad.isLoad || !fallbackLoad.isAnimate) return <MainFallback />;
+    if (!routes || !fallbackLoad) return <SecondFallback />;
 
     return (
             <Routes>

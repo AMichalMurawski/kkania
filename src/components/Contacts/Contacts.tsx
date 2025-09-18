@@ -1,10 +1,10 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Contacts.module.css";
 import { Contact } from "../../elements";
 import { ContactsProps } from "./types";
 import { useSiteInfo } from "../../context";
 
-const Contacts: React.FC<ContactsProps> = ({ darkStyle }) => {
+const Contacts: FC<ContactsProps> = ({ darkStyle }) => {
     const { data: siteInfo } = useSiteInfo();
 
     return (

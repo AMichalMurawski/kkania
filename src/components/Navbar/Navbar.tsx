@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { FC } from "react";
 import styles from "./Navbar.module.css";
 import { NavbarProps } from "./types";
 import { useModal, useRoutes } from "../../context";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar: React.FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => {
+const Navbar: FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => {
     const { data: routes } = useRoutes();
     const location = useLocation();
     const { close } = useModal();

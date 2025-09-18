@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { FC, useEffect } from "react";
 import styles from "./Hamburger.module.css";
 import { HamburgerProps } from "./types";
 import { useModal } from "../../context";
 import { useWindowWidth } from "../../hooks";
 
-const Hamburger: React.FC<HamburgerProps> = ({darkStyle}) => {
-    const { close, modals, open, toggle } = useModal();
+const Hamburger: FC<HamburgerProps> = ({darkStyle}) => {
+    const { close, modals, open } = useModal();
     const width = useWindowWidth();
 
     useEffect(() => {

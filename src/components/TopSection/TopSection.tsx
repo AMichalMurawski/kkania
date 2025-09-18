@@ -1,10 +1,10 @@
-import React, { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import styles from "./TopSection.module.css";
 import { LinkTo } from "../../elements";
 import { TopSectionProps } from "../../utils";
-import he from "he";
+import { decode } from "he";
 
-const Top: React.FC<PropsWithChildren<TopSectionProps>> = ({ title, description, children, link, darkStyle }) => {
+const Top: FC<PropsWithChildren<TopSectionProps>> = ({ title, description, children, link, darkStyle }) => {
     
     return (
         <div className={styles.topWrapper}>
@@ -15,7 +15,7 @@ const Top: React.FC<PropsWithChildren<TopSectionProps>> = ({ title, description,
                     )}
                 </div>
                 {children}
-            <LinkTo href={link.href} darkStyle={darkStyle}>{he.decode(link.value)}</LinkTo>
+            <LinkTo href={link.href} darkStyle={darkStyle}>{decode(link.value)}</LinkTo>
         </div>
     );
 };

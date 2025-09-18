@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "./ReservationForm.module.css";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Input } from "../../../elements";
-
 import { reservationSchema } from "./reservationValidation";
 import { ReservationFormData, ReservationFormProps } from "./types";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useOffers, useToast } from "../../../context";
-import { sendEmail, Toast } from "../../../utils";
+import { sendEmail } from "../../../utils";
 
 type FormFields = keyof ReservationFormData;
 
-const ReservationForm: React.FC<ReservationFormProps> = ({ darkStyle }) => {
+const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
     const { data: offers } = useOffers();
     const { addToast } = useToast();
     const navigate = useNavigate();

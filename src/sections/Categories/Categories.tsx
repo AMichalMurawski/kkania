@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Categories.module.css";
 import { CategoryItem } from "../../components";
 import { useGalleries } from "../../context";
 
-const Categories: React.FC = () => {
+const Categories: FC = () => {
     const { data: galleries } = useGalleries();
 
     return (

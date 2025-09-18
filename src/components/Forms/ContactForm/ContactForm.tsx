@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { FC } from "react";
 import styles from "./ContactForm.module.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -10,7 +10,7 @@ import { sendEmail } from "../../../utils";
 
 type FormFields = keyof ContactFormData;
 
-const ContactForm: React.FC<ContactFormProps> = ({ darkStyle }) => {
+const ContactForm: FC<ContactFormProps> = ({ darkStyle }) => {
     const { addToast } = useToast();
 
     const {

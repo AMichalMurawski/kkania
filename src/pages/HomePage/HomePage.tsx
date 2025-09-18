@@ -1,18 +1,19 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./HomePage.module.css";
 import { useRoutes, useSiteContent } from "../../context";
 import { AboutMe, ContactMe, Hero, TopGallery, TopOffers } from "../../sections";
 import { Button } from "../../elements";
 import { Helmet } from "react-helmet-async";
-import { ModalImages } from "../../components";
 
-const HomePage: React.FC = () => {
+const HomePage: FC = () => {
     const { data: routes } = useRoutes();
     const { data: siteContent } = useSiteContent();
 
     return <>
         <Helmet>
-            <link rel="preload" as="image" href="/images/hero/hero-home.webp" />
+            {routes?.aboutMe
+                && <link rel="preload" as="image" href={`/images/${routes?.home.heroImageName}.${routes?.home.heroImageType}`} />
+            }
         </Helmet>
         <Hero imageName={routes?.home.heroImageName || ""} imageType={routes?.home.heroImageType || ""} >
             <div className={styles.heroContent}>

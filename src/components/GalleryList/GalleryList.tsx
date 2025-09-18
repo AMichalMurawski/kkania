@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { FC, useEffect, useMemo, useRef, useState } from "react";
 import styles from "./GalleryList.module.css";
 import { GalleryListProps } from "./types";
 import { Image } from "../../elements";
@@ -11,7 +11,7 @@ interface PositionedImage extends ImageProps {
   rowSpan: number;
 }
 
-const GalleryList: React.FC<GalleryListProps> = ({images}) => {
+const GalleryList: FC<GalleryListProps> = ({images}) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [columns, setColumns] = useState(1);
     const { open, setActiveImageIndex } = useModal();

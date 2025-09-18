@@ -1,10 +1,10 @@
-import React, { PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from "react";
 import styles from "./Button.module.css";
 import { ButtonProps } from "./types";
 import { useNavigate } from "react-router-dom";
 
 
-const Button: React.FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'button', linkTo = '', darkStyle, view = 'short', disabled = false }) => {
+const Button: FC<PropsWithChildren<ButtonProps>> = ({ children, type = 'button', linkTo = '', darkStyle, view = 'short', disabled = false }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {

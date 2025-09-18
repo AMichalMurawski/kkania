@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Image.module.css";
 import { ImageComponentProps } from "./types";
 
-const Image: React.FC<ImageComponentProps> = ({ name, fileType, alt="", orientation, srcSet=false}) => {
+const Image: FC<ImageComponentProps> = ({ name, fileType, alt="", orientation, srcSet=false}) => {
     return (
         <div className={`${styles.wraper} 
             ${orientation === 'landscape' ? styles.landscape : null}

@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./OffersDescription.module.css";
 import { OfferDescription } from "../../components";
 import { asString, useValidatedQuery } from "../../hooks";
 import { useOffers, useRoutes } from "../../context";
 import { Button } from "../../elements";
 
-const OffersDescription: React.FC = () => {
+const OffersDescription: FC = () => {
     const { data: routes } = useRoutes();
     const { data: offers } = useOffers();
     const { plan } = useValidatedQuery({

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { createContext, FC, useContext, useEffect, useState, ReactNode } from "react";
 
 interface DataProviderProps<T> {
   jsonFile: string;
@@ -14,7 +14,7 @@ export interface DataState<T> {
 export function createDataContext<T>() {
   const Context = createContext<DataState<T> | undefined>(undefined);
 
-  const Provider: React.FC<DataProviderProps<T>> = ({ jsonFile, children }) => {
+  const Provider: FC<DataProviderProps<T>> = ({ jsonFile, children }) => {
     const [state, setState] = useState<DataState<T>>({
       data: null,
       loading: true,

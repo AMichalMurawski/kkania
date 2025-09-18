@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Gallery.module.css";
 import { GalleryList } from "../../components";
 import { GallerySectionProps } from "./types";
@@ -6,7 +6,7 @@ import { Link } from "../../elements";
 import { useOffers, useRoutes } from "../../context";
 import he from "he";
 
-const Gallery: React.FC<GallerySectionProps> = ({ gallery, previous, next }) => {
+const Gallery: FC<GallerySectionProps> = ({ gallery, previous, next }) => {
     const { data: routes } = useRoutes();
     const { data: offers } = useOffers();
 
