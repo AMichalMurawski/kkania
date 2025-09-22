@@ -5,6 +5,10 @@
     height: 4.64em;
 }
 
+.homePath {
+    cursor: pointer;
+}
+
 .light {
     fill: var(--color-text);
     color: var(--color-text);

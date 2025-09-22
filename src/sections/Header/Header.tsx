@@ -11,7 +11,7 @@ const Header: FC = () => {
 
     return <header className={styles.header}>
         <div className={styles.headerConteiner}>
-            <Logo withoutText={width < 1200} />
+            <Logo withoutText={width < 1200} homePath/>
             <div className={styles.navbarWrapper}>
                 <Navbar />
             </div>
