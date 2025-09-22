@@ -6,13 +6,18 @@ import { Button } from "../../../elements";
 
 const MobileMenu: FC = () => {
     const { data: routes } = useRoutes();
-    const { modals } = useModal()
+    const { modals, close } = useModal()
+
+    const handleClick = (e: any) => {
+        if (e.target.tagName !== "BUTTON") return;
+        close("MenuMobile")
+    }
     
     return (
         <div className={`${styles.conteiner} ${modals.MenuMobile ? styles.active : null}`}>
             <div className={styles.menuWrapper}>
                 <Navbar flexDirection="column" />
-                <div className={styles.buttonsWrapper}>
+                <div className={styles.buttonsWrapper} onClick={handleClick}>
                     <Button linkTo={routes?.order.path || ""} darkStyle >Zapytaj o termin</Button>
                     <Button linkTo={routes?.offers.path || ""} >Sprawdź ofertę</Button>
                 </div>

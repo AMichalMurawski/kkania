@@ -13,7 +13,6 @@ const Navbar: FC<NavbarProps> = ({ darkStyle, flexDirection = 'row' }) => {
     const currentPath = "/" + location.pathname.split("/")[1];
 
     const handleClick = () => {
-        document.body.style.overflow = "auto";
         close("MenuMobile")
     }
 
