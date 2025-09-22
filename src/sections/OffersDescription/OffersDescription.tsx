@@ -17,7 +17,7 @@ const OffersDescription: FC = () => {
     return (
         <section className={`${styles.sectionConteiner} ${!activeOffer?.[0] ? styles.deactive : null}`} id="offersDescription">
             <OfferDescription offer={activeOffer?.[0] || null} />
-            <Button linkTo={`${routes?.order.path}?plan=${plan}` || ""} >Zapytaj o termin</Button>
+            <Button linkTo={`${routes?.order.path}?plan=${plan}#order` || ""} >Zapytaj o termin</Button>
         </section>
     );
 };

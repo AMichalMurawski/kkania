@@ -15,7 +15,7 @@ const OfferItem: FC<OfferItemProps> = ({ offer, active = false }) => {
             <p className={styles.price}>{offer.price} zł</p>
             <Button darkStyle view="full" linkTo={`${routes?.offers.path}?plan=${offer.name}#offersDescription` || ""}>Sprawdź szczegóły</Button>
             <OfferDetails type={offer.details.type} text={offer.details.text || []} />
-            <Button view="full" linkTo={`${routes?.order.path}?plan=${offer.name}` || ""}>Zapytaj o termin</Button>
+            <Button view="full" linkTo={`${routes?.order.path}?plan=${offer.name}#order` || ""}>Zapytaj o termin</Button>
         </div>
     );
 };

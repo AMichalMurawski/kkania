@@ -18,7 +18,7 @@ const Gallery: FC<GallerySectionProps> = ({ gallery, previous, next }) => {
                 <div className={styles.content}>
                     <p>{gallery.description}</p>
                     <p className={styles.linkWrapper}>
-                        <Link href={`${routes?.offers.path}?plan=${gallery.session}`} >{offerName}</Link>
+                        <Link href={`${routes?.offers.path}?plan=${gallery.session}#offersDescription`} >{offerName}</Link>
                     </p>
                 </div>
                 <GalleryList images={gallery.images} />
