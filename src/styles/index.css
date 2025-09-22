@@ -124,11 +124,11 @@ img {
     padding: 4em 1em;
 
     @media screen and (min-width: 768px) {
-        padding: 1.5em;
+        padding-inline: 1.5em;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 2em;
+        padding-inline: 2em;
     }
 }
 
