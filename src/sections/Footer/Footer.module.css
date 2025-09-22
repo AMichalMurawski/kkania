@@ -17,31 +17,42 @@
 .footerConteiner {
     width: clamp(320px, 100%, 1200px);
     margin-inline: auto;
-    padding: 2em 2em;
+    padding: 2em 1em;
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+    @media screen and (min-width: 768px) {
+        padding-inline: 1.5em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-inline: 2em;
+    }
 }
 
 .footerContent{
     margin-inline: auto;
+    margin-bottom: 1em;
     display: grid;
     grid-template-areas: 
         "logo"
-        "socialMedia"
         "contacts"
+        "socialMedia"
         "legal";
-    gap: 4em;
+    gap: 2em;
 
     @media screen and (min-width: 768px) {
         display: grid;
         grid-template-areas: 
-            "socialMedia - logo"
+            "logo - socialMedia"
             "contacts - legal";
+        gap: 4em;
     }
 
     @media screen and (min-width: 1200px) {
-        grid-template-areas: "logo contacts legal socialMedia";
+        width: 100%;
+        grid-template-areas: "logo contacts socialMedia legal";
     }
 }
 
@@ -68,6 +79,10 @@
     @media screen and (min-width: 768px) {
         align-items: center;
         justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
     }
 }
 

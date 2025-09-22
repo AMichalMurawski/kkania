@@ -6,7 +6,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: fill var(--transition-primary), background-color var(--transition-primary);
+    transition: fill var(--transition-primary), background-color var(--transition-primary), box-shadow var(--transition-primary);
+}
+
+.icon svg {
+    translate: 0.05em 0.2em;
 }
 
 .light {
@@ -28,9 +32,9 @@
 }
 
 .dark:active {
-    box-shadow: inset 0 0 2px 3px var(--color-glass);
+    box-shadow: 0 0 2px 3px var(--color-glass);
 }
 
 .light:active {
-    box-shadow: inset 0 0 2px 3px var(--color-shadow);
+    box-shadow: 0 0 2px 3px var(--color-shadow);
 }

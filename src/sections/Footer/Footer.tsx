@@ -18,9 +18,7 @@ const Footer: FC = () => {
                     <Contacts darkStyle />
                 </div>
                 <div className={styles.legal}>
-                    <Link href="">Polityka Prywatności</Link>
                     <Link href={`${routes?.terms.path}`}>Regulamin</Link>
-                    <Link href="">FAQ</Link>
                 </div>
                 <div className={styles.socialMedia}>
                     {siteInfo?.socialMedia.map(social =>
