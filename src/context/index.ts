@@ -10,3 +10,4 @@ export { OffersProvider, useOffers } from "./ConfigProviders/OffersProvider";
 export { RoutesProvider, useRoutes } from "./ConfigProviders/RoutesProvider";
 export { SiteInfoProvider, useSiteInfo } from "./ConfigProviders/SiteInfoProvider";
 export { TermsProvider, useTerms } from "./ConfigProviders/TermsProvider";
+export { TopGalleryProvider, useTopGallery } from "./ConfigProviders/TopGalleryProvider";
