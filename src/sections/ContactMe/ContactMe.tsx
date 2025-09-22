@@ -9,8 +9,8 @@ const ContactMe: FC = () => {
     const { data: routes } = useRoutes();
 
     return (
-        <section className={styles.sectionConteiner}>
-            <h2>{siteContent?.contact.title}</h2>
+        <section className="container">
+            <h2 className={styles.sectionTitle}>{siteContent?.contact.title}</h2>
             <div className={styles.sectionWrapper}>
                 <div className={styles.content}>
                     {siteContent?.contact.value.map((value, i) => 

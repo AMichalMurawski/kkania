@@ -9,7 +9,7 @@ const Footer: FC = () => {
     const { data: routes } = useRoutes();
 
     return <footer className={styles.footer}>
-        <div className={styles.footerConteiner}>
+        <div className={`container ${styles.footerContainer}`}>
             <div className={styles.footerContent}>
                 <div className={styles.logo}>
                     <Logo darkStyle />

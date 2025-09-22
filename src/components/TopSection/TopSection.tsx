@@ -7,7 +7,7 @@ import { decode } from "he";
 const Top: FC<PropsWithChildren<TopSectionProps>> = ({ title, description, children, link, darkStyle }) => {
     
     return (
-        <div className={styles.topWrapper}>
+        <div className={`container ${styles.topContainer}`}>
                 <div className={styles.content}>
                     <h2>{title}</h2>
                     {description.map((value, i) => 

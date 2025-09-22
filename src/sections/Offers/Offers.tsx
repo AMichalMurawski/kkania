@@ -8,7 +8,7 @@ const Offers: FC<OffersProps> = ({content}) => {
     const { data: offers } = useOffers();
 
     return (
-        <section className={styles.sectionConteiner}>
+        <section className={`container ${styles.sectionContainer}`}>
             <p className={styles.description}>{content}</p>
             <OffersList offers={offers || []} />
         </section>

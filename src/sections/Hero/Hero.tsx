@@ -4,8 +4,8 @@ import { HeroProps } from "./types";
 import { ImageBg } from "../../elements";
 
 const Hero: FC<PropsWithChildren<HeroProps>> = ({ children, imageName, imageType, heroTitle }) => {
-    return <section className={styles.heroConteiner}>
-        <div className={styles.heroWrapper}>
+    return <section className={styles.hero}>
+        <div className={`container ${styles.heroContainer}`}>
             <div className={styles.content}>
                 {children
                     ? children 

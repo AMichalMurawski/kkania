@@ -13,7 +13,7 @@ const Gallery: FC<GallerySectionProps> = ({ gallery, previous, next }) => {
     const offerName = offers?.find(offer => offer.name === gallery.session)?.title
 
     return (
-        <section className={styles.sectionConteiner}>
+        <section className="container">
             <div className={styles.sectionWrapper}>
                 <div className={styles.content}>
                     <p>{gallery.description}</p>

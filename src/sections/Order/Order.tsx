@@ -15,7 +15,7 @@ const Order: FC = () => {
     const activeOffer = offers?.filter(offer => offer.name === plan);
 
     return (
-        <section className={styles.sectionConteiner} id="order">
+        <section className={`container ${styles.sectionContainer}`} id="order">
             <ReservationForm />
             {activeOffer?.[0]
                 ? <OfferDescription offer={activeOffer?.[0] || null} />
