@@ -8,7 +8,7 @@ const AboutMe: FC<AboutMeProps> = ({ content, flexDirection }) => {
     const width = useWindowWidth();
 
     return (
-        <section className={styles.aboutMeConteiner}>
+        <section className={`container ${styles.aboutMeContainer}`}>
             {content.map((item, i) => {
                 let direction: FlexDirection = flexDirection[0];
                 if (width > 768) direction = flexDirection[1];

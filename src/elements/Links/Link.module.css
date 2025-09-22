@@ -3,6 +3,7 @@
     text-decoration: underline;
     cursor: pointer;
     transition: filter var(--transition-primary);
+    height: fit-content;
 }
 
 .link:hover,

@@ -10,8 +10,8 @@ const Header: FC = () => {
     const width = useWindowWidth();
 
     return <header className={styles.header}>
-        <div className={styles.headerConteiner}>
-            <Logo withoutText={width < 1200} />
+        <div className={`container ${styles.headerContainer}`}>
+            <Logo withoutText={width < 1200} homePath/>
             <div className={styles.navbarWrapper}>
                 <Navbar />
             </div>

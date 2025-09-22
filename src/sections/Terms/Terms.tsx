@@ -58,7 +58,7 @@ const Terms: FC = () => {
     }, [terms]);
 
     return (
-        <section className={styles.section}>
+        <section className={`container ${styles.sectionContainer}`}>
             <h2>{parse(`${newTerms?.title}`)}</h2>
             <p className={styles.siteName}>{parse(`${newTerms?.siteName}`)}</p>
             <p className={styles.lastUpdated}>Data ostatniej aktualizacji: {parse(`${newTerms?.lastUpdated}`)}</p>

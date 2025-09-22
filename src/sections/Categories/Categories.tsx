@@ -7,7 +7,7 @@ const Categories: FC = () => {
     const { data: galleries } = useGalleries();
 
     return (
-        <section className={styles.sectionConteiner}>
+        <section className="container">
             <div className={styles.categoriesList}>
                 {galleries?.map(gallery => 
                     <CategoryItem

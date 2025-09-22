@@ -1,18 +1,4 @@
-.sectionConteiner {
-    width: clamp(320px, 100%, 1200px);
-    margin-inline: auto;
-    padding: 4em 1em;
-
-    @media screen and (min-width: 768px) {
-        padding-inline: 1.5em;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-inline: 2em;
-    }
-}
-
-.sectionConteiner h2 {
+.sectionTitle {
     margin-inline: auto;
     width: fit-content;
 }

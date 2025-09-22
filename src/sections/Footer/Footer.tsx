@@ -9,7 +9,7 @@ const Footer: FC = () => {
     const { data: routes } = useRoutes();
 
     return <footer className={styles.footer}>
-        <div className={styles.footerConteiner}>
+        <div className={`container ${styles.footerContainer}`}>
             <div className={styles.footerContent}>
                 <div className={styles.logo}>
                     <Logo darkStyle />
@@ -18,9 +18,7 @@ const Footer: FC = () => {
                     <Contacts darkStyle />
                 </div>
                 <div className={styles.legal}>
-                    <Link href="">Polityka Prywatności</Link>
                     <Link href={`${routes?.terms.path}`}>Regulamin</Link>
-                    <Link href="">FAQ</Link>
                 </div>
                 <div className={styles.socialMedia}>
                     {siteInfo?.socialMedia.map(social =>

@@ -1,23 +1,15 @@
-.sectionConteiner {
-    margin-inline: auto;
-    padding: 4em 1em;
-    width:  clamp(320px, 100%, 1200px);
+.sectionContainer {
     display: flex;
     flex-direction: column;
     gap: 4em;
 
-    @media screen and (min-width: 768px) {
-        padding-inline: 1.5em;
-    }
-
     @media screen and (min-width: 1200px) {
-        padding-inline: 2em;
         flex-direction: row;
         align-items: flex-start;
     }
 }
 
-.sectionConteiner > * {
+.sectionContainer > * {
     @media screen and (min-width: 1200px) {
         flex: 1;
     }

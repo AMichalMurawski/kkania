@@ -5,11 +5,13 @@ import { SocialIconProps } from "./types";
 
 const SocialIcon: FC<SocialIconProps> = ({ name, darkStyle, alt = '', href='' }) => {
     return (
-        <Link href={href} anotherSite ariaLabel={name}>
-            <div className={`${styles.icon} ${darkStyle ? styles.dark : styles.light}`}>
-                <IconSVG name={name} size='2rem' alt={alt} />
-            </div>
-        </Link>
+        <div className={`${styles.icon} ${darkStyle ? styles.dark : styles.light}`}>
+            <Link href={href} anotherSite ariaLabel={name}>
+                <div>
+                    <IconSVG name={name} size='2em' alt={alt} />
+                </div>
+            </Link>
+        </div>
     );
 };
 
