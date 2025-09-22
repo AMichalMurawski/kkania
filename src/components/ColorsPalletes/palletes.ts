@@ -23,4 +23,12 @@ export const palletes = [
         ['accent', '#945c56'],
         ['glass-accent', '#945c561d']
     ],
+    [
+        ['primary', '#FFE7E2'],
+        ['secondary', '#754540'],
+        ['text', '#754540'],
+        ['text-alternative', '#fcf0f4'],
+        ['accent', '#945c56'],
+        ['glass-accent', '#945c561d']
+    ],
 ]
