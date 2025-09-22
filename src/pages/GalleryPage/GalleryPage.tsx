@@ -1,17 +1,22 @@
 import { FC } from "react";
-import { useGalleries } from "../../context";
+import { useGalleries, useRoutes } from "../../context";
 import { Gallery, Hero } from "../../sections";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ModalImages } from "../../components";
 
 const GalleryPage: FC = () => {
+    const { data: routes } = useRoutes();
     const { data: galleries } = useGalleries();
     const { galleryName } = useParams<{ galleryName: string }>();
 
     const galleryIndex: number = galleries?.findIndex(gallery =>
         gallery.name === galleryName
     ) ?? -1;
+
+    if (galleryIndex === -1) {
+        return <Navigate to={routes?.categories.path || "/"} replace />
+    }
 
     const previous: { value: string; url: string} | null = galleries && galleryIndex > 0 ? {
         value: galleries?.[galleryIndex - 1].title,
