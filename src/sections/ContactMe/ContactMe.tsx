@@ -2,11 +2,11 @@ import { FC } from "react";
 import styles from "./ContactMe.module.css";
 import { ContactForm, Contacts } from "../../components";
 import { Link } from "../../elements";
-import { useSiteContent, useSiteInfo } from "../../context";
+import { useRoutes, useSiteContent } from "../../context";
 
 const ContactMe: FC = () => {
-    const { data: siteInfo } = useSiteInfo();
     const { data: siteContent } = useSiteContent();
+    const { data: routes } = useRoutes();
 
     return (
         <section className={styles.sectionConteiner}>
@@ -17,7 +17,7 @@ const ContactMe: FC = () => {
                         <p key={i}>{value}</p>
                     )}
                     <Contacts />
-                    <p>Jeśli chcesz zarezerwować sesję lub sprawdzić warunki sesji zapraszam do działu <Link href="">Oferta</Link>.</p>
+                    <p>Jeśli chcesz zarezerwować sesję lub sprawdzić warunki sesji zapraszam do działu <Link href={routes?.offers.path || "/"}>Oferta</Link>.</p>
                 </div>
                 <div className={styles.form}>
                     <ContactForm />
