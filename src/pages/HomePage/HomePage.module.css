@@ -1,6 +1,16 @@
 .heroContent {
     display: flex;
     flex-direction: column;
+    padding-inline: 10%;
+}
+
+.heroContent h1,
+.heroContent h2 {
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: var(--color-primary);
+    text-shadow: 0 0 4px var(--color-secondary);
+    filter: drop-shadow(0 0 4px var(--color-secondary));
 }
 
 .heroButtonsWrapper {
