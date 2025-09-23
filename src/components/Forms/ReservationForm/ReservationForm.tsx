@@ -111,7 +111,7 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="text"
-                label="Imię i Nazwisko"
+                label="Imię i Nazwisko:"
                 error={errors.name?.message}
                 {...register("name")}
                 onChange={() => handleFieldChange("name")}
@@ -120,7 +120,7 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="email"
-                label="Email"
+                label="E-mail:"
                 error={errors.email?.message}
                 {...register("email")}
                 onChange={() => handleFieldChange("email")}
@@ -129,7 +129,7 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="select"
-                label="Sesja"
+                label="Sesja:"
                 options={sessions}
                 error={errors.session?.message}
                 {...register("session")}
@@ -142,7 +142,7 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="date"
-                label="Data"
+                label="Data:"
                 error={errors.date?.message}
                 {...register("date")}
                 onChange={() => handleFieldChange("date")}
@@ -151,7 +151,7 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="textarea"
-                label="Informacje o sesji"
+                label="Informacje o sesji:"
                 placeholder="Podaj dodatkowe informacje..."
                 error={errors.info?.message}
                 {...register("info")}

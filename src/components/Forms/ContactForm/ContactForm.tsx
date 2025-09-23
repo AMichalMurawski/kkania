@@ -76,7 +76,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="text"
-                label="Imię"
+                label="Imię i Nazwisko:"
                 error={errors.name?.message}
                 {...register("name")}
                 onChange={() => handleFieldChange("name")}
@@ -85,7 +85,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="email"
-                label="Email"
+                label="E-mail:"
                 error={errors.email?.message}
                 {...register("email")}
                 onChange={() => handleFieldChange("email")}
@@ -94,7 +94,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkStyle }) => {
             <Input
                 darkStyle={darkStyle}
                 type="textarea"
-                label="Wiadomość"
+                label="Wiadomość:"
                 placeholder="Napisz swoją wiadomość..."
                 error={errors.message?.message}
                 {...register("message")}
