@@ -7,12 +7,17 @@
     background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.45));
     box-shadow: 0 4px 18px rgba(8,15,25,0.12);
     z-index: 1000;
+    transition: translate 500ms linear;
 
     @supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
         background: rgba(255,255,255,0.9);
         border-bottom: 1px solid rgba(0,0,0,0.06);
         box-shadow: 0 3px 10px rgba(0,0,0,0.06);
     }
+}
+
+.hide {
+    translate: 0 -110%;
 }
 
 .headerContainer {
