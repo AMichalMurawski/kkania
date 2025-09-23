@@ -34,7 +34,7 @@ const Footer: FC = () => {
                 </div>
                 <div className={styles.madeBy}>
                     <p>Projekt i realizacja strony</p>
-                    <p><a href={siteInfo?.madeBy.url} target='blank' rel='noopener noreferrer'>{siteInfo?.madeBy.name}</a></p>
+                    <p><Link href="" ariaLabel="Michał Murawski, strona portfolio" anotherSite>{siteInfo?.madeBy.name}</Link></p>
                 </div>
             </div>
         </div>
