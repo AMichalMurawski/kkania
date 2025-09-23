@@ -34,10 +34,18 @@ const ContactForm: FC<ContactFormProps> = ({ darkStyle }) => {
                 type: "loading"
             })
 
+            const message = `
+                <strong>Wiadomość:</strong> ${data.message}
+                <br>
+                <strong>Imię i Nazwisko:</strong> ${data.name}
+                <br>
+                <strong>E-mail:</strong> ${data.email}
+            `;
+
             const response = await sendEmail({
                 userName: data.name,
                 userEmail: data.email,
-                message: data.message,
+                message: message,
                 formType: "kontakt"
             });
 

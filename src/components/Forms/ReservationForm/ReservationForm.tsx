@@ -59,22 +59,28 @@ const ReservationForm: FC<ReservationFormProps> = ({ darkStyle }) => {
     };
 
     const onSubmit: SubmitHandler<ReservationFormData> = async (data) => {
-
         try {
             addToast({
                 message: "Wysyłanie wiadomości",
                 type: "loading"
             })
-        
+            
+            const message = `
+                <strong>Informacje o sesji:</strong> ${data.info}
+                <br>
+                <strong>Imię i nazwisko:</strong> ${data.name}
+                <br>
+                <strong>E-mail:</strong> ${data.email}
+                <br>
+                <strong>Sesja:</strong> ${data.session}
+                <br>
+                <strong>Data:</strong> ${data.date}
+            `;
+
             const response = await sendEmail({
                 userName: data.name,
                 userEmail: data.email,
-                message: `
-                    Zapytanie o rezerwację sesji:
-                    data: ${data.date}
-                    sesja: ${data.session}
-                    wiadomość: ${data.info}
-                `,
+                message: message,
                 formType: "kontakt"
             });
             
