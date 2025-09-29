@@ -1,4 +1,4 @@
-export type FormType = 'kontakt' | 'rezerwacja';
+export type FormType = "kontakt" | "rezerwacja";
 
 export interface SendEmailParams {
   userName: string;
@@ -22,16 +22,16 @@ export async function sendEmail({
   formType,
 }: SendEmailParams): Promise<SendEmailResponse> {
   if (!API_URL || !API_KEY) {
-    console.error('Brak konfiguracji API w .env');
-    return { success: false, error: 'API not configured' };
+    console.error("Brak konfiguracji API w .env");
+    return { success: false, error: "API not configured" };
   }
 
   try {
     const res = await fetch(API_URL, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'X-API-KEY': API_KEY,
+        "Content-Type": "application/json",
+        "X-API-KEY": API_KEY,
       },
       body: JSON.stringify({
         userName,
@@ -43,6 +43,7 @@ export async function sendEmail({
 
     return (await res.json()) as SendEmailResponse;
   } catch (err) {
-    return { success: false, error: 'Connection error' };
+    console.log(err);
+    return { success: false, error: "Connection error" };
   }
 }
