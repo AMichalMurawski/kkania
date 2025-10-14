@@ -19,7 +19,7 @@ const TopOffers: FC<TopOffersProps> = ({darkStyle}) => {
         title: siteContent?.offers.title || "",
         description: siteContent?.offers.value || [],
         link: {
-            href: routes?.offers.path || "",
+            href: `/#${routes?.offers.path}` || "",
             value: siteContent?.offers.button || ''
         }
     }
