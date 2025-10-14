@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./CategoryItem.module.css";
 import { Image, LinkTo } from "../../elements";
 import { CategoryItemProps } from "./types";
-import { useRoutes } from "../../context";
+import { useOffers, useRoutes } from "../../context";
 import { decode } from "he";
 
 const CategoryItem: FC<CategoryItemProps> = ({
@@ -14,6 +14,7 @@ const CategoryItem: FC<CategoryItemProps> = ({
   imagesPreview,
 }) => {
   const { data: routes } = useRoutes();
+  const { data: offers } = useOffers()
 
   const compositionImages = (): [string, string][] => {
     const compositions: Record<number, [string, string][]> = {
@@ -67,8 +68,8 @@ const CategoryItem: FC<CategoryItemProps> = ({
         ))}
       </div>
       <div className={styles.informationsWrapper}>
-        <h3 className={styles.session}>{session}</h3>
         <h3 className={styles.title}>{title}</h3>
+        <h3 className={styles.session}>{offers?.filter(offer => offer.name === session)[0].title}</h3>
         <p className={styles.description}>{description}</p>
         <p className={styles.buttonWrapper}>
           <LinkTo
