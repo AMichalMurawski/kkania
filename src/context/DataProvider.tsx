@@ -1,4 +1,11 @@
-import { createContext, FC, useContext, useEffect, useState, ReactNode } from "react";
+import {
+  createContext,
+  FC,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 interface DataProviderProps<T> {
   jsonFile: string;
@@ -24,13 +31,16 @@ export function createDataContext<T>() {
     useEffect(() => {
       setState({ data: null, loading: true, error: null });
 
-      fetch(jsonFile)
-        .then(res => {
-          if (!res.ok) throw new Error(`Nie udało się pobrać pliku: ${jsonFile}`);
+      fetch(`${jsonFile}?v=${Date.now()}`)
+        .then((res) => {
+          if (!res.ok)
+            throw new Error(`Nie udało się pobrać pliku: ${jsonFile}`);
           return res.json();
         })
-        .then((json: T) => setState({ data: json, loading: false, error: null }))
-        .catch(err => setState({ data: null, loading: false, error: err }));
+        .then((json: T) =>
+          setState({ data: json, loading: false, error: null })
+        )
+        .catch((err) => setState({ data: null, loading: false, error: err }));
     }, [jsonFile]);
 
     return <Context.Provider value={state}>{children}</Context.Provider>;
@@ -39,7 +49,9 @@ export function createDataContext<T>() {
   const useData = () => {
     const ctx = useContext(Context);
     if (!ctx) {
-      throw new Error("DataProvider: kontekst nie został poprawnie zainicjalizowany");
+      throw new Error(
+        "DataProvider: kontekst nie został poprawnie zainicjalizowany"
+      );
     }
     return ctx;
   };
