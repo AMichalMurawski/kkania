@@ -16,7 +16,6 @@ const OfferDescription: FC<OfferDescriptionProps> = ({ offer, darkStyle }) => {
           <p key={i}>{description}</p>
         ))}
       </>
-      <p className={styles.price}>{offer?.price} zł</p>
       <p className={styles.listTitle}>Co obejmuje:</p>
       <OfferDetails
         type={offer?.details.type || "list"}
